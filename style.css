@@ -2,17 +2,17 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo|Hind&display=swap');
 
 /* General */
-body{
+body {
     font-family: 'Nunito', sans-serif;
 }
 
 
 /* Navbar */
-.navbar-brand{
+.navbar-brand {
     background-color: #ffffff !important;
 }
 
-.nav-link{
+.nav-link {
     font-style: normal;
     font-weight: 800;
     font-size: 1rem;
@@ -20,11 +20,11 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 
-.other-navItems{
+.other-navItems {
     color: black !important;
 }
 
-.btn-outline-primary{
+.btn-outline-primary {
     background-color: #4C95B2 !important;
     color: #ffffff;
     border: none;
@@ -50,11 +50,13 @@ body{
     font-weight: 600;
     /* margin-top: -3px; */
 }
-.rounded:hover{
+
+.rounded:hover {
     background-color: #4C95B2;
-    border: none;   
+    border: none;
 }
-.header h4{
+
+.header h4 {
     font-family: Nunito;
     font-style: normal;
     font-weight: 900;
@@ -63,12 +65,13 @@ body{
     color: #4C95B2;
 }
 
-.header-paragraph{
+.header-paragraph {
     font-family: 'Hind', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
-    line-height: 35px;;
+    line-height: 35px;
+    ;
     font-style: normal;
     font-weight: 500;
     font-size: 1.5625rem;
@@ -78,9 +81,9 @@ body{
     word-wrap: break-word;
 }
 
-.bg-image{
-    background-image: url(./Images/bg-image.png) ;
-    height:33.1875rem;
+.bg-image {
+    background-image: url(./Images/bg-image.png);
+    height: 33.1875rem;
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -90,7 +93,7 @@ body{
 }
 
 @media (max-width: 420px) {
-    .bg-image{
+    .bg-image {
         background-image: none;
     }
 }
@@ -99,22 +102,22 @@ body{
 
 /* PATNERS */
 
-.patners{
-   
+.patners {
+
     height: 7.6875rem;
     margin-bottom: 10rem;
-    z-index:4 ;
-    background-image: 
-    url('images/patners-image.png');
+    z-index: 4;
+    background-image:
+        url('images/patners-image.png');
 }
 
-.over{
+.over {
     height: 7.45rem;
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0, 0, 0, .8);
     z-index: 1;
 }
 
-.logo-row{
+.logo-row {
     font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 900;
@@ -127,39 +130,56 @@ body{
     color: #C4C4C4;
 }
 
-.arrows{
+.arrows {
     position: relative;
     top: 0rem;
-   
+
 }
 
-@media (max-width: 420px){
-    .patners{
+@media (max-width: 420px) {
+    .patners {
         display: none;
     }
 }
 
 /* END OF PATNERS */
 
-.footer{
+/* START OF FAQ */
+.faq i {
+    color: #4C95B2;
+}
+
+.faq hr {
+    width: 12%;
+    border-top: 2px solid #4C95B2;
+}
+
+.faq h6,
+.faq h4 {
+    font-weight: 900;
+}
+
+
+/* END OF FAQ */
+.footer {
     color: white;
 }
 
-.footer-back  {
+.footer-back {
     background-color: #C4C4C4;
 }
 
 .footer-back2 {
     background-color: #4C95B2;
-    text-align:center;
-    padding:15px;
+    text-align: center;
+    padding: 15px;
 }
 
 .footer-center {
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
-    text-align:center;
+    text-align: center;
     padding: 35px;
 }
 
@@ -168,5 +188,5 @@ body{
 }
 
 .fas {
-    color:red;
+    color: red;
 }
