@@ -1,3 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo|Hind&display=swap');
+
+/* General */
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/* Navbar */
+.navbar-brand{
+    background-color: #ffffff !important;
+}
+
+.nav-link{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1rem;
+    color: #4C95B2 !important;
+    font-family: 'Nunito', sans-serif;
+}
+
+.other-navItems{
+    color: black !important;
+}
+
+.btn-outline-primary{
+    background-color: #4C95B2 !important;
+    color: #ffffff;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    line-height: 1.8125rem;
+}
+
+/* End of Navbar */
+
+/* Header */
+
+.rounded {
+    border-radius: 15px !important;
+    border: 1px solid#4C95B2;
+    color: #4C95B2;
+    letter-spacing: .02rem;
+    font-size: 1rem;
+    line-height: 3.4375rem;
+    width: 15.75rem;
+    height: 3rem;
+    padding: 0px;
+    font-weight: 600;
+    /* margin-top: -3px; */
+}
+.rounded:hover{
+    background-color: #4C95B2;
+    border: none;   
+}
+.header h4{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 2.5625rem;
+    color: #4C95B2;
+}
+
+.header-paragraph{
+    font-family: 'Hind', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 35px;;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5625rem;
+    line-height: 2.1875rem;
+    letter-spacing: 0.02rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.bg-image{
+    background-image: url(./Images/bg-image.png) ;
+    height:33.1875rem;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: relative;
+    top: 5rem;
+}
+
+@media (max-width: 420px) {
+    .bg-image{
+        background-image: none;
+    }
+}
+
+/* END OF HEADER */
+
+/* PATNERS */
+
+.patners{
+   
+    height: 7.6875rem;
+    margin-bottom: 10rem;
+    z-index:4 ;
+    background-image: 
+    url('images/patners-image.png');
+}
+
+.over{
+    height: 7.45rem;
+    background-color: rgba(0,0,0,.8);
+    z-index: 1;
+}
+
+.logo-row{
+    font-family: 'Heebo', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 5rem;
+    /* line-height: 55px; */
+    /* or 122% */
+
+    letter-spacing: 0.02em;
+
+    color: #C4C4C4;
+}
+
+.arrows{
+    position: relative;
+    top: 0rem;
+   
+}
+
+@media (max-width: 420px){
+    .patners{
+        display: none;
+    }
+}
+
+/* END OF PATNERS */
+
 .footer{
     color: white;
 }
