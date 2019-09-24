@@ -133,6 +133,11 @@ body{
    
 }
 
+@media (max-width: 420px){
+    .patners{
+        display: none;
+    }
+}
 
 /* END OF PATNERS */
 
