@@ -135,6 +135,65 @@
     </section>
     <!-- HOW-IT-WORKS-SECTION-END -->
 
+
+    <section id="calc_section" class="mt-5 mb-5">
+        <h4 class="mb-3 text-center text-uppercase">solar power calculator</h4>
+        <hr>
+        <div id="calc_inner" class="container mt-3">
+            <div class="row">
+                <div class="col-md-8">
+                    <form class="add_form form" id="calc_form">
+                        <input list="appliances" name="appliances" id="appliance_input" required placeholder="Applicance">
+                        <datalist id="appliances">
+                            <option value="Refrigerator">
+                            <option value="Pressing Iron">
+                            <option value="Television">
+                            <option value="Washing Machine">
+                            <option value="Water Heater">
+                        </datalist>
+
+                        <input type="number" id="quantity_input" required placeholder="Quantity">
+
+                        <input type="number" id="power_input" required placeholder="Power">
+
+                        <button class="btn calc_button" type="submit">Add</button>
+
+                    </form>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+
+
+            <div class="row mt-5">
+                <div class="col-md-7">
+                    <table class="table mt-4 table-borderless">
+                        <tbody>
+                            <tr>
+                                <td>Pressing Iron</td>
+                                <td>3 qty</td>
+                                <td>50 Watts</td>
+                            </tr>
+                            <tr>
+                                <td>Washing Machine</td>
+                                <td>3 qty</td>
+                                <td>100 Watts</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-1 d-none d-md-block">
+                    <div class="vl"></div>
+                </div>
+                <div id="result" class="col-md-4 text-uppercase font-weight-bold">
+                    <p id="result_heading">results</p>
+                    <p><span id="result_num">50</span><sub>watts</sub></p>
+                    <p>solar power needed</p>
+                </div>
+        </div>
+        </div>
+    </section>
+
     <!-- FAQ  SECTION -->
     <section id="faq" class=" faq container mt-3 faq-margin">
         <h4 class="mb-3 text-center text-uppercase text-bold">Frequently Asked Questions</h4>
