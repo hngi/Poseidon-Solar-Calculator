@@ -1,3 +1,4 @@
+
 $(".collapse").on("shown.bs.collapse", function() {
   $(this)
     .siblings(".fa-minus-circle")
@@ -14,3 +15,4 @@ $(".collapse").on("hidden.bs.collapse", function() {
     .siblings(".fa-minus-circle")
     .toggleClass("d-none");
 });
+

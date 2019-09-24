@@ -145,7 +145,7 @@
                     <form class="add_form form" id="calc_form">
                         <input list="appliances" name="appliances" id="appliance_input" required placeholder="Applicance">
                         <datalist id="appliances">
-                            <option value="Refrigerator">
+                            <option class="opt" value="Refrigerator">
                             <option value="Pressing Iron">
                             <option value="Television">
                             <option value="Washing Machine">
@@ -156,7 +156,7 @@
 
                         <input type="number" id="power_input" required placeholder="Power">
 
-                        <button class="btn calc_button" type="submit">Add</button>
+                        <button id="btn" class="btn calc_button" type="submit">Add</button>
 
                     </form>
                 </div>
@@ -168,7 +168,7 @@
             <div class="row mt-5">
                 <div class="col-md-7">
                     <table class="table mt-4 table-borderless">
-                        <tbody>
+                        <tbody id="tbody">
                             <tr>
                                 <td>Pressing Iron</td>
                                 <td>3 qty</td>
@@ -254,6 +254,7 @@
     </footer>
 
     <!-- SCRIPTS -->
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -261,6 +262,39 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="faq.js"></script>
+    <script>
+    const addBtn = document.querySelector('#btn');
+    let applianceValue = document.querySelector('#appliance_input');
+    let quantityValue = document.querySelector('#quantity_input');
+    let powerValue = document.querySelector('#power_input');
+    let tbody = document.querySelector("#tbody")
+
+
+    function click(evt) {
+        evt.preventDefault()
+        console.log(applianceValue.value,quantityValue.value,powerValue.value);
+        let tr = document.createElement("tr");
+        let td1 = document.createElement("td");
+        let td2 = document.createElement("td");
+        let td3 = document.createElement("td");
+
+        td1.textContent = applianceValue.value
+        td2.textContent = quantityValue.value + " qty"
+        td3.textContent = powerValue.value + " Watts"
+
+        tr.appendChild(td1)
+        tr.appendChild(td2)
+        tr.appendChild(td3)
+
+        tbody.appendChild(tr)
+    }
+
+
+    addBtn.addEventListener('click', click);
+
+    console.log(addBtn)
+    
+    </script>
 </body>
 
 </html>

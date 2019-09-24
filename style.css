@@ -156,7 +156,7 @@ body {
     font-weight: bold;
 }
 
-.faq hr {
+ hr {
     width: 12%;
     border-top: 2px solid #4C95B2;
 }
@@ -251,7 +251,10 @@ body {
   /* HOW-IT-WORKS-STYLE-ENDS */
 
 /*Calculator Section*/
-#calc_section{
+#calc_section {
+    background-color: #C4C4C4;
+    padding-top:40px;
+    padding-bottom:40px
 }
 #calc_inner{
     border-radius: 5px;
@@ -259,17 +262,18 @@ body {
     padding: 40px 20px;
 }
 form input{
-    outline: none;
-    border: 1px solid var(--primary-color);
+    border: 2px solid #4C95B2;
     border-radius: 25px;
     padding: 10px;
     height: 40px;
 
 }
 form input[name="appliances"] {
+    border: 2px solid #4C95B2;
     width: 75%;
     margin-bottom: 10px;
 }
+
 input[type="number"] {
     width: 30%;
     margin-right: 20px;
@@ -280,14 +284,15 @@ input::-webkit-calendar-picker-indicator {
   color: var(--primary-color);
 }
 
+/*
 form input::placeholder {
     color: var(--placeholder-color);
 }
 form input:focus {
     border: 2px solid var(--primary-color);
-}
+}*/
 .calc_button{
-    background-color: var(--primary-color);
+    background-color: #4C95B2;
     border-radius: 25px;
     outline: none;
     border: 0;
@@ -301,23 +306,7 @@ form input:focus {
 #result_heading{
     font-size: 20px;
 }
-/* table{
-    display: block;
-    height: 200px;
-    overflow-y: scroll;
-}
-table::-webkit-scrollbar {
-    width: 8px;
-    position: relative;
-    right:50px;
-}
- table::-webkit-scrollbar-track {
-    border: 1px solid var(--primary-color);
-    background-color: #c4c4c4;
-}
-table::-webkit-scrollbar-thumb {
-    background-color: var(--primary-color); 
-} */
+
 .vl {
     border-left: 1px solid #000;
     height: 150px;
