@@ -188,5 +188,50 @@ body {
 }
 
 .fas {
-    color: red;
+    color:red;
 }
+
+/* HOW-IT-WORKS-STYLE-STARTS */
+#how-it-works {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #how-it-works-header {
+    font-family: Hind;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3vw;
+    line-height: 56px;
+    color: #000000;
+    padding-left: 5vw;
+  }
+  
+  #how-it-works p {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.0vw;
+    max-width: 50vw;
+    line-height: 34px;
+    color: #4C95B2;
+  }
+  
+  .how-it-works-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+  
+  .how-it-works-main img {
+    max-width: 20vw;
+  }
+  
+  @media(max-width: 600px) {
+    #how-it-works p {
+      font-size: 2.5vw
+  
+    }
+  }
+  /* HOW-IT-WORKS-STYLE-ENDS */
+
