@@ -1,0 +1,6 @@
+.vscode/
+venv/
+__pycache__
+db.sqlite3
+index.html
+styles.css
