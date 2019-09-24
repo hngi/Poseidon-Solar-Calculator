@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <!-- Header -->
+   <!-- Header -->
 
     <section>
         <!-- navbar -->
@@ -34,13 +34,13 @@
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active ">
-                            <a class="nav-link ml-5" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link ml-5" href="#home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ml-5 other-navItems" href="#">How it Works</a>
+                            <a class="nav-link ml-5 other-navItems" href="#how-it-work">How it Works</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ml-5 other-navItems" href="#">FAQ</a>
+                            <a class="nav-link ml-5 other-navItems" href="#faq">FAQ</a>
                         </li>
 
                         <a href="" class="btn btn-outline-primary rounded-pill ml-5" role="button"> Calculate
@@ -51,7 +51,7 @@
         <!-- end of navbar -->
 
         <!-- header -->
-        <section class="header" style="height: 90vh">
+        <section class="header" id="home" style="height: 90vh">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-12 my-5 py-5">
@@ -115,38 +115,58 @@
         </div>
     </section>
 
+       <!-- HOW-IT-WORKS-SECTION-START -->
+       <section id="how-it-work" class="how-it-works">
+        <h3 id="how-it-works-header">How it works</h3>
+        <div id="how-it-works">
+            <div class="how-it-works-main">
+                <img src="./Images/washing-machine.png">
+                <p class="appliance">1. Choose an appliance</p>
+            </div>
+            <div class="how-it-works-main">
+                <img src="./Images/accounting.png">
+                <p class="appliance">2. Input appliance power</p>
+            </div>
+            <div class="how-it-works-main">
+                <img src="./Images/clipboard.png">
+                <p class="appliance">3. Calculate and get result</p>
+            </div>
+        </div>
+    </section>
+    <!-- HOW-IT-WORKS-SECTION-END -->
+
     <!-- FAQ  SECTION -->
-    <section class=" faq container mt-3">
+    <section id="faq" class=" faq container mt-3 faq-margin">
         <h4 class="mb-3 text-center text-uppercase text-bold">Frequently Asked Questions</h4>
         <hr>
         <h6 class="mb-5 text-center font-weight-light">Get enlightened with the stack of knowledge base you might jjust
             find that which
             you need</h6>
         <div class="mb-4">
-            <i class="fas fa-plus-circle mr-3" data-toggle="collapse" data-target=".description1"></i>
-            <i class="fas fa-minus-circle mr-3 d-none" data-toggle="collapse" data-target=".description1"></i>
-            <h6 class="d-inline">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
-            <p class="font-italic ml-5 collapse description1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description1"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description1"></i>
+            <h6 class="d-inline bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
+            <p class="font-italic ml-5 my-3 collapse description1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Adipisci
                 hic ex quis, sequi
                 asperiores
                 voluptatem deleniti officiis dicta beatae, aliquam repudiandae cumque unde! Optio, saepe!</p>
         </div>
         <div class="mb-4">
-            <i class="fas fa-plus-circle mr-3" data-toggle="collapse" data-target=".description2"></i>
-            <i class="fas fa-minus-circle mr-3 d-none" data-toggle="collapse" data-target=".description2"></i>
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description2"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description2"></i>
             <h6 class="d-inline">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
-            <p class="font-italic ml-5 collapse description2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <p class="font-italic ml-5 my-3 collapse description2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Adipisci
                 hic ex quis, sequi
                 asperiores
                 voluptatem deleniti officiis dicta beatae, aliquam repudiandae cumque unde! Optio, saepe!</p>
         </div>
         <div class="mb-4">
-            <i class="fas fa-plus-circle mr-3" data-toggle="collapse" data-target=".description3"></i>
-            <i class="fas fa-minus-circle mr-3 d-none" data-toggle="collapse" data-target=".description3"></i>
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description3"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description3"></i>
             <h6 class="d-inline">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
-            <p class="font-italic ml-5 collapse description3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <p class="font-italic ml-5 my-3 collapse description3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Adipisci
                 hic ex quis, sequi
                 asperiores
@@ -160,9 +180,9 @@
                 <h3>POSEIDON</h3>
                 <p>The perfect solar calculator for your abode</p>
                 <div class="nav nav-pills flex-column flex-sm-row">
-                    <a class="link flex-sm-fill text-sm-center" href="#">HOME</a>
-                    <a class="link flex-sm-fill text-sm-center" href="#">HOW IT WORKS</a>
-                    <a class="link flex-sm-fill text-sm-center" href="#">FAQ</a>
+                    <a class="link flex-sm-fill text-sm-center" href="#home">HOME</a>
+                    <a class="link flex-sm-fill text-sm-center" href="#how-it-work">HOW IT WORKS</a>
+                    <a class="link flex-sm-fill text-sm-center" href="#faq">FAQ</a>
                     <a class="link flex-sm-fill text-sm-center" href="#">CALCULATE</a>
                 </div>
             </div>
