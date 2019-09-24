@@ -103,9 +103,8 @@ body {
 /* PATNERS */
 
 .patners {
-
     height: 7.6875rem;
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
     z-index: 4;
     background-image:
         url('images/patners-image.png');
@@ -201,20 +200,24 @@ body {
     font-family: Hind;
     font-style: normal;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 2vw;
     line-height: 56px;
     color: #000000;
     padding-left: 5vw;
+    padding-top:30px;
+    padding-bottom: 40px;
+
   }
   
   #how-it-works p {
     font-family: Nunito;
     font-style: normal;
     font-weight: normal;
-    font-size: 2.0vw;
+    font-size: 1.5vw;
     max-width: 50vw;
     line-height: 34px;
     color: #4C95B2;
+    padding: 2rem
   }
   
   .how-it-works-main {
