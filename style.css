@@ -1,3 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+.navbar-brand{
+    background-color: #ffffff !important;
+}
+
+.nav-link{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1rem;
+    color: #4C95B2 !important;
+    font-family: 'Nunito', sans-serif;
+}
+
+.other-navItems{
+    color: black !important;
+}
+
+.btn-outline-primary{
+    background-color: #4C95B2 !important;
+    color: #ffffff;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+}
+
 .footer{
     color: white;
 }
