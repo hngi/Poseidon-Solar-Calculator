@@ -6,7 +6,6 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-
 /* Navbar */
 .navbar-brand {
     background-color: #ffffff !important;
@@ -35,20 +34,69 @@ body {
 
 /* End of Navbar */
 
-/* Header */
+/* Header/ Carousel */
 
 .rounded {
-    border-radius: 24px !important;
-    border: 1px solid#055DA8;
-    color: #055DA8;
+    border-radius: 15px !important;
+    /* border: 1px solid#4C95B2; */
+    border: none;
+    color: #4C95B2;
     letter-spacing: .02rem;
     font-size: 1rem;
     line-height: 3.4375rem;
     width: 15.75rem;
     height: 3.3rem;
     padding: 0px;
-    font-weight: 600;
+    font-weight: 800;
+    background-color: white;
     /* margin-top: -3px; */
+}
+
+/* .header{
+    color: #FFFFFF;
+    padding-top: 30px;
+    height: 100vh; 
+    background-image: url("./images/solar2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+} */
+
+.carousel-inner
+{
+    height: 85vh;
+    margin-bottom: 80px;
+}
+
+.item-three:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0; 
+    background:rgba(0,0,0,0.6);
+ }
+
+.main-text
+{
+    position: absolute;
+    top: 10%;
+    font-weight: bold;
+    margin-left: 250px;
+    color: #FFFFFF;
+    padding-top: 30px;
+}
+
+.main-text .header-title{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+} 
+
+.main-text p{
+    font-size: 25px;
 }
 
 .rounded:hover {
@@ -71,7 +119,6 @@ body {
     font-weight: 500;
     font-size: 25px;
     line-height: 35px;
-    ;
     font-style: normal;
     font-weight: 500;
     font-size: 1.5625rem;
@@ -83,18 +130,30 @@ body {
 
 .bg-image {
     background-image: url('Images/bg-image.png');
+}
+/* .bg-image {
+    background-image: url(./Images/bg-image.png);
     height: 33.1875rem;
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     object-fit: cover;
     position: relative;
-    top: 5rem;
+    top: 5rem;  
 }
+
+}
+
+} */
+
 
 @media (max-width: 767px) {
     .bg-image {
         background-image: none;
+    }
+
+    .main-text{
+        margin-left: 10px;
     }
 }
 
@@ -105,6 +164,7 @@ body {
 .patners {
     height: 7.6875rem;
     margin-bottom: 2rem;
+    margin-top: -20px;
     z-index: 4;
     background-image:
         url('Images/patners-image.png');
@@ -166,10 +226,16 @@ body {
     font-weight: 900;
 }
 
+@media (max-width: 375px) {
+    .faq{
+        position: relative;
+        top: 5rem;
+    }
+}
+
 .faq-margin {
     margin-bottom: 100px;
 }
-
 
 /* END OF FAQ */
 
@@ -288,10 +354,85 @@ body {
     padding: 35px;
 }
 
-.link {
+.calculator .result .Watts{
+    padding-top: 60px;
+    margin-left: -30px;
+}
+
+.calculator .applicance_list{
+    margin-top: 15px;
+    margin-left: -35px;
+}
+
+.label_result{
+    font-size:100px;
+    color: #055DA8;
+    margin-left: 90px;
+}
+
+.vl {
+    border-left: 1px solid;
+    height: 250px;
+    margin-top: 100px;
+}
+
+.container .calculator .close{
+    color: red;
+}
+
+.container .calculator .appliance_dropdown{
+    width: 300px;
+    color: #055DA8;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+
+.container .calculator .qty_dropdown{
+    width: 120px;
+    color: #055DA8;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+/*END OF CALC SOLAR POWER SECTION*/
+
+.footer {
+    color: white;
+}
+
+.footer-back {
+    background-color: #f2f4f8;
+    padding-bottom: 2.5rem;
+    padding-top: 1.2rem;
+    color: #000;
+    font-weight: 800;
+}
+
+.footer p {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .link{
+    margin-bottom: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.link:hover{
+    text-decoration: none;
+    opacity: .5;
+}
+
+/* .link{
+    color: #000000;
+} */
+
+.footer-back2 {
+    background-color: #4C95B2;
+    text-align: center;
     padding: 15px;
     color:white;
 }
+
 
 .fas {
     color: red;
@@ -302,19 +443,34 @@ body {
     display: flex;
     justify-content: space-around;
   }
+
+.how-it-works{
+    background-color: #f2f4f8;
+    position: relative;
+    bottom: 2rem;
+    min-height: 10px;
+}
   
   #how-it-works-header {
-    font-family: Hind;
+    font-family: 'Hind', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 2rem;
     line-height: 56px;
     color: #000000;
-    padding-left: 5vw;
-    padding-top:30px;
     padding-bottom: 40px;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    top: 2rem; 
+}
 
-  }
+.horizontal{
+    border: 1px solid #4C95B2;
+    width: 7%;
+    position: relative;
+    bottom: 2rem;
+}
   
   #how-it-works p {
     font-family: Nunito;
@@ -331,6 +487,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center
+
   }
   
   .how-it-works-main img {
@@ -342,10 +499,24 @@ body {
       font-size: 2.5vw
   
     }
+
+  }
+
+  @media(max-width: 375px) {
+      .how-it-works{
+          position: relative;
+          top: 4rem;
+      }
+
   }
   /* HOW-IT-WORKS-STYLE-ENDS */
 
 /*Calculator Section*/
+
+.form {
+    width:80%;
+}
+
 #calc_section {
     background-color: #C4C4C4;
     padding-top:40px;
@@ -364,6 +535,14 @@ form input{
 
 }
 form input[name="appliances"] {
+    border: 2px solid #4C95B2;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#quantity_input {
+    width: 20%;
+    margin-right:35.5px;
     border: 2px solid #055DA8;
     width: 75%;
     margin-bottom: 10px;
@@ -371,7 +550,7 @@ form input[name="appliances"] {
 
 input[type="number"] {
     width: 30%;
-    margin-right: 20px;
+    margin-right: 35.5px;
 }
 
 input::-webkit-calendar-picker-indicator {
@@ -393,6 +572,8 @@ form input:focus {
     border: 0;
     width: 18%;
     color: #fff;
+    margin-top:10px;
+    float: right;
 }
 #result_num{
     font-size: 60px;

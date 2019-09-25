@@ -34,6 +34,7 @@
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active ">
+                           
                             <a class="nav-link ml-5" href="#home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
@@ -45,18 +46,24 @@
 
                         <a href="#calc_section" class="btn btn-outline-primary rounded-pill ml-5" role="button"> Calculate
                             Solar Power</a>
+
                 </div>
             </div>
         </nav>
         <!-- end of navbar -->
 
         <!-- header -->
+
+      
         <section class="header" id="home" style="height: 90vh">
+
+        <!-- <section class="header" id="home" style="height: 90vh">
+
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-12 my-5 py-5">
                         <header>
-                            <h4 class="header"> Poseidon Energy <br>Calculator</h4>
+                            <h4 class="header-title"> Poseidon Energy <br>Calculator</h4>
                         </header>
                         <article>
                             <p class="lead text-wrap header-paragraph my-4">
@@ -64,7 +71,11 @@
 With the Poseidon Solar Calculator, we take away the hassle and have you know in the fraction of a second what precise Solar unit to purchase.
                             </p>
                         </article>
+
+                      
+
                         <a href="#calc_section" class="btn btn-outline-secondary rounded text-uppercase"> Calculate Solar Power</a>
+
                     </div>
 
                     <div class="col-md-6 col-sm-12">
@@ -73,9 +84,60 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
                 </div>
             </div>
         </section>
-    </section>
+    </section> -->
 
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ul>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/solar.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item item-two">
+            <img src="images/solar2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item item-three">
+            <img src="images/solar3.jpg" alt="Third slide">
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>    
+      </div>
+      <div class="main-text hidden-xs">
+      <div class="col-md-6 col-sm-12 my-5 py-5">
+           <h2 class="header-title"> Poseidon Energy <br>Calculator</h2>
+            
+            <article>
+                <p class="lead text-wrap header-paragraph my-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua uis aute irure dolor in reprehen
+                </p>
+            </article>
+            <div class="myButton">
+            <a href="#calc_section" class="btn btn-outline-secondary rounded text-uppercase"> Calculate Solar Power</a>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+</section>
 
     <section class="patners">
         <div class="over ">
@@ -88,11 +150,15 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
                             style="color: white; height:30px"></i>
                     </div>
                     <div class="col-md-2 col-sm-1 logo-row">
+
+                      
+
                         <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"></h4>
                     </div>
 
                     <div class="col-md-2 col-sm-1">
                         <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"></h4>
+
                     </div>
                     <div class="col-md-2 col-sm-1">
                         <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"></h4>
@@ -101,7 +167,11 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
                         <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"></h4>
                     </div>
                     <div class="col-md-2 ">
+
+                        
+
                         <h4 class="my-5 ml-5 text-light "></h4>
+
                     </div>
 
                     <div class="col-md-1 col-sm-1">
@@ -115,6 +185,9 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
     </section>
 
        <!-- HOW-IT-WORKS-SECTION-START -->
+
+       
+
        <section id="how-it-work" class="how-it-works">
         <h3 id="how-it-works-header">How it works</h3>
         <div id="how-it-works">
@@ -150,12 +223,20 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
                             <option value="Washing Machine">
                             <option value="Water Heater">
                         </datalist>
+                        <div>
 
                         <input type="number" id="quantity_input" required placeholder="Quantity">
 
-                        <input type="number" id="power_input" required placeholder="Power">
+                        <input type="number" id="power_input" required placeholder="Watt Per Hour">
 
-                        <button id="btn" class="btn calc_button" type="submit">Add</button>
+                        <input type="number" id="power_input" required placeholder="Hours on Per Day"> 
+                        
+                        </div>
+
+                        <div>
+                            <button id="btn" class="btn calc_button" type="submit">Add</button>
+                        </div>
+                        
 
                     </form>
                 </div>
@@ -236,8 +317,15 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
     <!-- END OF FAQ SECTION -->
     <footer class="footer">
         <div class="footer-back">
-            <div class="footer-center">
+          <div class="container">
+            <div class="col-sm-12 text-center ">
                 <h3>POSEIDON</h3>
+
+               
+
+            
+            </div>
+
                 <p>The perfect solar calculator for your abode</p>
                 <div class="nav nav-pills flex-column flex-sm-row">
                     <a class="link flex-sm-fill text-sm-center" href="#home">HOME</a>
@@ -245,6 +333,7 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
                     <a class="link flex-sm-fill text-sm-center" href="#faq">FAQ</a>
                     <a class="link flex-sm-fill text-sm-center" href="#calc_section">CALCULATE</a>
                 </div>
+
             </div>
 
         </div>
@@ -255,7 +344,10 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
     </footer>
 
     <!-- SCRIPTS -->
+
+
     
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -263,6 +355,7 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="faq.js"></script>
+
     <script>
 
     const addBtn = document.querySelector('#btn');
@@ -339,6 +432,7 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
     console.log(addBtn)
     
     </script>
+
 </body>
 
 </html>
