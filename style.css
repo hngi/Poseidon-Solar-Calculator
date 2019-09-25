@@ -348,6 +348,11 @@ body {
     font-weight: 800;
 }
 
+.footer p {
+    text-align: center;
+    padding: 20px;
+}
+
 .footer .link{
     margin-bottom: 1rem;
     color: rgb(0, 0, 0);
