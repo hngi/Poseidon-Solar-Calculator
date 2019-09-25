@@ -177,7 +177,7 @@ body {
 }
 
 .footer-back {
-    background-color: #C4C4C4;
+    background-color: rgb(131, 127, 127);
 }
 
 .footer-back2 {
@@ -196,6 +196,7 @@ body {
 
 .link {
     padding: 15px;
+    color:white;
 }
 
 .fas {
