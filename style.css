@@ -307,6 +307,12 @@ form input:focus {
     font-size: 20px;
 }
 
+.delete {
+    color: red;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 .vl {
     border-left: 1px solid #000;
     height: 150px;
