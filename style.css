@@ -252,6 +252,11 @@ body {
   /* HOW-IT-WORKS-STYLE-ENDS */
 
 /*Calculator Section*/
+
+.form {
+    width:80%;
+}
+
 #calc_section {
     background-color: #C4C4C4;
     padding-top:40px;
@@ -271,13 +276,18 @@ form input{
 }
 form input[name="appliances"] {
     border: 2px solid #4C95B2;
-    width: 75%;
-    margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#quantity_input {
+    width: 20%;
+    margin-right:35.5px;
 }
 
 input[type="number"] {
     width: 30%;
-    margin-right: 20px;
+    margin-right: 35.5px;
 }
 
 input::-webkit-calendar-picker-indicator {
@@ -299,6 +309,8 @@ form input:focus {
     border: 0;
     width: 18%;
     color: #fff;
+    margin-top:10px;
+    float: right;
 }
 #result_num{
     font-size: 60px;
