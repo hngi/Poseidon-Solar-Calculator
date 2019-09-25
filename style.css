@@ -16,7 +16,7 @@ body {
     font-style: normal;
     font-weight: 800;
     font-size: 1rem;
-    color: #4C95B2 !important;
+    color: #055DA8 !important;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -25,7 +25,7 @@ body {
 }
 
 .btn-outline-primary {
-    background-color: #4C95B2 !important;
+    background-color: #055DA8 !important;
     color: #ffffff;
     border: none;
     font-family: 'Nunito', sans-serif;
@@ -38,21 +38,21 @@ body {
 /* Header */
 
 .rounded {
-    border-radius: 15px !important;
-    border: 1px solid#4C95B2;
-    color: #4C95B2;
+    border-radius: 24px !important;
+    border: 1px solid#055DA8;
+    color: #055DA8;
     letter-spacing: .02rem;
     font-size: 1rem;
     line-height: 3.4375rem;
     width: 15.75rem;
-    height: 3rem;
+    height: 3.3rem;
     padding: 0px;
     font-weight: 600;
     /* margin-top: -3px; */
 }
 
 .rounded:hover {
-    background-color: #4C95B2;
+    background-color: #055DA8;
     border: none;
 }
 
@@ -62,7 +62,7 @@ body {
     font-weight: 900;
     font-size: 30px;
     line-height: 2.5625rem;
-    color: #4C95B2;
+    color: #055DA8;
 }
 
 .header-paragraph {
@@ -92,7 +92,7 @@ body {
     top: 5rem;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 767px) {
     .bg-image {
         background-image: none;
     }
@@ -145,7 +145,7 @@ body {
 
 /* START OF FAQ */
 .faq i {
-    color: #4C95B2;
+    color: #055DA8;
 }
 
 .size {
@@ -158,7 +158,7 @@ body {
 
  hr {
     width: 12%;
-    border-top: 2px solid #4C95B2;
+    border-top: 2px solid #055DA8;
 }
 
 .faq h6,
@@ -203,7 +203,7 @@ body {
 .calculator_main .input_power{
     width: 125px;
     border-radius: 40px;
-    border: 1px #4C95B2 solid;
+    border: 1px #055DA8 solid;
     margin-right: 10px;
 }
 
@@ -212,7 +212,7 @@ body {
 }
 
 .calculator_main .btn_add{
-    background-color: #4C95B2;
+    background-color: #055DA8;
     border: none;
     border-radius: 30px;
     height: 35px;
@@ -237,7 +237,7 @@ body {
 
 .label_result{
     font-size:100px;
-    color: #4C95B2;
+    color: #055DA8;
     margin-left: 90px;
 }
 
@@ -253,14 +253,14 @@ body {
 
 .container .calculator .appliance_dropdown{
     width: 300px;
-    color: #4C95B2;
+    color: #055DA8;
     background-color: #FFFFFF;
     border-radius: 30px;
 }
 
 .container .calculator .qty_dropdown{
     width: 120px;
-    color: #4C95B2;
+    color: #055DA8;
     background-color: #FFFFFF;
     border-radius: 30px;
 }
@@ -275,7 +275,7 @@ body {
 }
 
 .footer-back2 {
-    background-color: #4C95B2;
+    background-color: #055DA8;
     text-align: center;
     padding: 15px;
 }
@@ -323,7 +323,7 @@ body {
     font-size: 1.5vw;
     max-width: 50vw;
     line-height: 34px;
-    color: #4C95B2;
+    color: #055DA8;
     padding: 2rem
   }
   
@@ -357,14 +357,14 @@ body {
     padding: 40px 20px;
 }
 form input{
-    border: 2px solid #4C95B2;
+    border: 2px solid #055DA8;
     border-radius: 25px;
     padding: 10px;
     height: 40px;
 
 }
 form input[name="appliances"] {
-    border: 2px solid #4C95B2;
+    border: 2px solid #055DA8;
     width: 75%;
     margin-bottom: 10px;
 }
@@ -387,7 +387,7 @@ form input:focus {
     border: 2px solid var(--primary-color);
 }*/
 .calc_button{
-    background-color: #4C95B2;
+    background-color: #055DA8;
     border-radius: 25px;
     outline: none;
     border: 0;
