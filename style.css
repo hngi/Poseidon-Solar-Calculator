@@ -6,7 +6,6 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-
 /* Navbar */
 .navbar-brand {
     background-color: #ffffff !important;
@@ -42,7 +41,6 @@ body {
     /* border: 1px solid#4C95B2; */
     border: none;
     color: #4C95B2;
-
     letter-spacing: .02rem;
     font-size: 1rem;
     line-height: 3.4375rem;
@@ -131,12 +129,10 @@ body {
 }
 
 .bg-image {
-
     background-image: url('Images/bg-image.png');
 }
 /* .bg-image {
     background-image: url(./Images/bg-image.png);
->>>>>>> 2c4f682b0d1b8ed5b6cfed085841ef45ea4abc57
     height: 33.1875rem;
     width: 100%;
     background-size: contain;
@@ -149,6 +145,7 @@ body {
 }
 
 } */
+
 
 @media (max-width: 767px) {
     .bg-image {
@@ -170,7 +167,7 @@ body {
     margin-top: -20px;
     z-index: 4;
     background-image:
-        url('images/patners-image.png');
+        url('Images/patners-image.png');
 }
 
 .over {
