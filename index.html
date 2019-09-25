@@ -43,8 +43,8 @@
                             <a class="nav-link ml-5 other-navItems" href="#faq">FAQ</a>
                         </li>
 
-                        <a href="" class="btn btn-outline-primary rounded-pill ml-5" role="button"> Calculate
-                            S.Power</a>
+                        <a href="#calc_section" class="btn btn-outline-primary rounded-pill ml-5" role="button"> Calculate
+                            Solar Power</a>
                 </div>
             </div>
         </nav>
@@ -65,7 +65,7 @@
                                 aliqua uis aute irure dolor in reprehen
                             </p>
                         </article>
-                        <a href="" class="btn btn-outline-secondary rounded text-uppercase"> Calculate Solar Power</a>
+                        <a href="#calc_section" class="btn btn-outline-secondary rounded text-uppercase"> Calculate Solar Power</a>
                     </div>
 
                     <div class="col-md-6 col-sm-12">
@@ -89,20 +89,20 @@
                             style="color: white; height:30px"></i>
                     </div>
                     <div class="col-md-2 col-sm-1 logo-row">
-                        <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"> LOGO.</h4>
+                        <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"></h4>
                     </div>
 
                     <div class="col-md-2 col-sm-1">
-                        <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"> LOGO.</h4>
+                        <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"></h4>
                     </div>
                     <div class="col-md-2 col-sm-1">
-                        <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"> LOGO.</h4>
+                        <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"></h4>
                     </div>
                     <div class="col-md-2 col-sm-1">
-                        <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"> LOGO.</h4>
+                        <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"></h4>
                     </div>
                     <div class="col-md-2 ">
-                        <h4 class="my-5 ml-5 text-light "> LOGO.</h4>
+                        <h4 class="my-5 ml-5 text-light "></h4>
                     </div>
 
                     <div class="col-md-1 col-sm-1">
@@ -134,6 +134,67 @@
         </div>
     </section>
     <!-- HOW-IT-WORKS-SECTION-END -->
+
+
+    <section id="calc_section" class="mt-5 mb-5">
+        <h4 class="mb-3 text-center text-uppercase">solar power calculator</h4>
+        <hr>
+        <div id="calc_inner" class="container mt-3">
+            <div class="row">
+                <div class="col-md-8">
+                    <form class="add_form form" id="calc_form">
+                        <input list="appliances" name="appliances" id="appliance_input" required placeholder="Applicance">
+                        <datalist id="appliances">
+                            <option class="opt" value="Refrigerator">
+                            <option value="Pressing Iron">
+                            <option value="Television">
+                            <option value="Washing Machine">
+                            <option value="Water Heater">
+                        </datalist>
+
+                        <input type="number" id="quantity_input" required placeholder="Quantity">
+
+                        <input type="number" id="power_input" required placeholder="Power">
+
+                        <button id="btn" class="btn calc_button" type="submit">Add</button>
+
+                    </form>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+
+
+            <div class="row mt-5">
+                <div class="col-md-7">
+                    <table class="table mt-4 table-borderless">
+                        <tbody id="tbody">
+                            <tr>
+                                <td>Pressing Iron</td>
+                                <td>3 qty</td>
+                                <td>50 Watts</td>
+                                <td class="delete">X</td>
+                            </tr>
+                            <tr>
+                                <td>Washing Machine</td>
+                                <td>3 qty</td>
+                                <td>100 Watts</td>
+                                <td class="delete">X</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-1 d-none d-md-block">
+                    <div class="vl"></div>
+                </div>
+                <div id="result" class="col-md-4 text-uppercase font-weight-bold">
+                    <p id="result_heading">results</p>
+                    <p><span id="result_num">450</span><sub>watts</sub></p>
+                    <p>solar power needed</p>
+                </div>
+        </div>
+        </div>
+    </section>
 
     <!-- FAQ  SECTION -->
     <section id="faq" class=" faq container mt-3 faq-margin">
@@ -183,7 +244,7 @@
                     <a class="link flex-sm-fill text-sm-center" href="#home">HOME</a>
                     <a class="link flex-sm-fill text-sm-center" href="#how-it-work">HOW IT WORKS</a>
                     <a class="link flex-sm-fill text-sm-center" href="#faq">FAQ</a>
-                    <a class="link flex-sm-fill text-sm-center" href="#">CALCULATE</a>
+                    <a class="link flex-sm-fill text-sm-center" href="#calc_section">CALCULATE</a>
                 </div>
             </div>
 
@@ -195,6 +256,7 @@
     </footer>
 
     <!-- SCRIPTS -->
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -202,6 +264,82 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="faq.js"></script>
+    <script>
+
+    const addBtn = document.querySelector('#btn');
+    let applianceValue = document.querySelector('#appliance_input');
+    let quantityValue = document.querySelector('#quantity_input');
+    let powerValue = document.querySelector('#power_input');
+    let tbody = document.querySelector("#tbody")
+    let result = document.querySelector("#result_num")
+    
+    let total = 0
+    
+
+
+    function click(evt) {
+        evt.preventDefault()
+       
+        let tr = document.createElement("tr");
+        let td1 = document.createElement("td");
+        let td2 = document.createElement("td");
+        let td3 = document.createElement("td");
+        let td4 = document.createElement("td")
+
+        td1.textContent = applianceValue.value
+        td2.textContent = quantityValue.value + " qty"
+        td3.textContent = powerValue.value + " Watts"
+        td4.textContent = "X"
+        td4.classList = "delete"
+
+        tr.appendChild(td1)
+        tr.appendChild(td2)
+        tr.appendChild(td3)
+        tr.appendChild(td4)
+
+        tbody.appendChild(tr)
+        applianceValue.value = ""
+        quantityValue.value = ""
+        powerValue.value = ""
+
+        value()
+
+    }
+
+    const value = () => {
+        let allValue = document.querySelectorAll("tr")
+        let list = Array.from(allValue)
+        console.log(list)
+        total = 0
+
+        for (let i = 0; i < list.length; i++){
+            console.log(list[i].children[1])
+
+            let sum = list[i].children[1].textContent;
+            let sum2 = list[i].children[2].textContent;
+            let sumvalue = sum.split(" ")[0];
+            let sumvalue2 = sum2.split(" ")[0];
+            let num = sumvalue * sumvalue2
+            total += num
+            
+        }
+
+        result.textContent = total
+    }
+
+    const deleteValue = (evt) => {
+        const vv = evt.target.parentNode
+        tbody.removeChild(vv)
+        value()
+    }
+
+
+    addBtn.addEventListener('click', click);
+    tbody.addEventListener('click', deleteValue)
+
+    console.log(addBtn)
+    
+    </script>
 </body>
 
 </html>
