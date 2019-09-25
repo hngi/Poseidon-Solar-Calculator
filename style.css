@@ -82,7 +82,7 @@ body {
 }
 
 .bg-image {
-    background-image: url(./Images/bg-image.png);
+    background-image: url('Images/bg-image.png');
     height: 33.1875rem;
     width: 100%;
     background-size: contain;
