@@ -56,8 +56,6 @@ body {
     border: none;
 }
 
-
-
 .header h4 {
     font-family: Nunito;
     font-style: normal;
@@ -83,6 +81,7 @@ body {
 }
 
 .bg-image {
+
     background-image: url('Images/bg-image.png');
     height: 33.1875rem;
     width: 100%;
@@ -110,7 +109,6 @@ body {
     z-index: 4;
     background-image:
         url('images/patners-image.png');
-   
 }
 
 .over {
@@ -176,6 +174,10 @@ body {
     }
 }
 
+.faq-margin {
+    margin-bottom: 100px;
+}
+
 /* END OF FAQ */
 
 /*CALCULATE SOLAR POWER SECTION*/
@@ -184,6 +186,10 @@ body {
     height: 600px;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+
+
 }
 
 .container .calculator{
@@ -276,6 +282,69 @@ body {
 }
 
 .footer-back {
+    background-color: rgb(131, 127, 127);
+}
+
+.footer-back2 {
+    background-color: #055DA8;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer-center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    padding: 35px;
+}
+
+.calculator .result .Watts{
+    padding-top: 60px;
+    margin-left: -30px;
+}
+
+.calculator .applicance_list{
+    margin-top: 15px;
+    margin-left: -35px;
+}
+
+.label_result{
+    font-size:100px;
+    color: #055DA8;
+    margin-left: 90px;
+}
+
+.vl {
+    border-left: 1px solid;
+    height: 250px;
+    margin-top: 100px;
+}
+
+.container .calculator .close{
+    color: red;
+}
+
+.container .calculator .appliance_dropdown{
+    width: 300px;
+    color: #055DA8;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+
+.container .calculator .qty_dropdown{
+    width: 120px;
+    color: #055DA8;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+/*END OF CALC SOLAR POWER SECTION*/
+
+.footer {
+    color: white;
+}
+
+.footer-back {
     background-color: #f2f4f8;
     padding-bottom: 2.5rem;
     padding-top: 1.2rem;
@@ -301,7 +370,7 @@ body {
     background-color: #4C95B2;
     text-align: center;
     padding: 15px;
-    color:rgb(0, 0, 0);
+    color:white;
 }
 
 
@@ -314,6 +383,7 @@ body {
     display: flex;
     justify-content: space-around;
   }
+
 .how-it-works{
     background-color: #f2f4f8;
     position: relative;
@@ -349,14 +419,15 @@ body {
     font-size: 1.5vw;
     max-width: 50vw;
     line-height: 34px;
-    color: #4C95B2;
+    color: #055DA8;
+    padding: 2rem
   }
   
   .how-it-works-main {
     display: flex;
     flex-direction: column;
-    
-    align-items: center;
+    align-items: center
+
   }
   
   .how-it-works-main img {
@@ -369,7 +440,6 @@ body {
   
     }
 
-   
   }
 
   @media(max-width: 375px) {
@@ -377,6 +447,7 @@ body {
           position: relative;
           top: 4rem;
       }
+
   }
   /* HOW-IT-WORKS-STYLE-ENDS */
 
