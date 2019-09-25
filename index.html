@@ -1,33 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="Images/Logo/Frame.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0e498dcbfc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Solar Calculator</title>
 </head>
+
 <body>
+   <!-- Header -->
+
+    <section>
+        <!-- navbar -->
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="Images/Logo/Frame.png" width="" height="60" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active ">
+                            <a class="nav-link ml-5" href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ml-5 other-navItems" href="#how-it-work">How it Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ml-5 other-navItems" href="#faq">FAQ</a>
+                        </li>
+
+                        <a href="#calc_section" class="btn btn-outline-primary rounded-pill ml-5" role="button"> Calculate
+                            Solar Power</a>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar -->
+
+        <!-- header -->
+        <section class="header" id="home" style="height: 90vh">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 my-5 py-5">
+                        <header>
+                            <h4 class="header"> Poseidon Energy <br>Calculator</h4>
+                        </header>
+                        <article>
+                            <p class="lead text-wrap header-paragraph my-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua uis aute irure dolor in reprehen
+                            </p>
+                        </article>
+                        <a href="#calc_section" class="btn btn-outline-secondary rounded text-uppercase"> Calculate Solar Power</a>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="img-fluid bg-image "> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+    <section class="patners">
+        <div class="over ">
+            <div class="container">
+
+
+                <div class="row ">
+                    <div class="col-md-1 col-sm-1">
+                        <i class="fas fa-arrow-circle-left my-5 py-2 col-sm-1 arrows"
+                            style="color: white; height:30px"></i>
+                    </div>
+                    <div class="col-md-2 col-sm-1 logo-row">
+                        <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"></h4>
+                    </div>
+
+                    <div class="col-md-2 col-sm-1">
+                        <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"></h4>
+                    </div>
+                    <div class="col-md-2 col-sm-1">
+                        <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"></h4>
+                    </div>
+                    <div class="col-md-2 col-sm-1">
+                        <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"></h4>
+                    </div>
+                    <div class="col-md-2 ">
+                        <h4 class="my-5 ml-5 text-light "></h4>
+                    </div>
+
+                    <div class="col-md-1 col-sm-1">
+                        <i class="fas fa-arrow-circle-right my-5 py-2 ml-5 arrows"
+                            style="color: white; height:30px"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+       <!-- HOW-IT-WORKS-SECTION-START -->
+       <section id="how-it-work" class="how-it-works">
+        <h3 id="how-it-works-header">How it works</h3>
+        <div id="how-it-works">
+            <div class="how-it-works-main">
+                <img src="./Images/washing-machine.png">
+                <p class="appliance">1. Choose an appliance</p>
+            </div>
+            <div class="how-it-works-main">
+                <img src="./Images/accounting.png">
+                <p class="appliance">2. Input appliance power</p>
+            </div>
+            <div class="how-it-works-main">
+                <img src="./Images/clipboard.png">
+                <p class="appliance">3. Calculate and get result</p>
+            </div>
+        </div>
+    </section>
+    <!-- HOW-IT-WORKS-SECTION-END -->
+
+
+    <section id="calc_section" class="mt-5 mb-5">
+        <h4 class="mb-3 text-center text-uppercase">solar power calculator</h4>
+        <hr>
+        <div id="calc_inner" class="container mt-3">
+            <div class="row">
+                <div class="col-md-8">
+                    <form class="add_form form" id="calc_form">
+                        <input list="appliances" name="appliances" id="appliance_input" required placeholder="Applicance">
+                        <datalist id="appliances">
+                            <option class="opt" value="Refrigerator">
+                            <option value="Pressing Iron">
+                            <option value="Television">
+                            <option value="Washing Machine">
+                            <option value="Water Heater">
+                        </datalist>
+
+                        <input type="number" id="quantity_input" required placeholder="Quantity">
+
+                        <input type="number" id="power_input" required placeholder="Power">
+
+                        <button id="btn" class="btn calc_button" type="submit">Add</button>
+
+                    </form>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+
+
+            <div class="row mt-5">
+                <div class="col-md-7">
+                    <table class="table mt-4 table-borderless">
+                        <tbody id="tbody">
+                            <tr>
+                                <td>Pressing Iron</td>
+                                <td>3 qty</td>
+                                <td>50 Watts</td>
+                                <td class="delete">X</td>
+                            </tr>
+                            <tr>
+                                <td>Washing Machine</td>
+                                <td>3 qty</td>
+                                <td>100 Watts</td>
+                                <td class="delete">X</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-1 d-none d-md-block">
+                    <div class="vl"></div>
+                </div>
+                <div id="result" class="col-md-4 text-uppercase font-weight-bold">
+                    <p id="result_heading">results</p>
+                    <p><span id="result_num">450</span><sub>watts</sub></p>
+                    <p>solar power needed</p>
+                </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- FAQ  SECTION -->
+    <section id="faq" class=" faq container mt-3 faq-margin">
+        <h4 class="mb-3 text-center text-uppercase text-bold">Frequently Asked Questions</h4>
+        <hr>
+        <h6 class="mb-5 text-center font-weight-light">Get enlightened with the stack of knowledge base you might jjust
+            find that which
+            you need</h6>
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description1"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description1"></i>
+            <h6 class="d-inline bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
+            <p class="font-italic ml-5 my-3 collapse description1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci
+                hic ex quis, sequi
+                asperiores
+                voluptatem deleniti officiis dicta beatae, aliquam repudiandae cumque unde! Optio, saepe!</p>
+        </div>
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description2"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description2"></i>
+            <h6 class="d-inline">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
+            <p class="font-italic ml-5 my-3 collapse description2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci
+                hic ex quis, sequi
+                asperiores
+                voluptatem deleniti officiis dicta beatae, aliquam repudiandae cumque unde! Optio, saepe!</p>
+        </div>
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description3"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description3"></i>
+            <h6 class="d-inline">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
+            <p class="font-italic ml-5 my-3 collapse description3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci
+                hic ex quis, sequi
+                asperiores
+                voluptatem deleniti officiis dicta beatae, aliquam repudiandae cumque unde! Optio, saepe!</p>
+        </div>
+    </section>
+    <!-- END OF FAQ SECTION -->
     <footer class="footer">
         <div class="footer-back">
             <div class="footer-center">
                 <h3>POSEIDON</h3>
                 <p>The perfect solar calculator for your abode</p>
                 <div class="nav nav-pills flex-column flex-sm-row">
-                    <a class="link flex-sm-fill text-sm-center" href="#">HOME</a>
-                    <a class="link flex-sm-fill text-sm-center" href="#">HOW IT WORKS</a>
-                    <a class="link flex-sm-fill text-sm-center" href="#">FAQ</a>
-                    <a class="link flex-sm-fill text-sm-center" href="#">CALCULATE</a>
+                    <a class="link flex-sm-fill text-sm-center" href="#home">HOME</a>
+                    <a class="link flex-sm-fill text-sm-center" href="#how-it-work">HOW IT WORKS</a>
+                    <a class="link flex-sm-fill text-sm-center" href="#faq">FAQ</a>
+                    <a class="link flex-sm-fill text-sm-center" href="#calc_section">CALCULATE</a>
                 </div>
             </div>
-            
+
         </div>
-        
+
         <div class="footer-back2">
             <p>With <span><i class="fas fa-heart"></i></span> from Team Poseidon</p>
         </div>
     </footer>
+
+    <!-- SCRIPTS -->
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="faq.js"></script>
+    <script>
+
+    const addBtn = document.querySelector('#btn');
+    let applianceValue = document.querySelector('#appliance_input');
+    let quantityValue = document.querySelector('#quantity_input');
+    let powerValue = document.querySelector('#power_input');
+    let tbody = document.querySelector("#tbody")
+    let result = document.querySelector("#result_num")
+    
+    let total = 0
+    
+
+
+    function click(evt) {
+        evt.preventDefault()
+       
+        let tr = document.createElement("tr");
+        let td1 = document.createElement("td");
+        let td2 = document.createElement("td");
+        let td3 = document.createElement("td");
+        let td4 = document.createElement("td")
+
+        td1.textContent = applianceValue.value
+        td2.textContent = quantityValue.value + " qty"
+        td3.textContent = powerValue.value + " Watts"
+        td4.textContent = "X"
+        td4.classList = "delete"
+
+        tr.appendChild(td1)
+        tr.appendChild(td2)
+        tr.appendChild(td3)
+        tr.appendChild(td4)
+
+        tbody.appendChild(tr)
+        applianceValue.value = ""
+        quantityValue.value = ""
+        powerValue.value = ""
+
+        value()
+
+    }
+
+    const value = () => {
+        let allValue = document.querySelectorAll("tr")
+        let list = Array.from(allValue)
+        console.log(list)
+        total = 0
+
+        for (let i = 0; i < list.length; i++){
+            console.log(list[i].children[1])
+
+            let sum = list[i].children[1].textContent;
+            let sum2 = list[i].children[2].textContent;
+            let sumvalue = sum.split(" ")[0];
+            let sumvalue2 = sum2.split(" ")[0];
+            let num = sumvalue * sumvalue2
+            total += num
+            
+        }
+
+        result.textContent = total
+    }
+
+    const deleteValue = (evt) => {
+        const vv = evt.target.parentNode
+        tbody.removeChild(vv)
+        value()
+    }
+
+
+    addBtn.addEventListener('click', click);
+    tbody.addEventListener('click', deleteValue)
+
+    console.log(addBtn)
+    
+    </script>
 </body>
+
 </html>
