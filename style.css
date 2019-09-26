@@ -35,11 +35,12 @@ body {
 
 /* End of Navbar */
 
-/* Header */
+/* Header/ Carousel */
 
 .rounded {
     border-radius: 15px !important;
-    border: 1px solid#4C95B2;
+    /* border: 1px solid#4C95B2; */
+    border: none;
     color: #4C95B2;
     letter-spacing: .02rem;
     font-size: 1rem;
@@ -47,8 +48,56 @@ body {
     width: 15.75rem;
     height: 3rem;
     padding: 0px;
-    font-weight: 600;
+    font-weight: 800;
+    background-color: white;
     /* margin-top: -3px; */
+}
+
+/* .header{
+    color: #FFFFFF;
+    padding-top: 30px;
+    height: 100vh; 
+    background-image: url("./images/solar2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+} */
+
+.carousel-inner
+{
+    height: 85vh;
+    margin-bottom: 80px;
+}
+
+.item-three:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0; 
+    background:rgba(0,0,0,0.6);
+ }
+
+.main-text
+{
+    position: absolute;
+    top: 10%;
+    font-weight: bold;
+    margin-left: 250px;
+    color: #FFFFFF;
+    padding-top: 30px;
+}
+
+.main-text .header-title{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+} 
+
+.main-text p{
+    font-size: 25px;
 }
 
 .rounded:hover {
@@ -71,7 +120,6 @@ body {
     font-weight: 500;
     font-size: 25px;
     line-height: 35px;
-    ;
     font-style: normal;
     font-weight: 500;
     font-size: 1.5625rem;
@@ -81,7 +129,7 @@ body {
     word-wrap: break-word;
 }
 
-.bg-image {
+/* .bg-image {
     background-image: url(./Images/bg-image.png);
     height: 33.1875rem;
     width: 100%;
@@ -90,11 +138,15 @@ body {
     object-fit: cover;
     position: relative;
     top: 5rem;
-}
+} */
 
 @media (max-width: 420px) {
     .bg-image {
         background-image: none;
+    }
+
+    .main-text{
+        margin-left: 10px;
     }
 }
 
@@ -105,6 +157,7 @@ body {
 .patners {
     height: 7.6875rem;
     margin-bottom: 2rem;
+    margin-top: -20px;
     z-index: 4;
     background-image:
         url('images/patners-image.png');
