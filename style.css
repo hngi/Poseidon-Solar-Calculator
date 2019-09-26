@@ -68,7 +68,7 @@ body {
     margin-bottom: 80px;
 }
 
-.item-three:after {
+.item-two:after {
     content:"";
     display:block;
     position:absolute;
