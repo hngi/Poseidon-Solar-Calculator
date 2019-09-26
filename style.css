@@ -247,6 +247,10 @@ body {
     margin-bottom: 50px;
 }
 
+.calc_inner {
+    padding-bottom: 90px;
+}
+
 .container .calculator{
     background-color:  #FFFFFF;
     height: 450px;
@@ -307,11 +311,6 @@ body {
     margin-left: 90px;
 }
 
-.vl {
-    border-left: 1px solid;
-    height: 250px;
-    margin-top: 100px;
-}
 
 .container .calculator .close{
     color: red;
@@ -370,11 +369,6 @@ body {
     margin-left: 90px;
 }
 
-.vl {
-    border-left: 1px solid;
-    height: 250px;
-    margin-top: 100px;
-}
 
 .container .calculator .close{
     color: red;
@@ -535,27 +529,30 @@ form input{
 
 }
 form input[name="appliances"] {
-    border: 2px solid #4C95B2;
-    width: 100%;
+    border: 2px solid #055DA8;
+    width: 60%;
     margin-bottom: 20px;
+}
+
+#power_hr {
+    width:30%;
 }
 
 #quantity_input {
     width: 20%;
-    margin-right:35.5px;
+    margin-right:20px;
     border: 2px solid #055DA8;
-    width: 75%;
+    width: 20%;
     margin-bottom: 10px;
-}
-
-input[type="number"] {
-    width: 30%;
-    margin-right: 35.5px;
 }
 
 input::-webkit-calendar-picker-indicator {
   background-color: transparent;
   color: var(--primary-color);
+}
+
+.result {
+    color: #055DA8;
 }
 
 /*
@@ -572,8 +569,7 @@ form input:focus {
     border: 0;
     width: 18%;
     color: #fff;
-    margin-top:10px;
-    float: right;
+    margin-left:10px;
 }
 #result_num{
     font-size: 60px;
@@ -590,6 +586,29 @@ form input:focus {
 }
 
 .vl {
-    border-left: 1px solid #000;
-    height: 150px;
+    border-right: 1px solid #055DA8;
+    margin-top:0px;
+    margin-right: 50px;
+}
+
+.but {
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid #055DA8;
+    color: #055DA8;
+    margin-left:10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    outline: none;
+}
+
+.result-tab {
+    text-align: center;
+}
+
+.but-active {
+    background-color: #055DA8;
+    color:white;
 }
