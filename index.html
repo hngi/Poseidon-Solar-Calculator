@@ -219,23 +219,19 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
                             <option value="Washing Machine">
                             <option value="Water Heater">
                         </datalist>
-                         <input type="number" id="power_hr" required placeholder="Hours on Per Day">
+                         <input type="number" min="0" id="power_hr" required placeholder="Hours on Per Day" pattern="/[0-9]/" title="Enter a valid number">
                         <div>
 
-                        <input type="number" id="quantity_input" required placeholder="Quantity">
+                        <input type="number" min="0" id="quantity_input" required placeholder="Quantity" pattern="/[0-9]/" title="Enter a valid number" >
 
-                        <input type="number" id="power_input" required placeholder="Watt Per Hour">
-
-                        <button id="btn" class="btn calc_button" type="submit">Add</button>
+                        <input type="number" min="0" id="power_input" required placeholder="Watt Per Hour" pattern="/[0-9]/" title="Enter a valid number">
+                   
+                        <input id="btn" type="submit" class="btn calc_button" value="Add">
                         
                         </div>
-
-                     
-                            
-            
-                        
-
                     </form>
+
+                    
                 </div>
             </div>
 
@@ -274,7 +270,7 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
         <div class="mb-4">
             <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description1"></i>
             <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description1"></i>
-            <h6 class="d-inline bold">Why use a Solar Calculator?.</h6>
+            <h6 class="d-inline bold">Why use a Solar Calculator?</h6>
             <p class="font-italic ml-5 my-3 collapse description1">
                 A solar calculator helps you calculate with precise accuracy how many kW system sizes are required to power your selected appliances. With this information, you can know the cost of the system and make adjustments where necessary. Worthy of note is to power only the most important appliances on Solar especially if you will be purchasing a hybrid/Grid-tied unit
             </p>
@@ -424,8 +420,12 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
 
 
     function click(evt) {
-        evt.preventDefault()
-       
+        
+        if (applianceValue.validity.valid && quantityValue.validity.valid 
+        && powerValue.validity.valid && timeValue.validity.valid)
+
+        {
+        
         let tr = document.createElement("tr");
         let td1 = document.createElement("td");
         let td2 = document.createElement("td");
@@ -453,6 +453,8 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
         timeValue.value = ""
 
         value("daily")
+
+        }
 
     }
 
@@ -524,7 +526,6 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
     monthly.addEventListener('click', () => ( value("monthly") ))
     tbody.addEventListener('click', deleteValue)
 
-    console.log(addBtn)
     
     </script>
 
