@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="The one stop shop for accurate calculation of household solar power needs. With the Poseidon Solar Calculator, we take away the hassle and have you know in the fraction of a second what precise Solar unit to purchase.">
+    <meta name="Keywords" content="Solar, Energy, Power, Watt">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
     <link rel="shortcut icon" href="Images/Logo/Frame.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -210,7 +215,7 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
         <div id="calc_inner" class="container mt-3">
             <div class="row">
                 <div class="col-md-8">
-                    <form class="add_form form" id="calc_form">
+                    <form  class="add_form form" id="calc_form">
                         <input list="appliances" name="appliances" id="appliance_input" required placeholder="Applicance">
                         <datalist id="appliances">
                             <option class="opt" value="Refrigerator">
@@ -411,6 +416,7 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
     let timeValue = document.querySelector('#power_hr')
     let tbody = document.querySelector("#tbody")
     let result = document.querySelector("#result_num")
+    
 
     let daily = document.querySelector("#but-daily")
     let weekly = document.querySelector("#but-week")
@@ -434,17 +440,21 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
         let td5 = document.createElement("td");
 
         td1.textContent = applianceValue.value
+        td1.classList.add("white")
         td2.textContent = quantityValue.value + " qty"
         td3.textContent = powerValue.value + " Watts"
+        td3.classList.add("white")
         td4.textContent = timeValue.value + ' hr'
         td5.textContent = "X"
-        td5.classList = "delete"
+        td5.classList.add("delete")
+        td5.classList.add("white")
 
         tr.appendChild(td1)
         tr.appendChild(td2)
         tr.appendChild(td3)
         tr.appendChild(td4)
         tr.appendChild(td5)
+        tr.classList.add("tr-row")
 
         tbody.appendChild(tr)
         applianceValue.value = ""
@@ -514,13 +524,17 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
 
 
     const deleteValue = (evt) => {
-        const vv = evt.target.parentNode
-        tbody.removeChild(vv)
-        value()
+        if (evt.target.className === "delete white"){
+            const vv = evt.target.parentNode
+            tbody.removeChild(vv)
+            value("daily")
+        }
+        
     }
 
 
     addBtn.addEventListener('click', click);
+    let del = document.querySelector(".delete")
     daily.addEventListener('click', () => ( value("daily") ))
     weekly.addEventListener('click', () => ( value("weekly") ))
     monthly.addEventListener('click', () => ( value("monthly") ))
