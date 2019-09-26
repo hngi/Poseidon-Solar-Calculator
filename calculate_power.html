@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Solar Power Calculator">
+	<meta name="keywords" content="Solar power calculator, solar power, Nigeria, electronics, light">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0e498dcbfc.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	
+
+      <div class="container calculator_main">
+            <div class="page-header text-center">
+                <h3>Solar Power Calculator</h3>
+            </div>
+        
+        <div class="calculator col-lg-12">
+            <div class="row col-lg-6 inputs">
+            <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle appliance_dropdown" type="button" data-toggle="dropdown">Appliances
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li>Pressing Iron</li>
+                        <li>Fridge</li>
+                        <li>Television</li>
+                        <li>Washing Machine</li>
+                        <li>AC</li>
+                        <li>Electric Kettle</li>
+                    </ul>
+                    </div>
+           
+            <div class="row input_control">
+                    <div class="dropdown col-lg-4">
+                            <button class="btn btn-primary dropdown-toggle qty_dropdown" type="button" data-toggle="dropdown">Quantity
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                            </ul>
+                            </div>
+            <!-- <div class="form-group input_power col-lg-4">
+                <input type="text" class="form-control" id="appliance" placeholder="Quantity">
+            </div> -->
+            <div class="input_power col-lg-4">
+                <input type="text" class="form-control" id="appliance" placeholder="Power">
+            </div>
+           <button class="btn btn-sm btn-warning btn_add col-lg-3"><strong>Add</strong></button>
+        </div>
+        <div class="row applicance_list">
+                <label class="control-label col-sm-5 text-center">Pressing Iron</label>
+                <label class="control-label col-sm-3 text-center">3 qty</label>
+                <label class="control-label col-sm-3 text-center">50 watts</label>
+                <button type="button" class="close col-sm-1" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+        </div>
+        <div class="row ">
+                <label class="control-label col-sm-5 text-center">Washing machine</label>
+                <label class="control-label col-sm-3 text-center">3 qty</label>
+                <label class="control-label col-sm-3 text-center">150 watts</label>
+                <button type="button" class="close col-sm-1" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+        </div>
+        </div>
+        <div class="vl col-lg-1"></div>
+        <div class="col-lg-5 result">
+                <h3 class="text-center">Results</h3>
+                <div class="row">
+                    <label class="control-label col-sm-5 text-center label_result">50</label>
+                    <h3 class="col-sm-3 Watts">Watts</h3>
+                </div>
+                <h3 class="text-center">Solar Power needed</h3>
+            </div>
+    </div>
+    </div>
+
+
+   <footer class="footer">
+            <div class="footer-back">
+                <div class="footer-center">
+                    <h3>POSEIDON</h3>
+                    <p>The perfect solar calculator for your abode</p>
+                    <div class="nav nav-pills flex-column flex-sm-row">
+                        <a class="link flex-sm-fill text-sm-center" href="#">HOME</a>
+                        <a class="link flex-sm-fill text-sm-center" href="#">HOW IT WORKS</a>
+                        <a class="link flex-sm-fill text-sm-center" href="#">FAQ</a>
+                        <a class="link flex-sm-fill text-sm-center" href="#">CALCULATE</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="footer-back2">
+                <p>With <span><i class="fas fa-heart"></i></span> from Team Poseidon</p>
+            </div>
+        </footer>
+
+</body>
+</html>
