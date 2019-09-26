@@ -6,8 +6,8 @@ from .models import Appliances, Subscription
 class AppliancesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Appliances
-        fields = ('id', 'name', 'power', 'quantity_of_appliance', 
-                'hours_used_per_day', 'amp_rating', 'volt_rating', 'date')
+        fields = ('id', 'appliance', 'watt_per_hour', 'quantity_of_appliance', 
+                'hours_used_per_day', 'date')
         lookup_field = 'id'
 
 
