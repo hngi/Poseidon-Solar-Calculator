@@ -612,3 +612,7 @@ form input:focus {
     background-color: #055DA8;
     color:white;
 }
+
+.link:hover {
+    color: #055DA8
+}
