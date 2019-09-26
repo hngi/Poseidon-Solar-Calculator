@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="Images/Logo/Frame.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0e498dcbfc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Solar Calculator</title>
+</head>
+
+<body>
+   <!-- Header -->
+
+    <section>
+        <!-- navbar -->
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="Images/Logo/Frame modified.png" width="" height="60" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active ">
+                           
+                            <a class="nav-link ml-5" href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ml-5 other-navItems" href="#how-it-work">How it Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ml-5 other-navItems" href="#faq">FAQ</a>
+                        </li>
+
+                        <a href="#calc_section" class="btn btn-outline-primary rounded-pill ml-5" role="button"> Calculate
+                            Solar Power</a>
+
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar -->
+
+        <!-- header -->
+
+      
+        <section class="header" id="home" style="height: 90vh">
+
+   
+    
+         <div class="row">
+            <div class="col-md-12">
+             <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ul>
+        
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+            <div class="carousel-item item active">
+                <img class="img" src="images/solar2.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item item-two">
+                <img class="img" src="images/solar3.jpg" alt="Second slide">
+            </div>
+            </div>
+     
+        </div>
+        <div class="main-text hidden-xs">
+        <div class="col-md-6 col-sm-12 ">
+            <h2 class="header-title"> Poseidon Energy <br>Calculator</h2>
+                
+                <article>
+                    <p class="lead text-wrap header-paragraph my-4 ">
+                        
+                        The one stop shop for accurate calculation of household solar power needs.
+                    </p>
+                </article>
+                <div class="myButton">
+                <a href="#calc_section" class="btn btn-outline-secondary rounded text-uppercase"> Calculate Solar Power</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+    <section class="patners">
+        <div class="over ">
+            <div class="container">
+
+
+                <div class="row ">
+                    <div class="col-md-1 col-sm-1">
+                        <i class="fas fa-arrow-circle-left my-5 py-2 col-sm-1 arrows"
+                            style="color: white; height:30px"></i>
+                    </div>
+                    <div class="col-md-2 col-sm-1 logo-row">
+
+                      
+
+                        <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"></h4>
+                    </div>
+
+                    <div class="col-md-2 col-sm-1">
+                        <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"></h4>
+
+                    </div>
+                    <div class="col-md-2 col-sm-1">
+                        <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"></h4>
+                    </div>
+                    <div class="col-md-2 col-sm-1">
+                        <h4 class="my-5 ml-5 pl-5 text-light col-sm-1"></h4>
+                    </div>
+                    <div class="col-md-2 ">
+
+                        
+
+                        <h4 class="my-5 ml-5 text-light "></h4>
+
+                    </div>
+
+                    <div class="col-md-1 col-sm-1">
+                        <i class="fas fa-arrow-circle-right my-5 py-2 ml-5 arrows"
+                            style="color: white; height:30px"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+       <!-- HOW-IT-WORKS-SECTION-START -->
+
+       
+
+       <section id="how-it-work" class="how-it-works ">
+        <h3 id="how-it-works-header">How it works</h3>
+        <div id="how-it-works">
+            <div class="how-it-works-main">
+                <img src="./Images/washing-machine.png">
+                <p class="appliance">1. Choose an appliance</p>
+            </div>
+            <div class="how-it-works-main">
+                <img src="./Images/accounting.png">
+                <p class="appliance">2. Input appliance power</p>
+            </div>
+            <div class="how-it-works-main">
+                <img src="./Images/clipboard.png">
+                <p class="appliance">3. Calculate and get result</p>
+            </div>
+        </div>
+    </section>
+    <!-- HOW-IT-WORKS-SECTION-END -->
+
+
+    <section id="calc_section" class="">
+        <h4 class="mb-3 text-center text-uppercase">solar power calculator</h4>
+        <hr>
+        <div id="calc_inner" class="container mt-3">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                 
+                    <form class="add_form form mt-2 pt-2" id="calc_form">
+
+
+                      <div class="col-md col-sm-12">
+                        <input list="appliances" name="appliances" class="smaller"  id="appliance_input" required placeholder="Applicance">
+                        <datalist id="appliances">
+                            <option class="opt" value="Refrigerator">
+                            <option value="Pressing Iron">
+                            <option value="Television">
+                            <option value="Washing Machine">
+                            <option value="Water Heater">
+                        </datalist>
+                    </div>
+                         
+                        
+                            <div class="col-md mb-5 mt-5">
+                                <input type="number" id="power_hr" class="smaller" required placeholder="Hours on Per Day">
+                            </div>
+
+                            <div class="col-md mb-5 mt-5" >
+                                <input type="number" class="smaller" id="quantity_input" required placeholder="Quantity">
+                            </div>
+
+                            <div class="col-md-3 mb-5 mt-5">
+                                <input type="number" class="smaller" id="power_input" required placeholder="Watt Per Hour">
+                            </div>
+                            <button id="btn" class="btn btn-outline-primary p-2 m-2 ml-3 " style="width: 20%" type="submit">Add</button>
+
+                    </form>
+                    
+                </div>
+            </div>
+
+
+            <div class="row ">
+                <div class=" col-md-6 vl">
+                    <table class="table mt-4 table-borderless">
+                        <tbody id="tbody">
+                
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div id="result" class="col-md-4 col-sm-12 result text-uppercase font-weight-bold">
+                    <div class="result-tab">
+                    <p id="result_heading">results</p>
+                    <p class="result-text"><span id="result_num">0</span><sub>watts</sub></p>
+                    <p>solar power needed</p>
+                    </div>
+
+                    <button id="but-daily" class="but but-active">Daily</button>
+                        <button id="but-week" class="but">Weekly</button>
+                    <button id="but-month" class="but">Monthly</button>
+                </div>
+        </div>
+        </div> 
+    </section>
+
+    <!-- FAQ  SECTION -->
+    <section id="faq" class=" faq container mt-3 faq-margin">
+        <h4 class="mb-3 text-center text-uppercase text-bold">Frequently Asked Questions</h4>
+        <hr>
+        <h6 class="mb-5 text-center font-weight-light">Get enlightened with the stack of knowledge base you might jjust
+            find that which
+            you need</h6>
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description1"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description1"></i>
+            <h6 class="d-inline bold">Why use a Solar Calculator?.</h6>
+            <p class="font-italic ml-5 my-3 collapse description1">
+                A solar calculator helps you calculate with precise accuracy how many kW system sizes are required to power your selected appliances. With this information, you can know the cost of the system and make adjustments where necessary. Worthy of note is to power only the most important appliances on Solar especially if you will be purchasing a hybrid/Grid-tied unit
+            </p>
+        </div>
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description2"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description2"></i>
+            <h6 class="d-inline">Why consider Solar energy?</h6>
+            <p class="font-italic ml-5 my-3 collapse description2">Solar energy offers great benefits both financially and environmentally. Money for electricity bills will be saved and increasing the electricity rate in the future will be protected. It also helps reduce greenhouse gas emissions which plays a role in climate change and air pollution.</p>
+        </div>
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description3"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description3"></i>
+            <h6 class="d-inline">How does Solar energy work?</h6>
+            <p class="font-italic ml-5 my-3 collapse description3">Sunlight is converted into electricity using solar panels. The converted electricity can be stored in batteries to power electrical appliances. Excess energy harnessed from the panels can be exported to the grid. In the case of a grid-tied solar unit.</p>
+        </div>
+
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description4"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description4"></i>
+            <h6 class="d-inline">What are the effects of solar panels on roofs?</h6>
+            <p class="font-italic ml-5 my-3 collapse description4">
+                The solar panel has no negative effect on your roof, instead it has been known to help increase the value of the house when putting it up for sale.
+                </p>
+        </div>
+
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description5"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description5"></i>
+            <h6 class="d-inline"> How much does it cost?</h6>
+            <p class="font-italic ml-5 my-3 collapse description5">There can only be estimates as the installation cost varies considerably. This depends on your energy demands and how much autonomy you are willing to go for.</p>
+        </div>
+
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description6"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description6"></i>
+            <h6 class="d-inline">How do you know the number of panels to be used?</h6>
+            <p class="font-italic ml-5 my-3 collapse description6">The Poseidon solar calculator will help you calculate your appliances based on their capacities then estimates the number of panels that will be best suitable. </p>
+        </div>
+
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description7"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description7"></i>
+            <h6 class="d-inline">Do I pay for renewable energy?</h6>
+            <p class="font-italic ml-5 my-3 collapse description7">The only cost is the cost of initial components and installation. No subsequent subscription or bills is required to have access to power generated.
+            </p>
+        </div>
+
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description8"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description8"></i>
+            <h6 class="d-inline">Is solar power clean or green energy?
+            </h6>
+            <p class="font-italic ml-5 my-3 collapse description8">Solar Energy is both green and clean as it has no harmful effects on the environment.</p>
+        </div>
+
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description9"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description9"></i>
+            <h6 class="d-inline">Why do I need to calculate my solar power requirement?</h6>
+            <p class="font-italic ml-5 my-3 collapse description9">Calculation is required to get a fair or exact estimate of solar components needed to power your appliances and home.
+            </p>
+        </div>
+
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description10"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description10"></i>
+            <h6 class="d-inline">Is solar power stable?
+            </h6>
+            <p class="font-italic ml-5 my-3 collapse description10">Yes, solar power is stable and can be stored and inverted to be used later.
+            </p>
+        </div>
+
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description11"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description11"></i>
+            <h6 class="d-inline">What appliances can I enter here?
+            </h6>
+            <p class="font-italic ml-5 my-3 collapse description11">All appliances that require electricity to run and that will be used in your home (kitchen, living room, bathroom, etc.). All electrical appliances are rated in KWH, which tells the amount of electricity the particular appliance consumes per hour.</p>
+        </div>
+
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description12"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description12"></i>
+            <h6 class="d-inline">Is this Poseidon Solar Calculator Free?</h6>
+            <p class="font-italic ml-5 my-3 collapse description12">Yes, Poseidon Solar Calculator is absolutely free to use with no hidden charges whatsoever.
+            </p>
+        </div>
+    </section>
+    <!-- END OF FAQ SECTION -->
+    <footer class="footer">
+        <div class="footer-back">
+          <div class="container">
+            <div class="col-sm-12 text-center ">
+                <h3>POSEIDON</h3>
+
+               
+
+            
+            </div>
+
+                <p>The perfect solar calculator for your abode</p>
+                <div class="nav nav-pills flex-column flex-sm-row">
+                    <a class="link flex-sm-fill text-sm-center" href="#home">HOME</a>
+                    <a class="link flex-sm-fill text-sm-center" href="#how-it-work">HOW IT WORKS</a>
+                    <a class="link flex-sm-fill text-sm-center" href="#faq">FAQ</a>
+                    <a class="link flex-sm-fill text-sm-center" href="#calc_section">CALCULATE</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-back2">
+            <p>With <span><i class="fas fa-heart"></i></span> from Team Poseidon</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="faq.js"></script>
+
+    <script> </script>
+
+   
+
+</body>
+
+</html>
