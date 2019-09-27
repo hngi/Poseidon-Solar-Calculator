@@ -216,7 +216,7 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
             <div class="row">
                 <div class="col-md-8">
                     <form  class="add_form form" id="calc_form">
-                        <input list="appliances" name="appliances" id="appliance_input" required placeholder="Applicance">
+                        <input list="appliances" name="appliance" id="appliance_input" required placeholder="Applicance">
                         <datalist id="appliances">
                             <option class="opt" value="Refrigerator">
                             <option value="Pressing Iron">
@@ -224,12 +224,12 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
                             <option value="Washing Machine">
                             <option value="Water Heater">
                         </datalist>
-                         <input type="number" min="0" id="power_hr" required placeholder="Hours on Per Day" pattern="/[0-9]/" title="Enter a valid number">
+                         <input type="number" name="watt_per_hr" min="0" id="power_hr" required placeholder="Hours on Per Day" pattern="/[0-9]/" title="Enter a valid number">
                         <div>
 
-                        <input type="number" min="0" id="quantity_input" required placeholder="Quantity" pattern="/[0-9]/" title="Enter a valid number" >
+                        <input type="number" name="quantity_of_appliance" min="0" id="quantity_input" required placeholder="Quantity" pattern="/[0-9]/" title="Enter a valid number" >
 
-                        <input type="number" min="0" id="power_input" required placeholder="Watt Per Hour" pattern="/[0-9]/" title="Enter a valid number">
+                        <input type="number" name="hours_used_per_day" min="0" id="power_input" required placeholder="Watt Per Hour" pattern="/[0-9]/" title="Enter a valid number">
                    
                         <input id="btn" type="submit" class="btn calc_button" value="Add">
                         
@@ -431,6 +431,14 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
         && powerValue.validity.valid && timeValue.validity.valid)
 
         {
+
+        const appliance_data = {
+            "appliance" : applianceValue.value,
+            "watt_per_hr" : powerValue.value,
+            "quantity of appliance" : quantityValue.value,
+            "hours_used_per_day" : timeValue.value
+        }
+
         
         let tr = document.createElement("tr");
         let td1 = document.createElement("td");
@@ -463,6 +471,12 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
         timeValue.value = ""
 
         value("daily")
+
+        const url = 'http://chibuikem.pythonanywhere.com/';
+        console.log(appliance_data)
+
+
+       sendData(url,appliance_data)
 
         }
 
@@ -540,8 +554,27 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
     monthly.addEventListener('click', () => ( value("monthly") ))
     tbody.addEventListener('click', deleteValue)
 
+    async function sendData(url,appliance_data) {
+
+    try {
+    const response = await fetch(url, {
+    method: 'POST', // or 'PUT'
+    mode: 'cors', // no-cors, *cors, same-origin
+    body: JSON.stringify(appliance_data), // data can be `string` or {object}!
+    headers: {
+        'Content-Type': 'application/json'
+    }
+    });
+    const json = await response.json();
+    console.log('Success:', JSON.stringify(json));
+    } catch (error) {
+            console.error('Error:', error);
+    }
+
+}
     
     </script>
+
 
 </body>
 
