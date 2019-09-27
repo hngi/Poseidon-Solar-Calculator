@@ -68,7 +68,7 @@ body {
     margin-bottom: 80px;
 }
 
-.item-three:after {
+.item-two:after {
     content:"";
     display:block;
     position:absolute;
@@ -164,10 +164,11 @@ body {
 .patners {
     height: 7.6875rem;
     margin-bottom: 2rem;
-    margin-top: -20px;
+    margin-top: -2.5%;
     z-index: 4;
     background-image:
         url('Images/patners-image.png');
+    margin-top:0px;
 }
 
 .over {
@@ -181,9 +182,6 @@ body {
     font-style: normal;
     font-weight: 900;
     font-size: 5rem;
-    /* line-height: 55px; */
-    /* or 122% */
-
     letter-spacing: 0.02em;
 
     color: #C4C4C4;
@@ -206,6 +204,13 @@ body {
 /* START OF FAQ */
 .faq i {
     color: #055DA8;
+}
+
+@media (max-width: 425px){
+    .link{
+        display: flex;
+        
+    }
 }
 
 .size {
@@ -237,6 +242,7 @@ body {
     margin-bottom: 100px;
 }
 
+
 /* END OF FAQ */
 
 /*CALCULATE SOLAR POWER SECTION*/
@@ -245,6 +251,10 @@ body {
     height: 600px;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.calc_inner {
+    padding-bottom: 90px;
 }
 
 .container .calculator{
@@ -307,11 +317,6 @@ body {
     margin-left: 90px;
 }
 
-.vl {
-    border-left: 1px solid;
-    height: 250px;
-    margin-top: 100px;
-}
 
 .container .calculator .close{
     color: red;
@@ -354,6 +359,13 @@ body {
     padding: 35px;
 }
 
+@media (max-width: 425px){
+    .link{
+        display: grid;
+        justify-content: center;
+    }
+}
+
 .calculator .result .Watts{
     padding-top: 60px;
     margin-left: -30px;
@@ -370,11 +382,6 @@ body {
     margin-left: 90px;
 }
 
-.vl {
-    border-left: 1px solid;
-    height: 250px;
-    margin-top: 100px;
-}
 
 .container .calculator .close{
     color: red;
@@ -513,14 +520,29 @@ body {
 
 /*Calculator Section*/
 
-.form {
-    width:80%;
-}
-
 #calc_section {
     background-color: #C4C4C4;
-    padding-top:40px;
-    padding-bottom:40px
+    padding-top:20px;
+    padding-bottom:40px;
+    margin-top: -3rem;
+    margin-top:0px;
+}
+
+.calc_button{
+    background-color: #055DA8;
+    border-radius: 15px;
+    outline: none;
+    border: 0;
+    color: #fff;
+    margin-top:10px;
+    width:100px;
+    height: 40px;
+}
+
+@media (max-width: 375px){
+    #calc_section{
+        margin-top: 2rem;
+    }
 }
 #calc_inner{
     border-radius: 5px;
@@ -529,67 +551,173 @@ body {
 }
 form input{
     border: 2px solid #055DA8;
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 10px;
     height: 40px;
+    width:100px;
 
 }
 form input[name="appliances"] {
-    border: 2px solid #4C95B2;
-    width: 100%;
+    border: 2px solid #055DA8;
+    width: 60%;
     margin-bottom: 20px;
 }
 
-#quantity_input {
-    width: 20%;
-    margin-right:35.5px;
-    border: 2px solid #055DA8;
-    width: 75%;
-    margin-bottom: 10px;
+#power_input {
+    width: 200px;
 }
 
-input[type="number"] {
-    width: 30%;
-    margin-right: 35.5px;
-}
 
 input::-webkit-calendar-picker-indicator {
   background-color: transparent;
   color: var(--primary-color);
 }
 
+.result {
+    text-align: center;
+    width:50%;
+    margin-top:10px;
+}
+
+.result-tab p {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#result_heading {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.result-text {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #055DA8;
+}
+
+#result_num {
+    font-size: 40px;
+}
+
+.but {
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid #055DA8;
+    color: #055DA8;
+    margin-left:10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    outline: none;
+}
+
+
+.app-list {
+    margin-top:30px;
+    text-align: center;
+}
+
+#tbody {
+    text-align: center;
+    padding:20px;
+}
 /*
 form input::placeholder {
     color: var(--placeholder-color);
 }
-form input:focus {
-    border: 2px solid var(--primary-color);
-}*/
-.calc_button{
+
+
+
+
+
+
+
+.vl{
+    position: relative;
+    top: -10rem;
+    left: 50%;
+}
+
+@media (max-width: 425px){
+    .vl{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    .smaller{
+        min-width: 100%;
+    }
+
+}
+
+
+
+@media(max-width: 320px){
+    .but{
+        margin-bottom: 2rem;
+        position: relative;
+        display: flex;
+
+        left: 25%;
+        /* padding: 0; */
+ 
+
+
+
+.result-tab {
+    text-align: center;
+
+}
+
+.but-active {
     background-color: #055DA8;
-    border-radius: 25px;
-    outline: none;
-    border: 0;
-    width: 18%;
-    color: #fff;
-    margin-top:10px;
-    float: right;
+    color:white;
 }
-#result_num{
-    font-size: 60px;
-    color: var(--primary-color);
+
+.link:hover {
+    color: #055DA8
+
 }
-#result_heading{
-    font-size: 20px;
+
+.but-active {
+    background-color: #055DA8;
+    color:white;
+}
+
+.link:hover {
+    color: #055DA8
+}
+
+.color {
+    color: #055DA8
+}
+
+.div {
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #055DA8;
+    padding:10px;
+    margin-bottom:10px;
+    
+}
+
+.space {
+    padding: 10px;
 }
 
 .delete {
     color: red;
-    font-size: 24px;
+    font-size: 14px;
     cursor: pointer;
 }
 
-.vl {
-    border-left: 1px solid #000;
-    height: 150px;
+.container-flex{
+    display: flex;
+}
+
+.flex1 {
+    width:50%;
+   
 }

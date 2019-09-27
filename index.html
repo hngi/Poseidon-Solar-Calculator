@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="The one stop shop for accurate calculation of household solar power needs. With the Poseidon Solar Calculator, we take away the hassle and have you know in the fraction of a second what precise Solar unit to purchase.">
+    <meta name="Keywords" content="Solar, Energy, Power, Watt">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
     <link rel="shortcut icon" href="Images/Logo/Frame.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -35,7 +40,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active ">
                            
-                            <a class="nav-link ml-5" href="#home">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link ml-5" href="#calc_section">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link ml-5 other-navItems" href="#how-it-work">How it Works</a>
@@ -52,92 +57,73 @@
         </nav>
         <!-- end of navbar -->
 
+
+        <section id="calc_section" class="calc_section">
+            <h4 class="mb-3 text-center text-uppercase color">solar power calculator</h4>
+                <div id="calc_inner" class="container mt-3 container-flex ">
+                        <div class="flex1">
+                        <form method="post" class="add_form form " id="calc_form" >
+                              <div>
+                                <label for="appliances">Appliances</label>
+                              </div>
+                              <input list="appliances" name="appliances" class="smaller"  id="appliance_input" required placeholder="Applicance">
+                               <datalist id="appliances">
+                                    <option class="opt" value="Refrigerator">
+                                    <option value="Pressing Iron">
+                                    <option value="Television">
+                                    <option value="Washing Machine">
+                                    <option value="Water Heater">
+                                </datalist>
+                                    <div> <label for="power_hr">Hour on per Day</label> </div>
+                                    <div >
+                                        <input type="number" id="power_hr" class="smaller" required pattern="/[0-9]/">
+                                    </div>
+                                    
+                                    <div> <label for="quantity">Quantity</label> </div>
+                                    <div >
+                                        <input type="number" class="smaller" id="quantity_input" required pattern="/[0-9]/" >
+                                    </div>
+                                    
+                                    <div><label for="power_input">Power</label></div>
+                                    <div >
+                                        <input type="number" class="smaller" id="power_input" required pattern="/[0-9]/">
+                                    </div>
+                                    <button id="btn" class="calc_button" type="submit">Add</button>
+                            </form>
+
+                            
+                        </div>
+        
+                        
+                        <div id="result" class="result">
+                            <div>
+
+                           
+                            <div class="result-tab">
+                            <p id="result_heading">results</p>
+                            <p class="result-text"><span id="result_num">0</span><sub>watts</sub></p>
+        
+                            <p>solar power needed</p>
+                            </div>
+        
+                            <button id="but-daily" class="but but-active">Daily</button>
+                                
+                            <button id="but-week" class="but">Weekly</button>
+        
+                            <button id="but-month" class="but">Monthly</button>
+                            </div>
+
+                            <div class="app-list">
+                                
+                            </div>
+                        </div>
+                
+                </div> 
+            </section>
+
+
+
         <!-- header -->
-
-      
-        <section class="header" id="home" style="height: 90vh">
-
-        <!-- <section class="header" id="home" style="height: 90vh">
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 my-5 py-5">
-                        <header>
-                            <h4 class="header-title"> Poseidon Energy <br>Calculator</h4>
-                        </header>
-                        <article>
-                            <p class="lead text-wrap header-paragraph my-4">
-                                Figuring out the precise solar power size when considering a solar installation for your home can be a tedious task, especially if you have no background knowledge in solar or energy consumption and calculation.
-With the Poseidon Solar Calculator, we take away the hassle and have you know in the fraction of a second what precise Solar unit to purchase.
-                            </p>
-                        </article>
-
-                      
-
-                        <a href="#calc_section" class="btn btn-outline-secondary rounded text-uppercase"> Calculate Solar Power</a>
-
-                    </div>
-
-                    <div class="col-md-6 col-sm-12">
-                        <div class="img-fluid bg-image "> </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section> -->
-
-    <section>
-        <div class="row">
-            <div class="col-md-12">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ul>
-      
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="Images/solar.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item item-two">
-            <img src="Images/solar2.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item item-three">
-            <img src="Images/solar3.jpg" alt="Third slide">
-          </div>
-        </div>
-      
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>    
-      </div>
-      <div class="main-text hidden-xs">
-      <div class="col-md-6 col-sm-12 my-5 py-5">
-           <h2 class="header-title"> Poseidon Energy <br>Calculator</h2>
-            
-            <article>
-                <p class="lead text-wrap header-paragraph my-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua uis aute irure dolor in reprehen
-                </p>
-            </article>
-            <div class="myButton">
-            <a href="#calc_section" class="btn btn-outline-secondary rounded text-uppercase"> Calculate Solar Power</a>
-        </div>
-        </div>
-    </div>
-    </div>
-</div>
-</section>
 
     <section class="patners">
         <div class="over ">
@@ -188,7 +174,7 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
 
        
 
-       <section id="how-it-work" class="how-it-works">
+       <section id="how-it-work" class="how-it-works ">
         <h3 id="how-it-works-header">How it works</h3>
         <div id="how-it-works">
             <div class="how-it-works-main">
@@ -208,73 +194,7 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
     <!-- HOW-IT-WORKS-SECTION-END -->
 
 
-    <section id="calc_section" class="mt-5 mb-5">
-        <h4 class="mb-3 text-center text-uppercase">solar power calculator</h4>
-        <hr>
-        <div id="calc_inner" class="container mt-3">
-            <div class="row">
-                <div class="col-md-8">
-                    <form class="add_form form" id="calc_form">
-                        <input list="appliances" name="appliances" id="appliance_input" required placeholder="Applicance">
-                        <datalist id="appliances">
-                            <option class="opt" value="Refrigerator">
-                            <option value="Pressing Iron">
-                            <option value="Television">
-                            <option value="Washing Machine">
-                            <option value="Water Heater">
-                        </datalist>
-                        <div>
 
-                        <input type="number" min="0" id="quantity_input" required placeholder="Quantity">
-
-                        <input type="number" min="0" id="power_input" required placeholder="Watt Per Hour">
-
-                        <input type="number" min="0" id="power_input" required placeholder="Hours on Per Day"> 
-                        
-                        </div>
-
-                        <div>
-                            <button id="btn" class="btn calc_button" type="submit">Add</button>
-                        </div>
-                        
-
-                    </form>
-                </div>
-                <div class="col-md-4">
-                </div>
-            </div>
-
-
-            <div class="row mt-5">
-                <div class="col-md-7">
-                    <table class="table mt-4 table-borderless">
-                        <tbody id="tbody">
-                            <tr>
-                                <td>Pressing Iron</td>
-                                <td>3 qty</td>
-                                <td>50 Watts</td>
-                                <td class="delete">X</td>
-                            </tr>
-                            <tr>
-                                <td>Washing Machine</td>
-                                <td>3 qty</td>
-                                <td>100 Watts</td>
-                                <td class="delete">X</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-md-1 d-none d-md-block">
-                    <div class="vl"></div>
-                </div>
-                <div id="result" class="col-md-4 text-uppercase font-weight-bold">
-                    <p id="result_heading">results</p>
-                    <p><span id="result_num">450</span><sub>watts</sub></p>
-                    <p>solar power needed</p>
-                </div>
-        </div>
-        </div>
-    </section>
 
     <!-- FAQ  SECTION -->
     <section id="faq" class=" faq container mt-3 faq-margin">
@@ -286,32 +206,94 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
         <div class="mb-4">
             <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description1"></i>
             <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description1"></i>
-            <h6 class="d-inline bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
-            <p class="font-italic ml-5 my-3 collapse description1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci
-                hic ex quis, sequi
-                asperiores
-                voluptatem deleniti officiis dicta beatae, aliquam repudiandae cumque unde! Optio, saepe!</p>
+            <h6 class="d-inline bold">Why use a Solar Calculator?</h6>
+            <p class="font-italic ml-5 my-3 collapse description1">
+                A solar calculator helps you calculate with precise accuracy how many kW system sizes are required to power your selected appliances. With this information, you can know the cost of the system and make adjustments where necessary. Worthy of note is to power only the most important appliances on Solar especially if you will be purchasing a hybrid/Grid-tied unit
+            </p>
         </div>
         <div class="mb-4">
             <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description2"></i>
             <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description2"></i>
-            <h6 class="d-inline">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
-            <p class="font-italic ml-5 my-3 collapse description2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci
-                hic ex quis, sequi
-                asperiores
-                voluptatem deleniti officiis dicta beatae, aliquam repudiandae cumque unde! Optio, saepe!</p>
+            <h6 class="d-inline">Why consider Solar energy?</h6>
+            <p class="font-italic ml-5 my-3 collapse description2">Solar energy offers great benefits both financially and environmentally. Money for electricity bills will be saved and increasing the electricity rate in the future will be protected. It also helps reduce greenhouse gas emissions which plays a role in climate change and air pollution.</p>
         </div>
         <div class="mb-4">
             <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description3"></i>
             <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description3"></i>
-            <h6 class="d-inline">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
-            <p class="font-italic ml-5 my-3 collapse description3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci
-                hic ex quis, sequi
-                asperiores
-                voluptatem deleniti officiis dicta beatae, aliquam repudiandae cumque unde! Optio, saepe!</p>
+            <h6 class="d-inline">How does Solar energy work?</h6>
+            <p class="font-italic ml-5 my-3 collapse description3">Sunlight is converted into electricity using solar panels. The converted electricity can be stored in batteries to power electrical appliances. Excess energy harnessed from the panels can be exported to the grid. In the case of a grid-tied solar unit.</p>
+        </div>
+
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description4"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description4"></i>
+            <h6 class="d-inline">What are the effects of solar panels on roofs?</h6>
+            <p class="font-italic ml-5 my-3 collapse description4">
+                The solar panel has no negative effect on your roof, instead it has been known to help increase the value of the house when putting it up for sale.
+                </p>
+        </div>
+
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description5"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description5"></i>
+            <h6 class="d-inline"> How much does it cost?</h6>
+            <p class="font-italic ml-5 my-3 collapse description5">There can only be estimates as the installation cost varies considerably. This depends on your energy demands and how much autonomy you are willing to go for.</p>
+        </div>
+
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description6"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description6"></i>
+            <h6 class="d-inline">How do you know the number of panels to be used?</h6>
+            <p class="font-italic ml-5 my-3 collapse description6">The Poseidon solar calculator will help you calculate your appliances based on their capacities then estimates the number of panels that will be best suitable. </p>
+        </div>
+
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description7"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description7"></i>
+            <h6 class="d-inline">Do I pay for renewable energy?</h6>
+            <p class="font-italic ml-5 my-3 collapse description7">The only cost is the cost of initial components and installation. No subsequent subscription or bills is required to have access to power generated.
+            </p>
+        </div>
+
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description8"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description8"></i>
+            <h6 class="d-inline">Is solar power clean or green energy?
+            </h6>
+            <p class="font-italic ml-5 my-3 collapse description8">Solar Energy is both green and clean as it has no harmful effects on the environment.</p>
+        </div>
+
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description9"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description9"></i>
+            <h6 class="d-inline">Why do I need to calculate my solar power requirement?</h6>
+            <p class="font-italic ml-5 my-3 collapse description9">Calculation is required to get a fair or exact estimate of solar components needed to power your appliances and home.
+            </p>
+        </div>
+
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description10"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description10"></i>
+            <h6 class="d-inline">Is solar power stable?
+            </h6>
+            <p class="font-italic ml-5 my-3 collapse description10">Yes, solar power is stable and can be stored and inverted to be used later.
+            </p>
+        </div>
+
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description11"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description11"></i>
+            <h6 class="d-inline">What appliances can I enter here?
+            </h6>
+            <p class="font-italic ml-5 my-3 collapse description11">All appliances that require electricity to run and that will be used in your home (kitchen, living room, bathroom, etc.). All electrical appliances are rated in KWH, which tells the amount of electricity the particular appliance consumes per hour.</p>
+        </div>
+
+        <div class="mb-4">
+            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description12"></i>
+            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description12"></i>
+            <h6 class="d-inline">Is this Poseidon Solar Calculator Free?</h6>
+            <p class="font-italic ml-5 my-3 collapse description12">Yes, Poseidon Solar Calculator is absolutely free to use with no hidden charges whatsoever.
+            </p>
         </div>
     </section>
     <!-- END OF FAQ SECTION -->
@@ -319,11 +301,7 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
         <div class="footer-back">
           <div class="container">
             <div class="col-sm-12 text-center ">
-                <h3>POSEIDON</h3>
-
-               
-
-            
+                <h3>POSEIDON</h3>            
             </div>
 
                 <p>The perfect solar calculator for your abode</p>
@@ -355,84 +333,7 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="faq.js"></script>
-
-    <script>
-
-    const addBtn = document.querySelector('#btn');
-    let applianceValue = document.querySelector('#appliance_input');
-    let quantityValue = document.querySelector('#quantity_input');
-    let powerValue = document.querySelector('#power_input');
-    let tbody = document.querySelector("#tbody")
-    let result = document.querySelector("#result_num")
-    
-    let total = 0
-    
-
-
-    function click(evt) {
-        evt.preventDefault()
-       
-        let tr = document.createElement("tr");
-        let td1 = document.createElement("td");
-        let td2 = document.createElement("td");
-        let td3 = document.createElement("td");
-        let td4 = document.createElement("td")
-
-        td1.textContent = applianceValue.value
-        td2.textContent = quantityValue.value + " qty"
-        td3.textContent = powerValue.value + " Watts"
-        td4.textContent = "X"
-        td4.classList = "delete"
-
-        tr.appendChild(td1)
-        tr.appendChild(td2)
-        tr.appendChild(td3)
-        tr.appendChild(td4)
-
-        tbody.appendChild(tr)
-        applianceValue.value = ""
-        quantityValue.value = ""
-        powerValue.value = ""
-
-        value()
-
-    }
-
-    const value = () => {
-        let allValue = document.querySelectorAll("tr")
-        let list = Array.from(allValue)
-        console.log(list)
-        total = 0
-
-        for (let i = 0; i < list.length; i++){
-            console.log(list[i].children[1])
-
-            let sum = list[i].children[1].textContent;
-            let sum2 = list[i].children[2].textContent;
-            let sumvalue = sum.split(" ")[0];
-            let sumvalue2 = sum2.split(" ")[0];
-            let num = sumvalue * sumvalue2
-            total += num
-            
-        }
-
-        result.textContent = total
-    }
-
-    const deleteValue = (evt) => {
-        const vv = evt.target.parentNode
-        tbody.removeChild(vv)
-        value()
-    }
-
-
-    addBtn.addEventListener('click', click);
-    tbody.addEventListener('click', deleteValue)
-
-    console.log(addBtn)
-    
-    </script>
-
+    <script src="solar.js"></script>
 </body>
 
 </html>
