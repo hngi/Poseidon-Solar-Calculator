@@ -429,16 +429,6 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
         
         if (applianceValue.validity.valid && quantityValue.validity.valid 
         && powerValue.validity.valid && timeValue.validity.valid)
-
-        {
-
-        const appliance_data = {
-            "appliance" : applianceValue.value,
-            "watt_per_hr" : powerValue.value,
-            "quantity of appliance" : quantityValue.value,
-            "hours_used_per_day" : timeValue.value
-        }
-
         
         let tr = document.createElement("tr");
         let td1 = document.createElement("td");
@@ -471,12 +461,6 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
         timeValue.value = ""
 
         value("daily")
-
-        const url = 'http://chibuikem.pythonanywhere.com/';
-        console.log(appliance_data)
-
-
-       sendData(url,appliance_data)
 
         }
 
@@ -553,25 +537,6 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
     weekly.addEventListener('click', () => ( value("weekly") ))
     monthly.addEventListener('click', () => ( value("monthly") ))
     tbody.addEventListener('click', deleteValue)
-
-    async function sendData(url,appliance_data) {
-
-    try {
-    const response = await fetch(url, {
-    method: 'POST', // or 'PUT'
-    mode: 'cors', // no-cors, *cors, same-origin
-    body: JSON.stringify(appliance_data), // data can be `string` or {object}!
-    headers: {
-        'Content-Type': 'application/json'
-    }
-    });
-    const json = await response.json();
-    console.log('Success:', JSON.stringify(json));
-    } catch (error) {
-            console.error('Error:', error);
-    }
-
-}
     
     </script>
 
