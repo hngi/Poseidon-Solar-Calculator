@@ -721,3 +721,7 @@ form input::placeholder {
     width:50%;
    
 }
+
+label {
+    margin-top: 10px;
+}
