@@ -168,6 +168,7 @@ body {
     z-index: 4;
     background-image:
         url('Images/patners-image.png');
+    margin-top:0px;
 }
 
 .over {
@@ -519,15 +520,23 @@ body {
 
 /*Calculator Section*/
 
-.form {
-    width:80%;
-}
-
 #calc_section {
     background-color: #C4C4C4;
-    padding-top:40px;
+    padding-top:20px;
     padding-bottom:40px;
     margin-top: -3rem;
+    margin-top:0px;
+}
+
+.calc_button{
+    background-color: #055DA8;
+    border-radius: 15px;
+    outline: none;
+    border: 0;
+    color: #fff;
+    margin-top:10px;
+    width:100px;
+    height: 40px;
 }
 
 @media (max-width: 375px){
@@ -542,28 +551,22 @@ body {
 }
 form input{
     border: 2px solid #055DA8;
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 10px;
     height: 40px;
+    width:100px;
 
 }
-form input[name="appliance"] {
+form input[name="appliances"] {
     border: 2px solid #055DA8;
     width: 60%;
     margin-bottom: 20px;
 }
 
-#power_hr {
-    width:30%;
+#power_input {
+    width: 200px;
 }
 
-#quantity_input {
-    width: 20%;
-    margin-right:20px;
-    border: 2px solid #055DA8;
-    width: 20%;
-    margin-bottom: 10px;
-}
 
 input::-webkit-calendar-picker-indicator {
   background-color: transparent;
@@ -571,48 +574,64 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .result {
-
-    
-    margin-top: -37%;
-    border-left: 2px solid #055DA8;
+    text-align: center;
+    width:50%;
+    margin-top:10px;
 }
 
-@media (max-width: 425px){
-    .result{
-        margin-top: 0;
-        border: none;
-    }
+.result-tab p {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#result_heading {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.result-text {
+    font-size: 20px;
+    text-transform: uppercase;
     color: #055DA8;
 }
 
+#result_num {
+    font-size: 40px;
+}
+
+.but {
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid #055DA8;
+    color: #055DA8;
+    margin-left:10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    outline: none;
+}
+
+
+.app-list {
+    margin-top:30px;
+    text-align: center;
+}
+
+#tbody {
+    text-align: center;
+    padding:20px;
+}
 /*
 form input::placeholder {
     color: var(--placeholder-color);
 }
 
 
-.calc_button{
-    background-color: #055DA8;
-    border-radius: 25px;
-    outline: none;
-    border: 0;
-    width: 18%;
-    color: #fff;
-    margin-left:10px;
-}
-#result_num{
-    font-size: 60px;
-    color: var(--primary-color);
-}
-#result_heading{
-    font-size: 20px;
-}
 
-.delete {
-    color: red;
-    font-size: 14px;
-    cursor: pointer;
-}
+
+
+
 
 .vl{
     position: relative;
@@ -632,18 +651,7 @@ form input::placeholder {
 
 }
 
-.but {
-    background-color: white;
-    border-radius: 25px;
-    border: 1px solid #055DA8;
-    color: #055DA8;
-    margin-left:10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    outline: none;
-}
+
 
 @media(max-width: 320px){
     .but{
@@ -653,17 +661,9 @@ form input::placeholder {
 
         left: 25%;
         /* padding: 0; */
-    }
-}
+ 
 
-@media(min-width: 375px) and (min-height: 576px){
-    .but{
-        margin: 0;
-        position: relative;
-        left: 3%;
-    }
 
-}
 
 .result-tab {
     text-align: center;
@@ -689,17 +689,35 @@ form input::placeholder {
     color: #055DA8
 }
 
-.tr-row {
+.color {
+    color: #055DA8
+}
+
+.div {
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
     background-color: #055DA8;
-    border: 1px solid black;
+    padding:10px;
+    margin-bottom:10px;
     
 }
 
-td {
-    font-size: 14px;
-    text-align: center;
+.space {
+    padding: 10px;
 }
 
-.white {
-    background-color: white;
+.delete {
+    color: red;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.container-flex{
+    display: flex;
+}
+
+.flex1 {
+    width:50%;
+   
 }

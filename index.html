@@ -40,7 +40,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active ">
                            
-                            <a class="nav-link ml-5" href="#home">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link ml-5" href="#calc_section">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link ml-5 other-navItems" href="#how-it-work">How it Works</a>
@@ -57,52 +57,74 @@
         </nav>
         <!-- end of navbar -->
 
+
+        <section id="calc_section" class="calc_section">
+            <h4 class="mb-3 text-center text-uppercase color">solar power calculator</h4>
+                <div id="calc_inner" class="container mt-3 container-flex ">
+                        <div class="flex1">
+                        <form method="post" class="add_form form " id="calc_form" >
+                              <div>
+                                <label for="appliances">Appliances</label>
+                              </div>
+                              <input list="appliances" name="appliances" class="smaller"  id="appliance_input" required placeholder="Applicance">
+                               <datalist id="appliances">
+                                    <option class="opt" value="Refrigerator">
+                                    <option value="Pressing Iron">
+                                    <option value="Television">
+                                    <option value="Washing Machine">
+                                    <option value="Water Heater">
+                                </datalist>
+                                    <div> <label for="power_hr">Hour on per Day</label> </div>
+                                    <div >
+                                        <input type="number" id="power_hr" class="smaller" required pattern="/[0-9]">
+                                    </div>
+                                    
+                                    <div> <label for="quantity">Quantity</label> </div>
+                                    <div >
+                                        <input type="number" class="smaller" id="quantity_input" required pattern="/[0-9]" >
+                                    </div>
+                                    
+                                    <div><label for="power_input">Power</label></div>
+                                    <div >
+                                        <input type="number" class="smaller" id="power_input" required pattern="/[0-9]">
+                                    </div>
+                                    <button id="btn" class="calc_button" type="submit">Add</button>
+                            </form>
+
+                            
+                        </div>
+        
+                        
+                        <div id="result" class="result">
+                            <div>
+
+                           
+                            <div class="result-tab">
+                            <p id="result_heading">results</p>
+                            <p class="result-text"><span id="result_num">0</span><sub>watts</sub></p>
+        
+                            <p>solar power needed</p>
+                            </div>
+        
+                            <button id="but-daily" class="but but-active">Daily</button>
+                                
+                            <button id="but-week" class="but">Weekly</button>
+        
+                            <button id="but-month" class="but">Monthly</button>
+                            </div>
+
+                            <div class="app-list">
+                                
+                            </div>
+                        </div>
+                
+                </div> 
+            </section>
+
+
+
         <!-- header -->
 
-      
-        <section class="header" id="home" style="height: 90vh">
-  
-         <div class="row">
-            <div class="col-md-12">
-             <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ul>
-        
-            <!-- The slideshow -->
-            <div class="carousel-inner">
-            <div class="carousel-item item active">
-                <img class="img" src="images/solar2.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item item-two">
-                <img class="img" src="images/solar3.jpg" alt="Second slide">
-            </div>
-            </div>
-     
-        </div>
-        <div class="main-text hidden-xs">
-        <div class="col-md-6 col-sm-12 ">
-            <h2 class="header-title"> Poseidon Energy <br>Calculator</h2>
-                
-                <article>
-                    <p class="lead text-wrap header-paragraph my-4 ">
-                        
-                        The one stop shop for accurate calculation of household solar power needs.
-                    </p>
-                </article>
-                <div class="myButton">
-                <a href="#calc_section" class="btn btn-outline-secondary rounded text-uppercase"> Calculate Solar Power</a>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-        
-</section>
 
     <section class="patners">
         <div class="over ">
@@ -173,80 +195,7 @@
     <!-- HOW-IT-WORKS-SECTION-END -->
 
 
-    <section id="calc_section" class="">
-        <h4 class="mb-3 text-center text-uppercase">solar power calculator</h4>
-        <hr>
-        <div id="calc_inner" class="container mt-3">
-            <div class="row">
-            
-                <div class="col-md-12 col-sm-12">
-                 
-                    <form method="post" class="add_form form mt-2 pt-2" id="calc_form">
-
-
-                      <div class="col-md col-sm-12">
-                        <input list="appliances" name="appliances" class="smaller"  id="appliance_input" required placeholder="Applicance">
-                        <datalist id="appliances">
-                            <option class="opt" value="Refrigerator">
-                            <option value="Pressing Iron">
-                            <option value="Television">
-                            <option value="Washing Machine">
-                            <option value="Water Heater">
-                        </datalist>
-                         
-                        <div>
-
-                    
-                      </div>
-                         
-                        
-                        </div>
-            
-                        
-
-                            <div class="col-md mb-5 mt-5">
-                                <input type="number" id="power_hr" class="smaller" required placeholder="Hours on Per Day">
-                            </div>
-
-                            <div class="col-md mb-5 mt-5" >
-                                <input type="number" class="smaller" id="quantity_input" required placeholder="Quantity">
-                            </div>
-
-                            <div class="col-md-3 mb-5 mt-5">
-                                <input type="number" class="smaller" id="power_input" required placeholder="Watt Per Hour">
-                            </div>
-                            <button id="btn" class="btn btn-outline-primary p-2 m-2 ml-3 " style="width: 20%" type="submit">Add</button>
-
-                    </form>
-                </div>
-            </div>
-            <div class="row ">
-                <div class=" col-md-6 vl">
-
-                    <table class="table mt-4 table-borderless">
-                        <tbody id="tbody">
-                
-                        </tbody>
-                    </table>
-                </div>
-                
-                <div id="result" class="col-md-4 col-sm-12 result text-uppercase font-weight-bold">
-                    <div class="result-tab">
-                    <p id="result_heading">results</p>
-                    <p class="result-text"><span id="result_num">0</span><sub>watts</sub></p>
-
-                    <p>solar power needed</p>
-                    </div>
-
-                    <button id="but-daily" class="but but-active">Daily</button>
-                        
-                    <button id="but-week" class="but">Weekly</button>
-
-                    <button id="but-month" class="but">Monthly</button>
-                </div>
-        </div>
-        </div> 
-    </section>
+    
 
     <!-- FAQ  SECTION -->
     <section id="faq" class=" faq container mt-3 faq-margin">

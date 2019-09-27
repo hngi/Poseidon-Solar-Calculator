@@ -3,7 +3,7 @@ let applianceValue = document.querySelector('#appliance_input');
 let quantityValue = document.querySelector('#quantity_input');
 let powerValue = document.querySelector('#power_input');
 let timeValue = document.querySelector('#power_hr');
-let tbody = document.querySelector("#tbody");
+let tbody = document.querySelector(".app-list");
 let result = document.querySelector("#result_num");
 
 let daily = document.querySelector("#but-daily");
@@ -17,31 +17,38 @@ function click() {
     if (applianceValue.validity.valid && quantityValue.validity.valid 
     && powerValue.validity.valid && timeValue.validity.valid) {
     
-    let tr = document.createElement("tr");
-    let td1 = document.createElement("td");
-    let td2 = document.createElement("td");
-    let td3 = document.createElement("td");
-    let td4 = document.createElement("td");
-    let td5 = document.createElement("td");
+    
+    let td1 = document.createElement("span");
+    let td2 = document.createElement("span");
+    let td3 = document.createElement("span");
+    let td4 = document.createElement("span");
+    let td5 = document.createElement("span");
+
+    let div = document.createElement("div")
 
     td1.textContent = applianceValue.value
-    td1.classList.add("white")
+    td1.classList.add("space")
     td2.textContent = quantityValue.value + " qty"
+    td2.classList.add("space")
     td3.textContent = powerValue.value + " Watts"
-    td3.classList.add("white")
+    td3.classList.add("space")
     td4.textContent = timeValue.value + ' hr'
+    td4.classList.add("space")
     td5.textContent = "X"
+    td5.classList.add("space")
     td5.classList.add("delete")
-    td5.classList.add("white")
+   
 
-    tr.appendChild(td1)
-    tr.appendChild(td2)
-    tr.appendChild(td3)
-    tr.appendChild(td4)
-    tr.appendChild(td5)
-    tr.classList.add("tr-row")
+    div.appendChild(td1)
+    div.appendChild(td2)
+    div.appendChild(td3)
+    div.appendChild(td4)
+    div.appendChild(td5)
 
-    tbody.appendChild(tr)
+    div.classList.add("div")
+        
+    tbody.append(div)
+
     applianceValue.value = ""
     quantityValue.value = ""
     powerValue.value = ""
@@ -55,14 +62,13 @@ function click() {
 
 
 const value = (data) => {
-    let allValue = document.querySelectorAll("tr")
+    let allValue = document.querySelectorAll(".div")
     let list = Array.from(allValue)
-    console.log(list)
+  
     total = 0
 
     for (let i = 0; i < list.length; i++){
-        console.log(list[i].children[1])
-
+       
         let sum = list[i].children[1].textContent;
         let sum2 = list[i].children[2].textContent;
         let sum3 = list[i].children[3].textContent;
@@ -110,7 +116,9 @@ const value = (data) => {
 
 
 const deleteValue = (evt) => {
-    if (evt.target.className === "delete white"){
+    console.log(evt.target)
+    if (evt.target.className === "space delete"){
+        console.log("yes")
         const vv = evt.target.parentNode
         tbody.removeChild(vv)
         value("daily")
