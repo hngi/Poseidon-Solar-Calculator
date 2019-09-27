@@ -181,9 +181,6 @@ body {
     font-style: normal;
     font-weight: 900;
     font-size: 5rem;
-    /* line-height: 55px; */
-    /* or 122% */
-
     letter-spacing: 0.02em;
 
     color: #C4C4C4;
@@ -206,6 +203,13 @@ body {
 /* START OF FAQ */
 .faq i {
     color: #055DA8;
+}
+
+@media (max-width: 425px){
+    .link{
+        display: flex;
+        
+    }
 }
 
 .size {
@@ -236,6 +240,7 @@ body {
 .faq-margin {
     margin-bottom: 100px;
 }
+
 
 /* END OF FAQ */
 
@@ -351,6 +356,13 @@ body {
     width: 50%;
     text-align: center;
     padding: 35px;
+}
+
+@media (max-width: 425px){
+    .link{
+        display: grid;
+        justify-content: center;
+    }
 }
 
 .calculator .result .Watts{
