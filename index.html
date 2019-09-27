@@ -56,83 +56,47 @@
 
       
         <section class="header" id="home" style="height: 90vh">
-
-        <!-- <section class="header" id="home" style="height: 90vh">
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 my-5 py-5">
-                        <header>
-                            <h4 class="header-title"> Poseidon Energy <br>Calculator</h4>
-                        </header>
-                        <article>
-                            <p class="lead text-wrap header-paragraph my-4">
-                                Figuring out the precise solar power size when considering a solar installation for your home can be a tedious task, especially if you have no background knowledge in solar or energy consumption and calculation.
-With the Poseidon Solar Calculator, we take away the hassle and have you know in the fraction of a second what precise Solar unit to purchase.
-                            </p>
-                        </article>
-
-                      
-
-                        <a href="#calc_section" class="btn btn-outline-secondary rounded text-uppercase"> Calculate Solar Power</a>
-
-                    </div>
-
-                    <div class="col-md-6 col-sm-12">
-                        <div class="img-fluid bg-image "> </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section> -->
-
-    <section>
-        <div class="row">
+  
+         <div class="row">
             <div class="col-md-12">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+             <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ul>
-      
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-          <div class="carousel-item item active">
-            <img class="img" src="images/solar2.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item item-two">
-            <img class="img" src="images/solar3.jpg" alt="Second slide">
-          </div>
-        </div>
-      
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>    
-      </div>
-      <div class="main-text hidden-xs">
-      <div class="col-md-6 col-sm-12 my-3 py-5">
-           <h2 class="header-title"> Poseidon Energy <br>Calculator</h2>
-            
-            <article>
-                <p class="lead text-wrap header-paragraph my-4">
-                    THE ONE STOP SHOP FOR ACCURATE CALCULATION OF HOUSEHOLD SOLAR POWER NEEDS.
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ul>
         
-                </p>
-            </article>
-            <div class="myButton">
-            <a href="#calc_section" class="btn btn-outline-secondary rounded text-uppercase"> Calculate Solar Power</a>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+            <div class="carousel-item item active">
+                <img class="img" src="images/solar2.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item item-two">
+                <img class="img" src="images/solar3.jpg" alt="Second slide">
+            </div>
+            </div>
+     
+        </div>
+        <div class="main-text hidden-xs">
+        <div class="col-md-6 col-sm-12 ">
+            <h2 class="header-title"> Poseidon Energy <br>Calculator</h2>
+                
+                <article>
+                    <p class="lead text-wrap header-paragraph my-4 ">
+                        
+                        The one stop shop for accurate calculation of household solar power needs.
+                    </p>
+                </article>
+                <div class="myButton">
+                <a href="#calc_section" class="btn btn-outline-secondary rounded text-uppercase"> Calculate Solar Power</a>
+            </div>
+            </div>
         </div>
         </div>
     </div>
-    </div>
-</div>
+        
 </section>
 
     <section class="patners">
@@ -184,7 +148,7 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
 
        
 
-       <section id="how-it-work" class="how-it-works">
+       <section id="how-it-work" class="how-it-works ">
         <h3 id="how-it-works-header">How it works</h3>
         <div id="how-it-works">
             <div class="how-it-works-main">
@@ -204,14 +168,18 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
     <!-- HOW-IT-WORKS-SECTION-END -->
 
 
-    <section id="calc_section" class="mt-5 mb-5">
+    <section id="calc_section" class="">
         <h4 class="mb-3 text-center text-uppercase">solar power calculator</h4>
         <hr>
         <div id="calc_inner" class="container mt-3">
             <div class="row">
-                <div class="col-md-8">
-                    <form class="add_form form" id="calc_form">
-                        <input list="appliances" name="appliances" id="appliance_input" required placeholder="Applicance">
+                <div class="col-md-12 col-sm-12">
+                 
+                    <form class="add_form form mt-2 pt-2" id="calc_form">
+
+
+                      <div class="col-md col-sm-12">
+                        <input list="appliances" name="appliances" class="smaller"  id="appliance_input" required placeholder="Applicance">
                         <datalist id="appliances">
                             <option class="opt" value="Refrigerator">
                             <option value="Pressing Iron">
@@ -219,29 +187,30 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
                             <option value="Washing Machine">
                             <option value="Water Heater">
                         </datalist>
-                         <input type="number" id="power_hr" required placeholder="Hours on Per Day">
-                        <div>
-
-                        <input type="number" id="quantity_input" required placeholder="Quantity">
-
-                        <input type="number" id="power_input" required placeholder="Watt Per Hour">
-
-                        <button id="btn" class="btn calc_button" type="submit">Add</button>
+                      </div>
+                         
                         
-                        </div>
+                            <div class="col-md mb-5 mt-5">
+                                <input type="number" id="power_hr" class="smaller" required placeholder="Hours on Per Day">
+                            </div>
 
-                     
-                            
-            
-                        
+                            <div class="col-md mb-5 mt-5" >
+                                <input type="number" class="smaller" id="quantity_input" required placeholder="Quantity">
+                            </div>
+
+                            <div class="col-md-3 mb-5 mt-5">
+                                <input type="number" class="smaller" id="power_input" required placeholder="Watt Per Hour">
+                            </div>
+                            <button id="btn" class="btn btn-outline-primary p-2 m-2 ml-3 " style="width: 20%" type="submit">Add</button>
 
                     </form>
+                    
                 </div>
             </div>
 
+            <div class="row ">
+                <div class=" col-md-6 vl">
 
-            <div class="row mt-3">
-                <div class="col-md-7 vl">
                     <table class="table mt-4 table-borderless">
                         <tbody id="tbody">
                 
@@ -249,19 +218,22 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
                     </table>
                 </div>
                 
-                <div id="result" class="col-md-4 text-uppercase font-weight-bold">
+                <div id="result" class="col-md-4 col-sm-12 result text-uppercase font-weight-bold">
                     <div class="result-tab">
                     <p id="result_heading">results</p>
-                    <p class="result"><span id="result_num">0</span><sub>watts</sub></p>
+                    <p class="result-text"><span id="result_num">0</span><sub>watts</sub></p>
+
                     <p>solar power needed</p>
                     </div>
 
                     <button id="but-daily" class="but but-active">Daily</button>
+                        
                     <button id="but-week" class="but">Weekly</button>
+
                     <button id="but-month" class="but">Monthly</button>
                 </div>
         </div>
-        </div>
+        </div> 
     </section>
 
     <!-- FAQ  SECTION -->
@@ -369,11 +341,7 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
         <div class="footer-back">
           <div class="container">
             <div class="col-sm-12 text-center ">
-                <h3>POSEIDON</h3>
-
-               
-
-            
+                <h3>POSEIDON</h3>            
             </div>
 
                 <p>The perfect solar calculator for your abode</p>
@@ -406,128 +374,10 @@ With the Poseidon Solar Calculator, we take away the hassle and have you know in
     </script>
     <script src="faq.js"></script>
 
-    <script>
 
-    const addBtn = document.querySelector('#btn');
-    let applianceValue = document.querySelector('#appliance_input');
-    let quantityValue = document.querySelector('#quantity_input');
-    let powerValue = document.querySelector('#power_input');
-    let timeValue = document.querySelector('#power_hr')
-    let tbody = document.querySelector("#tbody")
-    let result = document.querySelector("#result_num")
+    <script src="solar.js"> </script>
 
-    let daily = document.querySelector("#but-daily")
-    let weekly = document.querySelector("#but-week")
-    let monthly = document.querySelector("#but-month")
-    
-    let total = 0
-
-
-    function click(evt) {
-        evt.preventDefault()
-       
-        let tr = document.createElement("tr");
-        let td1 = document.createElement("td");
-        let td2 = document.createElement("td");
-        let td3 = document.createElement("td");
-        let td4 = document.createElement("td");
-        let td5 = document.createElement("td");
-
-        td1.textContent = applianceValue.value
-        td2.textContent = quantityValue.value + " qty"
-        td3.textContent = powerValue.value + " Watts"
-        td4.textContent = timeValue.value + ' hr'
-        td5.textContent = "X"
-        td5.classList = "delete"
-
-        tr.appendChild(td1)
-        tr.appendChild(td2)
-        tr.appendChild(td3)
-        tr.appendChild(td4)
-        tr.appendChild(td5)
-
-        tbody.appendChild(tr)
-        applianceValue.value = ""
-        quantityValue.value = ""
-        powerValue.value = ""
-        timeValue.value = ""
-
-        value("daily")
-
-    }
-
-    const value = (data) => {
-        let allValue = document.querySelectorAll("tr")
-        let list = Array.from(allValue)
-        console.log(list)
-        total = 0
-
-        for (let i = 0; i < list.length; i++){
-            console.log(list[i].children[1])
-
-            let sum = list[i].children[1].textContent;
-            let sum2 = list[i].children[2].textContent;
-            let sum3 = list[i].children[3].textContent;
-            console.log(sum3)
-
-            let sumvalue = sum.split(" ")[0];
-            let sumvalue2 = sum2.split(" ")[0];
-            let sumvalue3 = sum3.split(" ")[0];
-            
-            if (data === "daily"){
-                let num = sumvalue * sumvalue2 * sumvalue3
-                total += num
-                console.log(total)
-            }
-
-            if (data === "weekly"){
-                let num = sumvalue * sumvalue2 * 7
-                total += num
-            }
-
-            if (data === "monthly") {
-                let num = sumvalue * sumvalue2 * 28
-                total += num
-            }
-        
-        }
-
-        if (data === "weekly"){
-            document.querySelector(".but-active").classList.remove("but-active")
-            weekly.classList.add("but-active")
-        }
-
-        if (data === "monthly"){
-            document.querySelector(".but-active").classList.remove("but-active")
-            monthly.classList.add("but-active")
-        }
-
-        if (data === "daily"){
-            document.querySelector(".but-active").classList.remove("but-active")
-            daily.classList.add("but-active")
-        }
-
-        result.textContent = total
-    }
-
-
-    const deleteValue = (evt) => {
-        const vv = evt.target.parentNode
-        tbody.removeChild(vv)
-        value()
-    }
-
-
-    addBtn.addEventListener('click', click);
-    daily.addEventListener('click', () => ( value("daily") ))
-    weekly.addEventListener('click', () => ( value("weekly") ))
-    monthly.addEventListener('click', () => ( value("monthly") ))
-    tbody.addEventListener('click', deleteValue)
-
-    console.log(addBtn)
-    
-    </script>
-
+ 
 </body>
 
 </html>
