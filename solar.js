@@ -2,20 +2,20 @@ const addBtn = document.querySelector('#btn');
 let applianceValue = document.querySelector('#appliance_input');
 let quantityValue = document.querySelector('#quantity_input');
 let powerValue = document.querySelector('#power_input');
-let timeValue = document.querySelector('#power_hr')
-let tbody = document.querySelector("#tbody")
-let result = document.querySelector("#result_num")
+let timeValue = document.querySelector('#power_hr');
+let tbody = document.querySelector("#tbody");
+let result = document.querySelector("#result_num");
 
-let daily = document.querySelector("#but-daily")
-let weekly = document.querySelector("#but-week")
-let monthly = document.querySelector("#but-month")
+let daily = document.querySelector("#but-daily");
+let weekly = document.querySelector("#but-week");
+let monthly = document.querySelector("#but-month");
 
 let total = 0
 
-function click(evt) {
+function click() {
         
     if (applianceValue.validity.valid && quantityValue.validity.valid 
-    && powerValue.validity.valid && timeValue.validity.valid)
+    && powerValue.validity.valid && timeValue.validity.valid) {
     
     let tr = document.createElement("tr");
     let td1 = document.createElement("td");
@@ -52,6 +52,7 @@ function click(evt) {
     }
 
 }
+
 
 const value = (data) => {
     let allValue = document.querySelectorAll("tr")
@@ -119,11 +120,7 @@ const deleteValue = (evt) => {
 
 
 addBtn.addEventListener('click', click);
-let del = document.querySelector(".delete")
 daily.addEventListener('click', () => ( value("daily") ))
 weekly.addEventListener('click', () => ( value("weekly") ))
 monthly.addEventListener('click', () => ( value("monthly") ))
 tbody.addEventListener('click', deleteValue)
-
-console.log(addBtn)
-

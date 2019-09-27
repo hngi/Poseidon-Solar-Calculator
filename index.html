@@ -181,7 +181,7 @@
             
                 <div class="col-md-12 col-sm-12">
                  
-                    <form class="add_form form mt-2 pt-2" id="calc_form">
+                    <form method="post" class="add_form form mt-2 pt-2" id="calc_form">
 
 
                       <div class="col-md col-sm-12">
@@ -193,23 +193,14 @@
                             <option value="Washing Machine">
                             <option value="Water Heater">
                         </datalist>
-                         <input type="number" name="watt_per_hr" min="0" id="power_hr" required placeholder="Hours on Per Day" pattern="/[0-9]/" title="Enter a valid number">
+                         
                         <div>
 
-                        <input type="number" name="quantity_of_appliance" min="0" id="quantity_input" required placeholder="Quantity" pattern="/[0-9]/" title="Enter a valid number" >
-
-                        <input type="number" name="hours_used_per_day" min="0" id="power_input" required placeholder="Watt Per Hour" pattern="/[0-9]/" title="Enter a valid number">
-                   
-                        <input id="btn" type="submit" class="btn calc_button" value="Add">
+                    
                       </div>
                          
                         
                         </div>
-
-                        
-
-                     
-                            
             
                         
 
@@ -394,7 +385,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="faq.js"></script>
-    <script src="solar.js"> </script>
+    <script src="solar.js"></script>
 </body>
 
 </html>
