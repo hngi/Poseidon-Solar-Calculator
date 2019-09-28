@@ -7,7 +7,6 @@ let tbody = document.querySelector(".app-list");
 let result = document.querySelector("#result_num");
 let email = document.querySelector("#email")
 let butSend = document.querySelector(".but-send")
-let hr = document.querySelectorAll('a[href^="#"]')
 
 let daily = document.querySelector("#but-daily");
 let weekly = document.querySelector("#but-week");
@@ -167,9 +166,9 @@ const sendMail = () => {
 
     
 
-const data = `The Daily Solar consumption for your appliances will be ${total1} watt`
-const data1 = `The Weekly Solar consumption for your appliances will be ${total2} watt`
-const data2 = `The Monthly Solar consumption  for your appliances will be ${total3} watt`
+const data = `The Daily Solar Consumption for your appliances is ${total1} watt`
+const data1 = `The Weekly Solar Consumption for your appliances is ${total2} watt`
+const data2 = `The Monthly Solar Consumption  for your appliances is ${total3} watt`
                  
     
 var templateParams = {
@@ -202,13 +201,6 @@ tbody.addEventListener('click', deleteValue)
 butSend.addEventListener("click", sendMail)
 
 
-
-const hr_list = Array.from(hr)
-
-for (let i = 0; i < hr_list; i++){
-    hr_list[i].addEventListener("click", function(evt){
-        evt.target.classList.add("animate") })
-}
 
 
 
