@@ -466,6 +466,12 @@ label {
     margin-top: 10px;
 }
 
+.img-partners {
+    width: 100px;
+    height: 50px;
+    background: rgb(177, 182, 187);
+}
+
 
 
 @media (max-width: 994px){
