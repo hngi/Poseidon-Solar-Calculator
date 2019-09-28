@@ -11,6 +11,9 @@ let weekly = document.querySelector("#but-week");
 let monthly = document.querySelector("#but-month");
 
 let total = 0
+let total1 = 0
+let total2 = 0
+let total3 = 0
 
 function click(evt) {
         
@@ -58,7 +61,7 @@ function click(evt) {
 
     }
 
-    
+    sendMail()
 
 }
 
@@ -127,6 +130,59 @@ const deleteValue = (evt) => {
     }
     
 }
+    
+
+const sendMail = () => {
+    let allValue = document.querySelectorAll(".div")
+    let list = Array.from(allValue)
+
+    total1 = 0
+    total2 = 0
+    total3 = 0
+
+    for (let i = 0; i < list.length; i++){
+       
+        let sum = list[i].children[1].textContent;
+        let sum2 = list[i].children[2].textContent;
+        let sum3 = list[i].children[3].textContent;
+    
+
+        let sumvalue = sum.split(" ")[0];
+        let sumvalue2 = sum2.split(" ")[0];
+        let sumvalue3 = sum3.split(" ")[0];
+        
+        let num1 = sumvalue * sumvalue2 * sumvalue3
+        total1 += num1
+       
+        let num2 = sumvalue * sumvalue2 * 7
+        total2 += num2
+       
+        let num3 = sumvalue * sumvalue2 * 28
+        total3 += num3
+   
+    }
+
+    
+
+   const data = `Your Daily Solar consumption will be ${total1}
+                 Your Weekly Solar consumption will be ${total2}
+                 Your Monthly Solar consumption will be ${total3}
+   `
+
+   Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "adesanyajoshua@gmail.com",
+    Password : "32d44feb-d5e4-4235-b6a5-7990276196f2",
+    To : 'adesanyajoshua@gmail.com',
+    From : "adesanyajoshua@ymail.com",
+    Subject : "Solar Consumption",
+    Body : data
+}).then(
+  message => alert(message)
+);
+}
+
+
 
 
 addBtn.addEventListener('click', click);
