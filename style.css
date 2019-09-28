@@ -34,131 +34,6 @@ body {
 
 /* End of Navbar */
 
-/* Header/ Carousel */
-
-.rounded {
-    border-radius: 15px !important;
-    /* border: 1px solid#4C95B2; */
-    border: none;
-    color: #4C95B2;
-    letter-spacing: .02rem;
-    font-size: 1rem;
-    line-height: 3.4375rem;
-    width: 15.75rem;
-    height: 3.3rem;
-    padding: 0px;
-    font-weight: 800;
-    background-color: white;
-    /* margin-top: -3px; */
-}
-
-/* .header{
-    color: #FFFFFF;
-    padding-top: 30px;
-    height: 100vh; 
-    background-image: url("./images/solar2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-} */
-
-.carousel-inner
-{
-    height: 85vh;
-    margin-bottom: 80px;
-}
-
-.item-two:after {
-    content:"";
-    display:block;
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0; 
-    background:rgba(0,0,0,0.6);
- }
-
-.main-text
-{
-    position: absolute;
-    top: 10%;
-    font-weight: bold;
-    margin-left: 250px;
-    color: #FFFFFF;
-    padding-top: 30px;
-}
-
-.main-text .header-title{
-    color: #FFFFFF;
-    font-size: 40px;
-    font-weight: bold;
-} 
-
-.main-text p{
-    font-size: 25px;
-}
-
-.rounded:hover {
-    background-color: #055DA8;
-    border: none;
-}
-
-.header h4 {
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 2.5625rem;
-    color: #055DA8;
-}
-
-.header-paragraph {
-    font-family: 'Hind', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 35px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.5625rem;
-    line-height: 2.1875rem;
-    letter-spacing: 0.02rem;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-}
-
-.bg-image {
-    background-image: url('Images/bg-image.png');
-}
-/* .bg-image {
-    background-image: url(./Images/bg-image.png);
-    height: 33.1875rem;
-    width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    position: relative;
-    top: 5rem;  
-}
-
-}
-
-} */
-
-
-@media (max-width: 767px) {
-    .bg-image {
-        background-image: none;
-    }
-
-    .main-text{
-        margin-left: 10px;
-    }
-}
-
-/* END OF HEADER */
-
 /* PATNERS */
 
 .patners {
@@ -243,98 +118,22 @@ body {
 }
 
 
+.fre {
+    color: #055DA8;
+}
+
+
 /* END OF FAQ */
 
 /*CALCULATE SOLAR POWER SECTION*/
-.calculator_main{
-    background-color: #C4C4C4;
-    height: 600px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+
 
 .calc_inner {
     padding-bottom: 90px;
 }
 
-.container .calculator{
-    background-color:  #FFFFFF;
-    height: 450px;
-    width: 90%;
-    margin-left: 60px;
-    border-radius: 20px;
-}
-
-.calculator_main .form-group{
-    width: 300px;
-    border-radius: 40px;
-}
-
-.calculator_main .inputs{
-    padding-left: 100px;
-    margin-top: 50px;
-    border-radius: 40px;
-}
-
-.calculator_main .input_power{
-    width: 125px;
-    border-radius: 40px;
-    border: 1px #055DA8 solid;
-    margin-right: 10px;
-}
-
-.calculator_main .input_control{
-    margin-top: 15px;
-}
-
-.calculator_main .btn_add{
-    background-color: #055DA8;
-    border: none;
-    border-radius: 30px;
-    height: 35px;
-}
-
-.calculator .result {
-    margin-top: 60px;
-    text-transform: uppercase;
-    font-size:17px;
-    font-weight: bold;
-}
-
-.calculator .result .Watts{
-    padding-top: 60px;
-    margin-left: -30px;
-}
-
-.calculator .applicance_list{
-    margin-top: 15px;
-    margin-left: -35px;
-}
-
-.label_result{
-    font-size:100px;
-    color: #055DA8;
-    margin-left: 90px;
-}
 
 
-.container .calculator .close{
-    color: red;
-}
-
-.container .calculator .appliance_dropdown{
-    width: 300px;
-    color: #055DA8;
-    background-color: #FFFFFF;
-    border-radius: 30px;
-}
-
-.container .calculator .qty_dropdown{
-    width: 120px;
-    color: #055DA8;
-    background-color: #FFFFFF;
-    border-radius: 30px;
-}
 /*END OF CALC SOLAR POWER SECTION*/
 
 .footer {
@@ -366,52 +165,12 @@ body {
     }
 }
 
-.calculator .result .Watts{
-    padding-top: 60px;
-    margin-left: -30px;
-}
-
-.calculator .applicance_list{
-    margin-top: 15px;
-    margin-left: -35px;
-}
-
-.label_result{
-    font-size:100px;
-    color: #055DA8;
-    margin-left: 90px;
-}
-
-
-.container .calculator .close{
-    color: red;
-}
-
-.container .calculator .appliance_dropdown{
-    width: 300px;
-    color: #055DA8;
-    background-color: #FFFFFF;
-    border-radius: 30px;
-}
-
-.container .calculator .qty_dropdown{
-    width: 120px;
-    color: #055DA8;
-    background-color: #FFFFFF;
-    border-radius: 30px;
-}
-/*END OF CALC SOLAR POWER SECTION*/
-
-.footer {
-    color: white;
-}
-
 .footer-back {
     background-color: #f2f4f8;
     padding-bottom: 2.5rem;
     padding-top: 1.2rem;
-    color: #000;
     font-weight: 800;
+    color: #000000;
 }
 
 .footer p {
@@ -429,10 +188,6 @@ body {
     opacity: .5;
 }
 
-/* .link{
-    color: #000000;
-} */
-
 .footer-back2 {
     background-color: #4C95B2;
     text-align: center;
@@ -440,15 +195,17 @@ body {
     color:white;
 }
 
-
 .fas {
     color: red;
 }
+
+
 
 /* HOW-IT-WORKS-STYLE-STARTS */
 #how-it-works {
     display: flex;
     justify-content: space-around;
+    flex-wrap:wrap;
   }
 
 .how-it-works{
@@ -464,13 +221,15 @@ body {
     font-weight: bold;
     font-size: 2rem;
     line-height: 56px;
-    color: #000000;
+    color: #055DA8;
     padding-bottom: 40px;
+    margin-bottom: 20px;
     display: grid;
     justify-content: center;
     position: relative;
     top: 2rem; 
 }
+
 
 .horizontal{
     border: 1px solid #4C95B2;
@@ -483,8 +242,7 @@ body {
     font-family: Nunito;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.5vw;
-    max-width: 50vw;
+    font-size: 20px;
     line-height: 34px;
     color: #055DA8;
     padding: 2rem
@@ -501,27 +259,17 @@ body {
     max-width: 20vw;
   }
   
-  @media(max-width: 600px) {
-    #how-it-works p {
-      font-size: 2.5vw
+ 
+
   
-    }
-
-  }
-
-  @media(max-width: 375px) {
-      .how-it-works{
-          position: relative;
-          top: 4rem;
-      }
-
-  }
   /* HOW-IT-WORKS-STYLE-ENDS */
+
+
 
 /*Calculator Section*/
 
 #calc_section {
-    background-color: #C4C4C4;
+    background-color: #f2f4f8;
     padding-top:20px;
     padding-bottom:40px;
     margin-top: -3rem;
@@ -537,6 +285,7 @@ body {
     margin-top:10px;
     width:100px;
     height: 40px;
+    margin-top:20px;
 }
 
 @media (max-width: 375px){
@@ -544,6 +293,7 @@ body {
         margin-top: 2rem;
     }
 }
+
 #calc_inner{
     border-radius: 5px;
     background-color: #fff;
@@ -554,20 +304,14 @@ form input{
     border-radius: 15px;
     padding: 10px;
     height: 40px;
-    width:100px;
+    width:60%;
 
 }
-form input[name="appliances"] {
-    border: 2px solid #055DA8;
-    width: 60%;
-    margin-bottom: 20px;
+
+.flexy {
+    border-right: 2px solid #055DA8;
+    text-align: center;
 }
-
-#power_input {
-    width: 200px;
-}
-
-
 input::-webkit-calendar-picker-indicator {
   background-color: transparent;
   color: var(--primary-color);
@@ -618,53 +362,6 @@ input::-webkit-calendar-picker-indicator {
     text-align: center;
 }
 
-#tbody {
-    text-align: center;
-    padding:20px;
-}
-/*
-form input::placeholder {
-    color: var(--placeholder-color);
-}
-
-
-
-
-
-
-
-.vl{
-    position: relative;
-    top: -10rem;
-    left: 50%;
-}
-
-@media (max-width: 425px){
-    .vl{
-        position: relative;
-        left: 0;
-        top: 0;
-    }
-    .smaller{
-        min-width: 100%;
-    }
-
-}
-
-
-
-@media(max-width: 320px){
-    .but{
-        margin-bottom: 2rem;
-        position: relative;
-        display: flex;
-
-        left: 25%;
-        /* padding: 0; */
- 
-
-
-
 .result-tab {
     text-align: center;
 
@@ -700,7 +397,9 @@ form input::placeholder {
     background-color: #055DA8;
     padding:10px;
     margin-bottom:10px;
-    
+    width:400px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .space {
@@ -715,13 +414,77 @@ form input::placeholder {
 
 .container-flex{
     display: flex;
+    flex-wrap:wrap;
 }
 
 .flex1 {
     width:50%;
-   
 }
 
 label {
     margin-top: 10px;
 }
+
+@media (max-width: 994px){
+    .buttons {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .flex1 {
+        width: 100%;
+    }
+
+    .flexy {
+        border-right: none;
+        
+    }
+    #result {
+        border-top: 2px solid #055DA8;
+        margin-top:20px;
+        padding-top:20px;
+    }
+}
+
+@media (max-width: 616px) {
+    .how-it-works-main {
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width: 440px){
+
+    .div {
+      width:100%;
+      margin-left:0px;
+      margin-right:0px;
+    }
+
+    form input{
+    
+        width:100%;
+    
+    }
+
+}
+
+@media (max-width: 360px) {
+    .space {
+        display: block;
+        background-color:white;
+    }
+
+    .but {
+        width:80%;
+        margin-top:10px;
+
+    }
+}
+
+
