@@ -175,8 +175,10 @@ body {
 
 .footer p {
     text-align: center;
-    padding: 20px;
+    padding:10px;
+    margin-bottom:0px;
 }
+
 
 .footer .link{
     margin-bottom: 1rem;
