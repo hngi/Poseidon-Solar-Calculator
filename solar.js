@@ -90,12 +90,13 @@ const value = (data) => {
         }
 
         if (data === "weekly"){
-            let num = sumvalue * sumvalue2 * 7
+            let num = sumvalue * sumvalue2 * sumvalue3 * 7
+            console.log(sumvalue,sumvalue2)
             total += num
         }
 
         if (data === "monthly") {
-            let num = sumvalue * sumvalue2 * 28
+            let num = sumvalue * sumvalue2 * sumvalue3 * 28
             total += num
         }
     
