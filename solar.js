@@ -87,7 +87,6 @@ const value = (data) => {
         if (data === "daily"){
             let num = sumvalue * sumvalue2 * sumvalue3
             total += num
-            console.log(total)
         }
 
         if (data === "weekly"){
@@ -187,6 +186,8 @@ emailjs.send('gmail', 'contact_form', templateParams, "user_uINuNBjAvZ4Re6NBn6W7
 
 email.value = ""
 tbody.innerHTML = ""
+result.textContent = 0
+
 
 }
 
