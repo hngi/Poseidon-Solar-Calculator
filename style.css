@@ -440,6 +440,7 @@ input::-webkit-calendar-picker-indicator {
     width:400px;
     margin-left:auto;
     margin-right:auto;
+    color: white;
 }
 
 .space {
