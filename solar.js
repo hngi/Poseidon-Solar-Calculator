@@ -166,9 +166,9 @@ const sendMail = () => {
 
     
 
-const data = `The Daily Solar consumption for your appliances will be ${total1}`
-const data1 = `The Weekly Solar consumption for your appliances will be ${total2}`
-const data2 = `The Monthly Solar consumption  for your appliances will be ${total3}`
+const data = `The Daily Solar consumption for your appliances will be ${total1} watt`
+const data1 = `The Weekly Solar consumption for your appliances will be ${total2} watt`
+const data2 = `The Monthly Solar consumption  for your appliances will be ${total3} watt`
                  
     
 var templateParams = {
