@@ -5,6 +5,8 @@ let powerValue = document.querySelector('#power_input');
 let timeValue = document.querySelector('#power_hr');
 let tbody = document.querySelector(".app-list");
 let result = document.querySelector("#result_num");
+let email = document.querySelector("#email")
+let butSend = document.querySelector(".but-send")
 
 let daily = document.querySelector("#but-daily");
 let weekly = document.querySelector("#but-week");
@@ -61,7 +63,6 @@ function click(evt) {
 
     }
 
-    sendMail()
 
 }
 
@@ -115,7 +116,7 @@ const value = (data) => {
         document.querySelector(".but-active").classList.remove("but-active")
         daily.classList.add("but-active")
     }
-
+    
     result.textContent = total
 }
 
@@ -159,27 +160,34 @@ const sendMail = () => {
        
         let num3 = sumvalue * sumvalue2 * 28
         total3 += num3
+
    
     }
 
     
 
-   const data = `Your Daily Solar consumption will be ${total1}
-                 Your Weekly Solar consumption will be ${total2}
-                 Your Monthly Solar consumption will be ${total3}
-   `
+const data = `The Daily Solar Consumption for your appliances is ${total1} watt`
+const data1 = `The Weekly Solar Consumption for your appliances is ${total2} watt`
+const data2 = `The Monthly Solar Consumption  for your appliances is ${total3} watt`
+                 
+    
+var templateParams = {
+    message1: data,
+    message2: data1,
+    message3: data2,
+    email: email.value
+};
+ 
+emailjs.send('gmail', 'contact_form', templateParams, "user_uINuNBjAvZ4Re6NBn6W7K")
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
 
-   Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "adesanyajoshua@gmail.com",
-    Password : "32d44feb-d5e4-4235-b6a5-7990276196f2",
-    To : 'adesanyajoshua@gmail.com',
-    From : "adesanyajoshua@ymail.com",
-    Subject : "Solar Consumption",
-    Body : data
-}).then(
-  message => console.log(message)
-);
+email.value = ""
+tbody.innerHTML = ""
+
 }
 
 
@@ -190,3 +198,10 @@ daily.addEventListener('click', () => ( value("daily") ))
 weekly.addEventListener('click', () => ( value("weekly") ))
 monthly.addEventListener('click', () => ( value("monthly") ))
 tbody.addEventListener('click', deleteValue)
+butSend.addEventListener("click", sendMail)
+
+
+
+
+
+
