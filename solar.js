@@ -178,7 +178,7 @@ const sendMail = () => {
     Subject : "Solar Consumption",
     Body : data
 }).then(
-  message => alert(message)
+  message => console.log(message)
 );
 }
 
