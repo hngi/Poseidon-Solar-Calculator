@@ -310,6 +310,15 @@ form input{
 
 }
 
+#email {
+    width: 350px;
+    border-radius: 15px;
+    border: 2px solid #055DA8;
+    height: 40px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
 .flexy {
     border-right: 2px solid #055DA8;
     text-align: center;
@@ -382,6 +391,17 @@ input::-webkit-calendar-picker-indicator {
 .but-active {
     background-color: #055DA8;
     color:white;
+}
+
+.but-send {
+    display:block;
+    width:100px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #055DA8;
+    color: white;
+    height: 40px;
 }
 
 .link:hover {
@@ -468,10 +488,12 @@ label {
       margin-right:0px;
     }
 
+    #email {
+        width: 100%;
+    }
+
     form input{
-    
         width:100%;
-    
     }
 
 }
