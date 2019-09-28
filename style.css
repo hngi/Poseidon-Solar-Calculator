@@ -94,6 +94,15 @@ body {
 
 .bold {
     font-weight: bold;
+    
+}
+
+.text {
+    font-size: 20px;
+}
+
+.text1 {
+    font-size: 1.2rem;
 }
 
  hr {
