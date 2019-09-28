@@ -12,7 +12,7 @@ let monthly = document.querySelector("#but-month");
 
 let total = 0
 
-function click() {
+function click(evt) {
         
     if (applianceValue.validity.valid && quantityValue.validity.valid 
     && powerValue.validity.valid && timeValue.validity.valid) {
@@ -57,6 +57,8 @@ function click() {
     value("daily")
 
     }
+
+    
 
 }
 

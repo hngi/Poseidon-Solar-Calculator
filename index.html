@@ -61,32 +61,52 @@
         <section id="calc_section" class="calc_section">
             <h4 class="mb-3 text-center text-uppercase color">solar power calculator</h4>
                 <div id="calc_inner" class="container mt-3 container-flex ">
-                        <div class="flex1">
+                        <div class="flex1 flexy">
                         <form method="post" class="add_form form " id="calc_form" >
                               <div>
                                 <label for="appliances">Appliances</label>
                               </div>
                               <input list="appliances" name="appliances" class="smaller"  id="appliance_input" required placeholder="Applicance">
                                <datalist id="appliances">
-                                    <option class="opt" value="Refrigerator">
-                                    <option value="Pressing Iron">
-                                    <option value="Television">
-                                    <option value="Washing Machine">
-                                    <option value="Water Heater">
+                                    <option class="opt" value="REFRIGERATOR">
+                                    <option value="PRESSING IRON">
+                                    <option value="TELEVISION">
+                                    <option value="WASHING MACHINE">
+                                    <option value="WATER HEATER">
+                                    <option value="BLENDER"></option>
+                                    <option value="DISHWASHER"></option>
+                                    <option value="COFFEE MACHINE"></option>
+                                    <option value="FREEZER"></option>
+                                    <option value="MICROWAVE"></option>
+                                    <option value="ELECTRIC KETTLE"></option>
+                                    <option value="ELECTRIC OVEN"></option>
+                                    <option value="TOASTER"></option>
+                                    <option value="FAN"></option>
+                                    <option value="AIR CONDITIONER"></option>
+                                    <option value="WATER HEATER"></option>
+                                    <option value="HALOGEN"></option>
+                                    <option value="LED BULB"></option>
+                                    <option value="DESKTOP COMPUTER"></option>
+                                    <option value="LAPTOP COMPUTER"></option>
+                                    <option value="PRINTER"></option>
+                                    <option value="ROUTER"></option>
+                                    <option value="SMART PHONE RECHARGE"></option>
+                                    <option value="SEWING MACHINE"></option>
+                                    
                                 </datalist>
                                     <div> <label for="power_hr">Hour on per Day</label> </div>
                                     <div >
-                                        <input type="number" id="power_hr" class="smaller" min="1" required pattern="/[0-9]/">
+                                        <input type="number" id="power_hr" class="smaller" min="1" placeholder="Hour on per Day" required pattern="/[0-9]/">
                                     </div>
                                     
                                     <div> <label for="quantity">Quantity</label> </div>
                                     <div >
-                                        <input type="number" class="smaller" id="quantity_input" min="1" required pattern="/[0-9]/" >
+                                        <input type="number" class="smaller" id="quantity_input" min="1" placeholder="Quantity" required pattern="/[0-9]/" >
                                     </div>
                                     
                                     <div><label for="power_input">Power</label></div>
                                     <div >
-                                        <input type="number" class="smaller" id="power_input" min="1" required pattern="/[0-9]/">
+                                        <input type="number" class="smaller" id="power_input" min="1" placeholder="Watt per Hour" required pattern="/[0-9]/">
                                     </div>
                                     <button id="btn" class="calc_button" type="submit">Add</button>
                             </form>
@@ -95,7 +115,7 @@
                         </div>
         
                         
-                        <div id="result" class="result">
+                        <div id="result" class="result flex1">
                             <div>
 
                            
@@ -105,12 +125,15 @@
         
                             <p>solar power needed</p>
                             </div>
-        
-                            <button id="but-daily" class="but but-active">Daily</button>
-                                
-                            <button id="but-week" class="but">Weekly</button>
-        
-                            <button id="but-month" class="but">Monthly</button>
+                            
+                            <div class="buttons">
+                                <button id="but-daily" class="but but-active">Daily</button>
+                                    
+                                <button id="but-week" class="but">Weekly</button>
+            
+                                <button id="but-month" class="but">Monthly</button>
+                            </div>
+
                             </div>
 
                             <div class="app-list">
@@ -198,7 +221,7 @@
 
     <!-- FAQ  SECTION -->
     <section id="faq" class=" faq container mt-3 faq-margin">
-        <h4 class="mb-3 text-center text-uppercase text-bold">Frequently Asked Questions</h4>
+        <h4 class="mb-3 text-center text-uppercase text-bold fre">Frequently Asked Questions</h4>
         <hr>
         <h6 class="mb-5 text-center font-weight-light">Get enlightened with the stack of knowledge base you might jjust
             find that which
@@ -301,10 +324,10 @@
         <div class="footer-back">
           <div class="container">
             <div class="col-sm-12 text-center ">
-                <h3>POSEIDON</h3>            
+                <h3 class="fre">POSEIDON</h3>            
             </div>
 
-                <p>The perfect solar calculator for your abode</p>
+                <p class="fre">The perfect solar calculator for your abode</p>
                 <div class="nav nav-pills flex-column flex-sm-row">
                     <a class="link flex-sm-fill text-sm-center" href="#home">HOME</a>
                     <a class="link flex-sm-fill text-sm-center" href="#how-it-work">HOW IT WORKS</a>
