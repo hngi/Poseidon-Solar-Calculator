@@ -538,4 +538,52 @@ label {
     }
 }
 
+/* START OF CONTACT US SECTION */
+#section_contact {
+    background-color: #f2f4f8;
+    padding-top:20px;
+    padding-bottom:40px;
+    /* margin-top: -3rem; */
+    margin-top:80px;
+}
+
+#contact_inner{
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 40px 20px;
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+}
+
+.contact_input {
+    width: 350px;
+    border-radius: 15px;
+    border: 2px solid #055DA8;
+    height: 40px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.contact_textarea{
+    width: 350px;
+    height: 150px;
+    border-radius: 15px;
+    border: 2px solid #055DA8;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.msg{
+    color: red;
+}
+
+@media (max-width: 616px){
+    #contact_inner{
+        width: 90%;
+    }
+}
+
+/*END OF CONTACT US SECTION */
+
 
