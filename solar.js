@@ -181,6 +181,7 @@ var templateParams = {
 emailjs.send('gmail', 'contact_form', templateParams, "user_uINuNBjAvZ4Re6NBn6W7K")
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
+       alert("Results Sent Successfully")
     }, function(error) {
        console.log('FAILED...', error);
     });
@@ -188,6 +189,7 @@ emailjs.send('gmail', 'contact_form', templateParams, "user_uINuNBjAvZ4Re6NBn6W7
 email.value = ""
 tbody.innerHTML = ""
 result.textContent = 0
+
 
 
 }
@@ -202,8 +204,7 @@ monthly.addEventListener('click', () => ( value("monthly") ))
 tbody.addEventListener('click', deleteValue)
 butSend.addEventListener("click", sendMail)
 
-
-
+  
 
 
 
