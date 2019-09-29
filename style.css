@@ -523,6 +523,13 @@ label {
         width:100%;
     }
 
+    .contact_input{
+        width:100%;
+    }
+
+    .contact_textarea{
+        width:100%;
+    }
 }
 
 @media (max-width: 360px) {
@@ -551,13 +558,13 @@ label {
     border-radius: 5px;
     background-color: #fff;
     padding: 40px 20px;
-    width: 70%;
+    width: 60%;
     height: 70%;
     margin: 0 auto;
 }
 
 .contact_input {
-    width: 350px;
+    width: 70%;
     border-radius: 15px;
     border: 2px solid #055DA8;
     height: 40px;
@@ -566,7 +573,7 @@ label {
 }
 
 .contact_textarea{
-    width: 350px;
+    width: 70%;
     height: 150px;
     border-radius: 15px;
     border: 2px solid #055DA8;

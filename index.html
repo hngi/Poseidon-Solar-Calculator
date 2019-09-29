@@ -300,15 +300,15 @@
                             </p>
                             <p>
                                 <!-- <label for="Name">Name:</label> -->
-                                <input type="text" id="name" name="name" class="contact_input" placeholder="Your name" required>
+                                <input type="text" id="name" name="name" class="contact_input" placeholder="Your name" required >
                             </p>     
                             <p>
                                 <!-- <label for="Email">Email:</label> -->
-                                <input type="email" id="email" name="email" class="contact_input" placeholder="Your email" required>
+                                <input type="email" id="email1" name="email" class="contact_input" placeholder="Your email" required>
                             </p> 
                             <p>
                                 <!-- <label for="textarea">Type your message here:</label> -->
-                                <textarea name="" id="textarea" name="message" class="contact_textarea" cols="40" rows="5" placeholder="Type your message here:" required></textarea>
+                                <textarea name="" id="textarea" name="message" class="contact_textarea" cols="40" rows="5" placeholder="Type your message here:" required pattern="/^[a-z A-Z]+$/"></textarea>
                             </p>
                             
                             <button type="submit" class="but but-send" id="btn_submit">Send</button>              
@@ -334,13 +334,7 @@
                     <a class="link flex-sm-fill text-sm-center" href="#faq">FAQ</a>
                     <a class="link flex-sm-fill text-sm-center" href="#section_contact">CONTACT US</a>
                 </div>
-                <div class="contact_sm text-center">
-                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a> &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp
-                    <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a> &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp
-                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a> &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp
-                    <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a> &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp
-                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a> &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp
-                </div>
+                
             </div>
 
         </div>
@@ -364,7 +358,7 @@
     </script>
     <script src="faq.js"></script>
     <script src="solar.js"></script>
-    <script src="firstname.js"></script>
+    <script src="contact.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js"></script>
 </body>
 
