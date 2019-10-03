@@ -231,7 +231,7 @@ body {
 .how-it-works{
     background-color: #f2f4f8;
     position: relative;
-    bottom: 2rem;
+    /*bottom: 2rem;*/
     min-height: 10px;
 }
   
@@ -644,4 +644,30 @@ label {
 
 /*END OF CONTACT US SECTION */
 
-
+/*START OF SHARE SECTION */
+    #share_sec{
+        background-color: #000000;
+        color: #f2f4f8;
+        font-weight: 700;
+    }
+    #shareBtnDiv .btn{
+        background-color: #000;
+        border: 2px solid #055DA8;
+        border-radius: 25px;
+        color: #fff;
+    }
+    #shareBtnDiv .btn:hover{
+        background-color: #055DA8;
+        color: #fff;
+    }
+    @media (max-width: 768px){
+        #shareBtnDiv{
+            text-align: center;
+        }
+    }
+    @media (min-width: 992px){
+        #share_sec{
+            display: none;
+        }
+   
+/*END OF SHARE SECTION */
