@@ -18,6 +18,39 @@
     <link rel="manifest" href="/manifest.json" />
     <link rel="stylesheet" href="src/css/style.css">
     <title>Solar Calculator</title>
+	
+<script> 
+function validateForm()                                    
+{ 
+    var hourPerDay = document.forms["calculateForm"]["hourPerDay"];               
+    var quantity = document.forms["calculateForm"]["quantity"];    
+    var power = document.forms["calculateForm"]["power"];  
+   
+    if (hourPerDay.value == "")                                  
+    { 
+        window.alert("Please enter Number of Hours Per Day."); 
+        hourPerDay.focus(); 
+        return false; 
+    } 
+   
+    if (quantity.value == "")                               
+    { 
+        window.alert("Please enter the Number of The Appliance."); 
+        quantity.focus(); 
+        return false; 
+    } 
+       
+    if (power.value == "")                                   
+    { 
+        window.alert("Please enter the Power rating of The Appliance."); 
+        power.focus(); 
+        return false; 
+    } 
+    
+    return true; 
+}
+</script>
+	
     <style>
         /* SIMPLE CUSTOMIZED SCROLLBAR */
         /* width */
@@ -95,7 +128,7 @@
             <h4 class="mb-3 text-center text-uppercase color">solar power calculator</h4>
                 <div id="calc_inner" class="container mt-3 container-flex ">
                         <div class="flex1 flexy">
-                        <form method="post" class="add_form form " id="calc_form" >
+                        <form method="post" class="add_form form " id="calc_form" name="calculateForm" onsubmit="return validateForm()" >
                               <div>
                                 <label for="appliances">Appliances</label>
                               </div>
@@ -129,17 +162,17 @@
                                 </datalist>
                                     <div> <label for="power_hr">Hour on per Day</label> </div>
                                     <div >
-                                        <input type="number" id="power_hr" class="smaller" min="1" placeholder="Hour on per Day" required pattern="/[0-9]/">
+                                        <input type="number" id="power_hr" class="smaller" min="1" max="24" placeholder="Hour on per Day" required pattern="/[0-9]/" name="hourPerDay">
                                     </div>
                                     
                                     <div> <label for="quantity">Quantity</label> </div>
                                     <div >
-                                        <input type="number" class="smaller" id="quantity_input" min="1" placeholder="Quantity" required pattern="/[0-9]/" >
+                                        <input type="number" class="smaller" id="quantity_input" min="1" placeholder="Quantity" required pattern="/[0-9]/" name="quantity" >
                                     </div>
                                     
                                     <div><label for="power_input">Power</label></div>
                                     <div >
-                                        <input type="number" class="smaller" id="power_input" min="1" placeholder="Watt per Hour" required pattern="/[0-9]/">
+                                        <input type="number" class="smaller" id="power_input" min="1" placeholder="Watt per Hour" required pattern="/[0-9]/" name="power">
                                     </div>
                                     <button id="btn" class="calc_button" type="submit">Add</button>
                             </form>
