@@ -10,12 +10,36 @@
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
     <meta name="revisit-after" content="1 days">
+    <meta name="theme-color" content="#333" />
     <link rel="shortcut icon" href="Images/Logo/Frame.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0e498dcbfc.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Solar Calculator</title>
+    <style>
+        /* SIMPLE CUSTOMIZED SCROLLBAR */
+        /* width */
+        ::-webkit-scrollbar {
+          width: 7px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1; 
+        }
+         
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #888; 
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #555; 
+        }
+    </style>
 </head>
 
 <body>
@@ -411,17 +435,19 @@
 
     
 
+   
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="faq.js"></script>
-    <script src="solar.js"></script>
-	<script src="webshare.js"></script>
-    <script src="contact.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js"></script>
+    <script src="src/js/faq.js " defer></script>
+    <script src="src/js/solar.js" async></script>
+	<script src="src/js/webshare.js" defer></script>
+    <script src="src/js/contact.js" defer></script>
+    <script src="src/js/app.js" async> </script>
 </body>
 
 </html>
