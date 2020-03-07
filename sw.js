@@ -1,4 +1,4 @@
-const staticSolar = "staticSolar-v1"
+const staticSolar = "staticSolar-v2"
 
 const assets = [
     "/",
@@ -26,9 +26,12 @@ const assets = [
 ]
 
 self.addEventListener("install", installEvent => {
+
     installEvent.waitUntil(
+
         caches.open(staticSolar).then(cache => {
-            cache.addAll(assets)
+            console.log("install")
+            return cache.addAll(assets)
         })
     )
 });
