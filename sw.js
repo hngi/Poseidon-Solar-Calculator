@@ -1,6 +1,7 @@
 const staticSolar = "staticSolar-v2"
 
 const assets = [
+    "/",
     "index.html",
     "src/css/style.css",
     "src/js/app.js",
