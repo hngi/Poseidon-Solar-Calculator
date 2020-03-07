@@ -1,4 +1,4 @@
-const staticSolar = "staticSolar-v2"
+const staticSolar = "staticSolar-v3"
 
 const assets = [
     "/",
