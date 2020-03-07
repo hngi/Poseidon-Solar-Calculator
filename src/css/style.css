@@ -48,7 +48,7 @@ body {
     z-index: 4;
     background-image:
         url('Images/patners-image.png');
-    margin-top:0px;
+    margin-top: 0px;
 }
 
 .over {
@@ -86,20 +86,20 @@ body {
     color: #055DA8;
 }
 
-@media (max-width: 425px){
-    .link{
+@media (max-width: 425px) {
+    .link {
         display: flex;
-        
+
     }
 }
 
 .size {
-    font-size:1.5rem;
+    font-size: 1.5rem;
 }
 
 .bold {
     font-weight: bold;
-    
+
 }
 
 .text {
@@ -110,7 +110,7 @@ body {
     font-size: 1.2rem;
 }
 
- hr {
+hr {
     width: 12%;
     border-top: 2px solid #055DA8;
 }
@@ -121,7 +121,7 @@ body {
 }
 
 @media (max-width: 375px) {
-    .faq{
+    .faq {
         position: relative;
         top: 5rem;
     }
@@ -172,8 +172,8 @@ body {
     padding: 35px;
 }
 
-@media (max-width: 425px){
-    .link{
+@media (max-width: 425px) {
+    .link {
         display: grid;
         justify-content: center;
     }
@@ -189,17 +189,17 @@ body {
 
 .footer p {
     text-align: center;
-    padding:10px;
-    margin-bottom:0px;
+    padding: 10px;
+    margin-bottom: 0px;
 }
 
 
-.footer .link{
+.footer .link {
     margin-bottom: 1rem;
     color: rgb(0, 0, 0);
 }
 
-.link:hover{
+.link:hover {
     text-decoration: none;
     opacity: .5;
 }
@@ -208,11 +208,11 @@ body {
     background-color: #4C95B2;
     text-align: center;
     padding: 15px;
-    color:white;
+    color: white;
 }
 
 .footer-nav {
-    margin-top:30px;
+    margin-top: 30px;
 }
 
 .fas {
@@ -225,17 +225,17 @@ body {
 #how-it-works {
     display: flex;
     justify-content: space-around;
-    flex-wrap:wrap;
-  }
+    flex-wrap: wrap;
+}
 
-.how-it-works{
+.how-it-works {
     background-color: #f2f4f8;
     position: relative;
     /*bottom: 2rem;*/
     min-height: 10px;
 }
-  
-  #how-it-works-header {
+
+#how-it-works-header {
     font-family: 'Hind', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -247,18 +247,18 @@ body {
     display: grid;
     justify-content: center;
     position: relative;
-    top: 2rem; 
+    top: 2rem;
 }
 
 
-.horizontal{
+.horizontal {
     border: 1px solid #4C95B2;
     width: 7%;
     position: relative;
     bottom: 2rem;
 }
-  
-  #how-it-works p {
+
+#how-it-works p {
     font-family: Nunito;
     font-style: normal;
     font-weight: normal;
@@ -266,23 +266,22 @@ body {
     line-height: 34px;
     color: #055DA8;
     padding: 2rem
-  }
-  
-  .how-it-works-main {
+}
+
+.how-it-works-main {
     display: flex;
     flex-direction: column;
     align-items: center
+}
 
-  }
-  
-  .how-it-works-main img {
+.how-it-works-main img {
     max-width: 20vw;
-  }
-  
- 
+}
 
-  
-  /* HOW-IT-WORKS-STYLE-ENDS */
+
+
+
+/* HOW-IT-WORKS-STYLE-ENDS */
 
 
 
@@ -290,41 +289,42 @@ body {
 
 #calc_section {
     background-color: #f2f4f8;
-    padding-top:20px;
-    padding-bottom:40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
     margin-top: -3rem;
-    margin-top:0px;
+    margin-top: 0px;
 }
 
-.calc_button{
+.calc_button {
     background-color: #055DA8;
     border-radius: 15px;
     outline: none;
     border: 0;
     color: #fff;
-    margin-top:10px;
-    width:100px;
+    margin-top: 10px;
+    width: 100px;
     height: 40px;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
-@media (max-width: 375px){
-    #calc_section{
+@media (max-width: 375px) {
+    #calc_section {
         margin-top: 2rem;
     }
 }
 
-#calc_inner{
+#calc_inner {
     border-radius: 5px;
     background-color: #fff;
     padding: 40px 20px;
 }
-form input{
+
+form input {
     border: 2px solid #055DA8;
     border-radius: 15px;
     padding: 10px;
     height: 40px;
-    width:60%;
+    width: 60%;
 
 }
 
@@ -341,15 +341,16 @@ form input{
     border-right: 2px solid #055DA8;
     text-align: center;
 }
+
 input::-webkit-calendar-picker-indicator {
-  background-color: transparent;
-  color: var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
 }
 
 .result {
     text-align: center;
-    width:50%;
-    margin-top:10px;
+    width: 50%;
+    margin-top: 10px;
 }
 
 .result-tab p {
@@ -377,7 +378,7 @@ input::-webkit-calendar-picker-indicator {
     border-radius: 25px;
     border: 1px solid #055DA8;
     color: #055DA8;
-    margin-left:10px;
+    margin-left: 10px;
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 5px;
@@ -387,7 +388,7 @@ input::-webkit-calendar-picker-indicator {
 
 
 .app-list {
-    margin-top:30px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -398,23 +399,22 @@ input::-webkit-calendar-picker-indicator {
 
 .but-active {
     background-color: #055DA8;
-    color:white;
+    color: white;
 }
 
 .link:hover {
     color: #055DA8
-
 }
 
 .but-active {
     background-color: #055DA8;
-    color:white;
+    color: white;
 }
 
 .but-send {
-    display:block;
-    width:100px;
-    margin-left:auto;
+    display: block;
+    width: 100px;
+    margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     background-color: #055DA8;
@@ -435,11 +435,11 @@ input::-webkit-calendar-picker-indicator {
     text-align: center;
     border-radius: 10px;
     background-color: #055DA8;
-    padding:10px;
-    margin-bottom:10px;
-    width:400px;
-    margin-left:auto;
-    margin-right:auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
     color: white;
 }
 
@@ -453,13 +453,13 @@ input::-webkit-calendar-picker-indicator {
     cursor: pointer;
 }
 
-.container-flex{
+.container-flex {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 .flex1 {
-    width:50%;
+    width: 50%;
 }
 
 label {
@@ -475,10 +475,10 @@ label {
 
 
 .inner-about {
-    width:80%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color:#f2f4f8;
+    background-color: #f2f4f8;
     margin-top: 30px;
     padding: 30px;
     line-height: 1.5em;
@@ -488,15 +488,15 @@ label {
 
 .contact1 {
     text-align: center;
-    display:block;
+    display: block;
     background-color: #055DA8;
     width: 150px;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
     color: white;
-    padding:10px;
+    padding: 10px;
     border-radius: 5px;
-    margin-top:50px;
+    margin-top: 50px;
 }
 
 .contact1:hover {
@@ -512,23 +512,23 @@ label {
     text-align: center;
     border-radius: 10px;
     box-shadow: 2px 2px 2px black;
-    
+
 }
 
 .lead-tab {
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 
 
-@media (max-width: 994px){
+@media (max-width: 994px) {
     .buttons {
         display: flex;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         justify-content: center;
     }
 
-    .lead{
+    .lead {
         width: 100%;
     }
 
@@ -541,12 +541,13 @@ label {
 
     .flexy {
         border-right: none;
-        
+
     }
+
     #result {
         border-top: 2px solid #055DA8;
-        margin-top:20px;
-        padding-top:20px;
+        margin-top: 20px;
+        padding-top: 20px;
     }
 }
 
@@ -555,43 +556,43 @@ label {
         width: 100%;
     }
 
-    
+
 }
 
-@media (max-width: 440px){
+@media (max-width: 440px) {
 
     .div {
-      width:100%;
-      margin-left:0px;
-      margin-right:0px;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     #email {
         width: 100%;
     }
 
-    form input{
-        width:100%;
+    form input {
+        width: 100%;
     }
 
-    .contact_input{
-        width:100%;
+    .contact_input {
+        width: 100%;
     }
 
-    .contact_textarea{
-        width:100%;
+    .contact_textarea {
+        width: 100%;
     }
 }
 
 @media (max-width: 360px) {
     .space {
         display: block;
-        background-color:white;
+        background-color: white;
     }
 
     .but {
-        width:80%;
-        margin-top:10px;
+        width: 80%;
+        margin-top: 10px;
 
     }
 }
@@ -599,13 +600,13 @@ label {
 /* START OF CONTACT US SECTION */
 #section_contact {
     background-color: #f2f4f8;
-    padding-top:20px;
-    padding-bottom:40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
     /* margin-top: -3rem; */
-    margin-top:80px;
+    margin-top: 80px;
 }
 
-#contact_inner{
+#contact_inner {
     border-radius: 5px;
     background-color: #fff;
     padding: 40px 20px;
@@ -623,7 +624,7 @@ label {
     margin-top: 20px;
 }
 
-.contact_textarea{
+.contact_textarea {
     width: 70%;
     height: 150px;
     border-radius: 15px;
@@ -632,12 +633,12 @@ label {
     margin-top: 20px;
 }
 
-.msg{
+.msg {
     color: red;
 }
 
-@media (max-width: 616px){
-    #contact_inner{
+@media (max-width: 616px) {
+    #contact_inner {
         width: 90%;
     }
 }
@@ -645,31 +646,36 @@ label {
 /*END OF CONTACT US SECTION */
 
 /*START OF SHARE SECTION */
-    #share_sec{
-        background-color: #000000;
-        color: #f2f4f8;
-        font-weight: 700;
+#share_sec {
+    background-color: #000000;
+    color: #f2f4f8;
+    font-weight: 700;
+}
+
+#shareBtnDiv .btn {
+    background-color: #000;
+    border: 2px solid #055DA8;
+    border-radius: 25px;
+    color: #fff;
+}
+
+#shareBtnDiv .btn:hover {
+    background-color: #055DA8;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #shareBtnDiv {
+        text-align: center;
     }
-    #shareBtnDiv .btn{
-        background-color: #000;
-        border: 2px solid #055DA8;
-        border-radius: 25px;
-        color: #fff;
+}
+
+@media (min-width: 992px) {
+    #share_sec {
+        display: none;
     }
-    #shareBtnDiv .btn:hover{
-        background-color: #055DA8;
-        color: #fff;
-    }
-    @media (max-width: 768px){
-        #shareBtnDiv{
-            text-align: center;
-        }
-    }
-    @media (min-width: 992px){
-        #share_sec{
-            display: none;
-        }
-    }
+}
+
 /*END OF SHARE SECTION */
 
 /* START OF BLOG */
@@ -680,70 +686,114 @@ label {
     text-align: center;
     background: white;
     text-transform: uppercase;
-  }
+}
 
-  .headings{
+.headings {
     color: #055DA8;
-  }
-  
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
-  .leftcolumn {   
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
     float: left;
     width: 75%;
-  }
-  
-  /* Right column */
-  .rightcolumn {
+}
+
+/* Right column */
+.rightcolumn {
     float: left;
     width: 25%;
     padding-left: 20px;
-  }
-  
-  /* Side Divs */
-  .side-div {
+}
+
+/* Side Divs */
+.side-div {
     background-color: #f2f4f8;
     width: 100%;
     padding: 15px;
-  }
-  
-  /* Add a card effect for articles */
-  .card {
-     background-color: white;
-     padding: 20px;
-     margin-top: 20px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
 
-  /*give color to Popular post titles*/
-  .side_title{
+/*give color to Popular post titles*/
+.side_title {
     color: #055DA8;
-  }
-  
-  .blog-container{
+}
+
+.blog-container {
     padding: 20px;
     margin-bottom: 20px;
-  }
+}
 
-  .head-article{
-      margin-top: 30px;
-  }
+.head-article {
+    margin-top: 30px;
+}
 
-  .description{
-      color: #055DA8;
-      font-style: italic;
-  }
-  
-  @media screen and (max-width: 616px) {
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
+.description {
+    color: #055DA8;
+    font-style: italic;
+}
+
+@media screen and (max-width: 616px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
     }
-  }
-   /* END OF BLOG */
+}
+
+@media screen and (max-width: 540px) {
+
+    #contact_inner {
+        padding: 40px 20px;
+        width: 100%;
+        height: 70%;
+        margin: 0 auto;
+    }
+
+    .contact_input {
+        width: 90%;
+        border-radius: 15px;
+        border: 2px solid #055DA8;
+        height: 40px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .contact_textarea {
+        width: 90%;
+        height: 150px;
+        border-radius: 15px;
+        border: 2px solid #055DA8;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+}
+
+
+
+
+
+.label {
+    text-align: left;
+}
+
+.contact {
+    width: 100% !important;
+}
+
+/* END OF BLOG */

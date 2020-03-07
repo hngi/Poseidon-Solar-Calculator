@@ -25,6 +25,7 @@ const assets = [
 ]
 
 self.addEventListener("install", installEvent => {
+    self.skipWaiting();
 
     installEvent.waitUntil(
         caches.open(staticSolar).then(cache => {
