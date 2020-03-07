@@ -1,4 +1,4 @@
-const staticSolar = "staticSolar-v4"
+const staticSolar = "staticSolar-v1"
 
 const assets = [
     "index.html",
