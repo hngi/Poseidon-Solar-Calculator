@@ -5,45 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="The one stop shop for accurate calculation of household solar power needs. With the Poseidon Solar Calculator, we take away the hassle and have you know in the fraction of a second what precise Solar unit to purchase.">
+    <meta name="Description"
+        content="The one stop shop for accurate calculation of household solar power needs. With the Poseidon Solar Calculator, we take away the hassle and have you know in the fraction of a second what precise Solar unit to purchase.">
     <meta name="Keywords" content="Solar, Energy, Power, Watt">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
     <meta name="revisit-after" content="1 days">
-    <meta name="theme-color" content="#333" />
+    <meta name="theme-color" content="rgb(131, 127, 127)" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Poseidon PWA">
+    <link rel="apple-touch-icon" href="Images/icons/solar192x192.png">
+    <meta name="apple-mobile-web-app-status-bar" content="rgb(131, 127, 127)" />
+    <link rel="apple-touch-icon" href="Images/icons/solar128x128.png" , />
+    <link rel="apple-touch-icon" href="Images/icons/solar192x192.png" />
+    <link rel="apple-touch-icon" href="Images/icons/solar256x256.png" />
+    <link rel="apple-touch-icon" href="Images/icons/solar512x512.png" />
+
+
     <link rel="shortcut icon" href="Images/Logo/Frame.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0e498dcbfc.js" crossorigin="anonymous"></script>
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="src/css/style.css">
     <title>Solar Calculator</title>
     <style>
         /* SIMPLE CUSTOMIZED SCROLLBAR */
         /* width */
         ::-webkit-scrollbar {
-          width: 7px;
+            width: 7px;
         }
-        
+
         /* Track */
         ::-webkit-scrollbar-track {
-          background: #f1f1f1; 
+            background: #f1f1f1;
         }
-         
+
         /* Handle */
         ::-webkit-scrollbar-thumb {
-          background: #888; 
+            background: #888;
         }
-        
+
         /* Handle on hover */
         ::-webkit-scrollbar-thumb:hover {
-          background: #555; 
+            background: #555;
         }
     </style>
 </head>
 
 <body>
-   <!-- Header -->
+    <!-- Header -->
 
     <section>
         <!-- navbar -->
@@ -51,10 +64,10 @@
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="Images/Logo/Frame modified.png" width="" height="60" alt="">
+                    <img src="Images/Logo/Framemodified.png" height="60" alt="Frame">
                 </a>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                <button class=" navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -63,8 +76,9 @@
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active ">
-                           
-                            <a class="nav-link ml-5" href="#calc_section">Home <span class="sr-only">(current)</span></a>
+
+                            <a class="nav-link ml-5" href="#calc_section">Home <span
+                                    class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link ml-5 other-navItems" href="#how-it-work">How it Works</a>
@@ -78,11 +92,10 @@
                         <li class="nav-item">
                             <a class="nav-link ml-5 other-navItems" href="#section_contact">Contact Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link ml-5 other-navItems" href="blog.html">Blog</a>
-                        </li>
 
-                        <a href="#calc_section" class="btn btn-outline-primary rounded-pill ml-5" role="button"> Calculate
+
+                        <a href="#calc_section" class="btn btn-outline-primary rounded-pill ml-5" role="button">
+                            Calculate
                             Solar Power</a>
 
                 </div>
@@ -93,162 +106,169 @@
 
         <section id="calc_section" class="calc_section">
             <h4 class="mb-3 text-center text-uppercase color">solar power calculator</h4>
-                <div id="calc_inner" class="container mt-3 container-flex ">
-                        <div class="flex1 flexy">
-                        <form method="post" class="add_form form " id="calc_form" >
-                              <div>
-                                <label for="appliances">Appliances</label>
-                              </div>
-                              <input list="appliances" name="appliances" class="smaller"  id="appliance_input" required placeholder="Applicance">
-                               <datalist id="appliances">
-                                    <option class="opt" value="REFRIGERATOR">
-                                    <option value="PRESSING IRON">
-                                    <option value="TELEVISION">
-                                    <option value="WASHING MACHINE">
-                                    <option value="WATER HEATER">
-                                    <option value="BLENDER"></option>
-                                    <option value="DISHWASHER"></option>
-                                    <option value="COFFEE MACHINE"></option>
-                                    <option value="FREEZER"></option>
-                                    <option value="MICROWAVE"></option>
-                                    <option value="ELECTRIC KETTLE"></option>
-                                    <option value="ELECTRIC OVEN"></option>
-                                    <option value="TOASTER"></option>
-                                    <option value="FAN"></option>
-                                    <option value="AIR CONDITIONER"></option>
-                                    <option value="WATER HEATER"></option>
-                                    <option value="HALOGEN"></option>
-                                    <option value="LED BULB"></option>
-                                    <option value="DESKTOP COMPUTER"></option>
-                                    <option value="LAPTOP COMPUTER"></option>
-                                    <option value="PRINTER"></option>
-                                    <option value="ROUTER"></option>
-                                    <option value="SMART PHONE RECHARGE"></option>
-                                    <option value="SEWING MACHINE"></option>
-                                    
-                                </datalist>
-                                    <div> <label for="power_hr">Hour on per Day</label> </div>
-                                    <div >
-                                        <input type="number" id="power_hr" class="smaller" min="1" placeholder="Hour on per Day" required pattern="/[0-9]/">
-                                    </div>
-                                    
-                                    <div> <label for="quantity">Quantity</label> </div>
-                                    <div >
-                                        <input type="number" class="smaller" id="quantity_input" min="1" placeholder="Quantity" required pattern="/[0-9]/" >
-                                    </div>
-                                    
-                                    <div><label for="power_input">Power</label></div>
-                                    <div >
-                                        <input type="number" class="smaller" id="power_input" min="1" placeholder="Watt per Hour" required pattern="/[0-9]/">
-                                    </div>
-                                    <button id="btn" class="calc_button" type="submit">Add</button>
-                            </form>
-
-                            
+            <div id="calc_inner" class="container mt-3 container-flex ">
+                <div class="flex1 flexy">
+                    <form method="post" class="add_form form " id="calc_form">
+                        <div>
+                            <label for="appliances">Appliances</label>
                         </div>
-        
-                        
-                        <div id="result" class="result flex1">
-                            <div>
+                        <input list="appliances" name="appliances" class="smaller" id="appliance_input" required
+                            placeholder="Applicance">
+                        <datalist id="appliances">
+                            <option class="opt" value="REFRIGERATOR">
+                            <option value="PRESSING IRON">
+                            <option value="TELEVISION">
+                            <option value="WASHING MACHINE">
+                            <option value="WATER HEATER">
+                            <option value="BLENDER"></option>
+                            <option value="DISHWASHER"></option>
+                            <option value="COFFEE MACHINE"></option>
+                            <option value="FREEZER"></option>
+                            <option value="MICROWAVE"></option>
+                            <option value="ELECTRIC KETTLE"></option>
+                            <option value="ELECTRIC OVEN"></option>
+                            <option value="TOASTER"></option>
+                            <option value="FAN"></option>
+                            <option value="AIR CONDITIONER"></option>
+                            <option value="WATER HEATER"></option>
+                            <option value="HALOGEN"></option>
+                            <option value="LED BULB"></option>
+                            <option value="DESKTOP COMPUTER"></option>
+                            <option value="LAPTOP COMPUTER"></option>
+                            <option value="PRINTER"></option>
+                            <option value="ROUTER"></option>
+                            <option value="SMART PHONE RECHARGE"></option>
+                            <option value="SEWING MACHINE"></option>
 
-                           
-                            <div class="result-tab">
+                        </datalist>
+                        <div> <label for="power_hr">Hour on per Day</label> </div>
+                        <div>
+                            <input type="number" id="power_hr" class="smaller" min="1" placeholder="Hour on per Day"
+                                required pattern="/[0-9]/">
+                        </div>
+
+                        <div> <label for="quantity">Quantity</label> </div>
+                        <div>
+                            <input type="number" class="smaller" id="quantity_input" min="1" placeholder="Quantity"
+                                required pattern="/[0-9]/">
+                        </div>
+
+                        <div><label for="power_input">Power</label></div>
+                        <div>
+                            <input type="number" class="smaller" id="power_input" min="1" placeholder="Watt per Hour"
+                                required pattern="/[0-9]/">
+                        </div>
+                        <button id="btn" class="calc_button" type="submit">Add</button>
+                    </form>
+
+
+                </div>
+
+
+                <div id="result" class="result flex1">
+                    <div>
+
+
+                        <div class="result-tab">
                             <p id="result_heading">results</p>
                             <p class="result-text"><span id="result_num">0</span><sub>watts</sub></p>
-        
+
                             <p>solar power needed</p>
-                            </div>
-                            
-                            <div class="buttons">
-                                <button id="but-daily" class="but but-active">Daily</button>
-                                    
-                                <button id="but-week" class="but">Weekly</button>
-            
-                                <button id="but-month" class="but">Monthly</button>
-                            </div>
-
-                            </div>
-
-                            <div class="app-list">
-                                
-                            </div>
-
-                            <input type="email" name="email" id="email" placeholder="Enter Email to receive result in your inbox">
-                            
-                            <button class="but but-send">Send</button>
                         </div>
-                
-                </div> 
-            </section>
+
+                        <div class="buttons">
+                            <button id="but-daily" class="but but-active">Daily</button>
+
+                            <button id="but-week" class="but">Weekly</button>
+
+                            <button id="but-month" class="but">Monthly</button>
+                        </div>
+
+                    </div>
+
+                    <div class="app-list">
+
+                    </div>
+
+                    <input type="email" name="email" id="email"
+                        placeholder="Enter Email to receive result in your inbox">
+
+                    <button class="but but-send">Send</button>
+                </div>
+
+            </div>
+        </section>
 
 
 
         <!-- header -->
 
-    
 
-       <!-- HOW-IT-WORKS-SECTION-START -->
 
-       
+        <!-- HOW-IT-WORKS-SECTION-START -->
 
-       <section id="how-it-work" class="how-it-works ">
-        <h3 id="how-it-works-header">How it works</h3>
-        <div id="how-it-works">
-            <div class="how-it-works-main">
-                <img src="./Images/washing-machine.png">
-                <p class="appliance">1. Choose an appliance</p>
-            </div>
-            <div class="how-it-works-main">
-                <img src="./Images/accounting.png">
-                <p class="appliance">2. Input appliance power</p>
-            </div>
-            <div class="how-it-works-main">
-                <img src="./Images/clipboard.png">
-                <p class="appliance">3. Calculate and get result</p>
-            </div>
-        </div>
-    </section>
-    <!-- HOW-IT-WORKS-SECTION-END -->
 
-    <!--Share Section-->
-    <section id="share_sec" class="p-3 container-fluid">
-        <div class="row">
-            <div class="col-md-8 col-sm-8 d-none d-sm-block text-center">
-                <h3>Found This App Useful?</h3>
-            </div>
-            <div id="shareBtnDiv" class="col-md-4 col-sm-4 col-xs-4">
-                <button type="submit" class="btn btn-lg" id="shareBtn"><i class="fa fa-share"></i> Share</button>
-                <p id="shareSuccess"></p>
-            </div>
-        </div>
-    </section>
-    <!--Share Section Ends-->
 
-    <section id="about-us">
-        <h3 class=" text-center text-uppercase text-bold pt-4 fre" >About Us</h3>
-        <div class="inner-about">
+        <section id="how-it-work" class="how-it-works ">
+            <h3 id="how-it-works-header">How it works</h3>
+            <div id="how-it-works">
+                <div class="how-it-works-main">
+                    <img src="./Images/washing-machine.png" alt="washing-machine">
+                    <p class="appliance">1. Choose an appliance</p>
+                </div>
+                <div class="how-it-works-main">
+                    <img src="./Images/accounting.png" alt="accounting">
+                    <p class="appliance">2. Input appliance power</p>
+                </div>
+                <div class="how-it-works-main">
+                    <img src="./Images/clipboard.png" alt="clipboard">
+                    <p class="appliance">3. Calculate and get result</p>
+                </div>
+            </div>
+        </section>
+        <!-- HOW-IT-WORKS-SECTION-END -->
+
+        <!--Share Section-->
+        <section id="share_sec" class="p-3 container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-sm-8 d-none d-sm-block text-center">
+                    <h3>Found This App Useful?</h3>
+                </div>
+                <div id="shareBtnDiv" class="col-md-4 col-sm-4 col-xs-4">
+                    <button type="submit" class="btn btn-lg" id="shareBtn"><i class="fa fa-share"></i> Share</button>
+                    <p id="shareSuccess"></p>
+                </div>
+            </div>
+        </section>
+        <!--Share Section Ends-->
+
+        <section id="about-us">
+            <h3 class=" text-center text-uppercase text-bold pt-4 fre">About Us</h3>
+            <div class="inner-about">
 
                 <div>
 
                     <h4 class="text-center fre">Our Mission</h4>
                     <hr>
-                        
-                    <p class="text-center small">To develop Problem Solving Application that makes the world a better place</p>
 
-                    <p>We are <span class="fre">Team POSEIDON</span> , a motivated team specialized in delivering State 
+                    <p class="text-center small">To develop Problem Solving Application that makes the world a better
+                        place</p>
+
+                    <p>We are <span class="fre">Team POSEIDON</span> , a motivated team specialized in delivering State
                         of the art problem solving Web Applications, We believe passionately in great bargains
-                    and excellent service which is why we bring you the best of both. </p>
+                        and excellent service which is why we bring you the best of both. </p>
 
                     <p>
                         We are a remote Team that help each other and believe that we can make the world a better place.
                     </p>
-        
+
                     <p>
                         If you are looking for something new, you are in the right place, We strive to be industrious,
-                        and innovative, offering our customers something they want, putting their desires at the top of our
+                        and innovative, offering our customers something they want, putting their desires at the top of
+                        our
                         priority.
                     </p>
-        
+
                     <h4 class="text-center fre">Team Leaders</h4>
 
                     <div class="lead-tab">
@@ -258,196 +278,232 @@
                         <p class="lead">Lead for Mobile & Design Affairs- Amaizu Melody</p>
                         <p class="lead">Lead for Our Digital Marketing & Content Creation - Victor Obinna Nwosu</p>
                     </div>
-                     
+
 
                 </div>
-                <a href="#section_contact" class="text-center contact1" >Contact Us</a>
-        </div>
-       
-    </section>
+                <a href="#section_contact" class="text-center contact1">Contact Us</a>
+            </div>
 
-    <!-- FAQ  SECTION -->
-    <section id="faq" class=" faq container mt-3 faq-margin">
-        <h4 class="mb-3 text-center text-uppercase text-bold fre">Frequently Asked Questions</h4>
-        <hr>
-        <h6 class="mb-5 text-center font-weight-light">Get enlightened with the stack of knowledge base you might just
-            find that which
-            you need</h6>
-        <div class="mb-4">
-            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description1"></i>
-            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description1"></i>
-            <h6 class="d-inline bold text">Why use a Solar Calculator?</h6>
-            <p class="font-italic ml-5 my-3 collapse description1 text1">
-                A solar calculator helps you calculate with precise accuracy how many kW system sizes are required to power your selected appliances. With this information, you can know the cost of the system and make adjustments where necessary. Worthy of note is to power only the most important appliances on Solar especially if you will be purchasing a hybrid/Grid-tied unit
-            </p>
-        </div>
-        <div class="mb-4">
-            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description2"></i>
-            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description2"></i>
-            <h6 class="d-inline text">Why consider Solar energy?</h6>
-            <p class="font-italic ml-5 my-3 collapse description2 text1">Solar energy offers great benefits both financially and environmentally. Money for electricity bills will be saved and increasing the electricity rate in the future will be protected. It also helps reduce greenhouse gas emissions which plays a role in climate change and air pollution.</p>
-        </div>
-        <div class="mb-4">
-            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description3"></i>
-            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description3"></i>
-            <h6 class="d-inline text">How does Solar energy work?</h6>
-            <p class="font-italic ml-5 my-3 collapse description3 text1">Sunlight is converted into electricity using solar panels. The converted electricity can be stored in batteries to power electrical appliances. Excess energy harnessed from the panels can be exported to the grid. In the case of a grid-tied solar unit.</p>
-        </div>
+        </section>
 
-        <div class="mb-4">
-            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description4"></i>
-            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description4"></i>
-            <h6 class="d-inline text">What are the effects of solar panels on roofs?</h6>
-            <p class="font-italic ml-5 my-3 collapse description4 text1">
-                The solar panel has no negative effect on your roof, instead it has been known to help increase the value of the house when putting it up for sale.
+        <!-- FAQ  SECTION -->
+        <section id="faq" class=" faq container mt-3 faq-margin">
+            <h4 class="mb-3 text-center text-uppercase text-bold fre">Frequently Asked Questions</h4>
+            <hr>
+            <h6 class="mb-5 text-center font-weight-light">Get enlightened with the stack of knowledge base you might
+                just
+                find that which
+                you need</h6>
+            <div class="mb-4">
+                <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description1"></i>
+                <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description1"></i>
+                <h6 class="d-inline bold text">Why use a Solar Calculator?</h6>
+                <p class="font-italic ml-5 my-3 collapse description1 text1">
+                    A solar calculator helps you calculate with precise accuracy how many kW system sizes are required
+                    to power your selected appliances. With this information, you can know the cost of the system and
+                    make adjustments where necessary. Worthy of note is to power only the most important appliances on
+                    Solar especially if you will be purchasing a hybrid/Grid-tied unit
                 </p>
-        </div>
+            </div>
+            <div class="mb-4">
+                <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description2"></i>
+                <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description2"></i>
+                <h6 class="d-inline text">Why consider Solar energy?</h6>
+                <p class="font-italic ml-5 my-3 collapse description2 text1">Solar energy offers great benefits both
+                    financially and environmentally. Money for electricity bills will be saved and increasing the
+                    electricity rate in the future will be protected. It also helps reduce greenhouse gas emissions
+                    which plays a role in climate change and air pollution.</p>
+            </div>
+            <div class="mb-4">
+                <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description3"></i>
+                <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description3"></i>
+                <h6 class="d-inline text">How does Solar energy work?</h6>
+                <p class="font-italic ml-5 my-3 collapse description3 text1">Sunlight is converted into electricity
+                    using solar panels. The converted electricity can be stored in batteries to power electrical
+                    appliances. Excess energy harnessed from the panels can be exported to the grid. In the case of a
+                    grid-tied solar unit.</p>
+            </div>
 
-        <div class="mb-4">
-            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description5"></i>
-            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description5"></i>
-            <h6 class="d-inline text"> How much does it cost?</h6>
-            <p class="font-italic ml-5 my-3 collapse description5 text1">There can only be estimates as the installation cost varies considerably. This depends on your energy demands and how much autonomy you are willing to go for.</p>
-        </div>
+            <div class="mb-4">
+                <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description4"></i>
+                <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description4"></i>
+                <h6 class="d-inline text">What are the effects of solar panels on roofs?</h6>
+                <p class="font-italic ml-5 my-3 collapse description4 text1">
+                    The solar panel has no negative effect on your roof, instead it has been known to help increase the
+                    value of the house when putting it up for sale.
+                </p>
+            </div>
 
-        <div class="mb-4">
-            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description6"></i>
-            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description6"></i>
-            <h6 class="d-inline text">How do you know the number of panels to be used?</h6>
-            <p class="font-italic ml-5 my-3 collapse description6 text1">The Poseidon solar calculator will help you calculate your appliances based on their capacities then estimates the number of panels that will be best suitable. </p>
-        </div>
+            <div class="mb-4">
+                <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description5"></i>
+                <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description5"></i>
+                <h6 class="d-inline text"> How much does it cost?</h6>
+                <p class="font-italic ml-5 my-3 collapse description5 text1">There can only be estimates as the
+                    installation cost varies considerably. This depends on your energy demands and how much autonomy you
+                    are willing to go for.</p>
+            </div>
 
-        <div class="mb-4">
-            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description7"></i>
-            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description7"></i>
-            <h6 class="d-inline text">Do I pay for renewable energy?</h6>
-            <p class="font-italic ml-5 my-3 collapse description7 text1">The only cost is the cost of initial components and installation. No subsequent subscription or bills is required to have access to power generated.
-            </p>
-        </div>
+            <div class="mb-4">
+                <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description6"></i>
+                <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description6"></i>
+                <h6 class="d-inline text">How do you know the number of panels to be used?</h6>
+                <p class="font-italic ml-5 my-3 collapse description6 text1">The Poseidon solar calculator will help you
+                    calculate your appliances based on their capacities then estimates the number of panels that will be
+                    best suitable. </p>
+            </div>
 
-        <div class="mb-4">
-            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description8"></i>
-            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description8"></i>
-            <h6 class="d-inline text">Is solar power clean or green energy?
-            </h6>
-            <p class="font-italic ml-5 my-3 collapse description8 text1">Solar Energy is both green and clean as it has no harmful effects on the environment.</p>
-        </div>
+            <div class="mb-4">
+                <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description7"></i>
+                <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description7"></i>
+                <h6 class="d-inline text">Do I pay for renewable energy?</h6>
+                <p class="font-italic ml-5 my-3 collapse description7 text1">The only cost is the cost of initial
+                    components and installation. No subsequent subscription or bills is required to have access to power
+                    generated.
+                </p>
+            </div>
 
-        <div class="mb-4">
-            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description9"></i>
-            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description9"></i>
-            <h6 class="d-inline text">Why do I need to calculate my solar power requirement?</h6>
-            <p class="font-italic ml-5 my-3 collapse description9 text1">Calculation is required to get a fair or exact estimate of solar components needed to power your appliances and home.
-            </p>
-        </div>
+            <div class="mb-4">
+                <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description8"></i>
+                <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description8"></i>
+                <h6 class="d-inline text">Is solar power clean or green energy?
+                </h6>
+                <p class="font-italic ml-5 my-3 collapse description8 text1">Solar Energy is both green and clean as it
+                    has no harmful effects on the environment.</p>
+            </div>
 
-        <div class="mb-4">
-            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description10"></i>
-            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description10"></i>
-            <h6 class="d-inline text">Is solar power stable?
-            </h6>
-            <p class="font-italic ml-5 my-3 collapse description10 text1">Yes, solar power is stable and can be stored and inverted to be used later.
-            </p>
-        </div>
+            <div class="mb-4">
+                <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description9"></i>
+                <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description9"></i>
+                <h6 class="d-inline text">Why do I need to calculate my solar power requirement?</h6>
+                <p class="font-italic ml-5 my-3 collapse description9 text1">Calculation is required to get a fair or
+                    exact estimate of solar components needed to power your appliances and home.
+                </p>
+            </div>
 
-        <div class="mb-4">
-            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description11"></i>
-            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description11"></i>
-            <h6 class="d-inline text">What appliances can I enter here?
-            </h6>
-            <p class="font-italic ml-5 my-3 collapse description11 text1">All appliances that require electricity to run and that will be used in your home (kitchen, living room, bathroom, etc.). All electrical appliances are rated in KWH, which tells the amount of electricity the particular appliance consumes per hour.</p>
-        </div>
+            <div class="mb-4">
+                <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description10"></i>
+                <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description10"></i>
+                <h6 class="d-inline text">Is solar power stable?
+                </h6>
+                <p class="font-italic ml-5 my-3 collapse description10 text1">Yes, solar power is stable and can be
+                    stored and inverted to be used later.
+                </p>
+            </div>
 
-        <div class="mb-4">
-            <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description12"></i>
-            <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description12"></i>
-            <h6 class="d-inline text">Is this Poseidon Solar Calculator Free?</h6>
-            <p class="font-italic ml-5 my-3 collapse description12 text1">Yes, Poseidon Solar Calculator is absolutely free to use with no hidden charges whatsoever.
-            </p>
-        </div>
-    </section>
-    <!-- END OF FAQ SECTION -->
+            <div class="mb-4">
+                <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description11"></i>
+                <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description11"></i>
+                <h6 class="d-inline text">What appliances can I enter here?
+                </h6>
+                <p class="font-italic ml-5 my-3 collapse description11 text1">All appliances that require electricity to
+                    run and that will be used in your home (kitchen, living room, bathroom, etc.). All electrical
+                    appliances are rated in KWH, which tells the amount of electricity the particular appliance consumes
+                    per hour.</p>
+            </div>
 
-    <!-- CONTACT US SECTION -->
-    <section id="section_contact" class="contact_us">
+            <div class="mb-4">
+                <i class="fas fa-plus-circle mr-3 size" data-toggle="collapse" data-target=".description12"></i>
+                <i class="fas fa-minus-circle mr-3 d-none size" data-toggle="collapse" data-target=".description12"></i>
+                <h6 class="d-inline text">Is this Poseidon Solar Calculator Free?</h6>
+                <p class="font-italic ml-5 my-3 collapse description12 text1">Yes, Poseidon Solar Calculator is
+                    absolutely free to use with no hidden charges whatsoever.
+                </p>
+            </div>
+        </section>
+        <!-- END OF FAQ SECTION -->
+
+        <!-- CONTACT US SECTION -->
+        <section id="section_contact" class="contact_us">
             <h4 class="mb-3 text-center text-uppercase text-bold fre">CONTACT US</h4>
             <!-- <hr> -->
-        <div id="contact_inner" class="contact_container text-center text-sm-center"> 
-            
-            <div class="contact">
+            <div id="contact_inner" class="contact_container text-center text-sm-center">
+
+                <div class="contact">
                     <label for="" class="msg"></label>
-                    <form class="contact_form" id="contact_us_form"> 
-                            <p>
-                                <!-- <label for="title">Title:</label>  -->
-                                <input type="text" id="title" name="title" class="contact_input" placeholder="Your Title" required>
-                            </p>
-                            <p>
-                                <!-- <label for="Name">Name:</label> -->
-                                <input type="text" id="name" name="name" class="contact_input" placeholder="Your name" required >
-                            </p>     
-                            <p>
-                                <!-- <label for="Email">Email:</label> -->
-                                <input type="email" id="email1" name="email" class="contact_input" placeholder="Your email" required>
-                            </p> 
-                            <p>
-                                <!-- <label for="textarea">Type your message here:</label> -->
-                                <textarea name="" id="textarea" name="message" class="contact_textarea" cols="40" rows="5" placeholder="Type your message here:" required pattern="/^[a-z A-Z]+$/"></textarea>
-                            </p>
-                            
-                            <button type="submit" class="but but-send" id="btn_submit">Send</button>              
-                        </form>
-                    </div>
-                   
+                    <form class="contact_form" id="contact_us_form">
+                        <p>
+                            <div class="label"><label for="title">Title:</label></div>
+                            <div>
+                                <input type="text" id="title" name="title" class="contact_input"
+                                    placeholder="Your Title" required>
+                            </div>
+                        </p>
+                        <p>
+                            <div class="label"><label for="Name">Name:</label></div>
+                            <div>
+                                <input type="text" id="name" name="name" class="contact_input" placeholder="Your name"
+                                    required>
+                            </div>
+                        </p>
+                        <p>
+                            <div class="label"><label for="Email">Email:</label></div>
+                            <div>
+                                <input type="email" id="email1" name="email" class="contact_input"
+                                    placeholder="Your email" required>
+                            </div>
+                        </p>
+                        <p>
+                            <div class="label"><label for="textarea">Type your message here:</label></div>
+                            <textarea name="" id="textarea" name="message" class="contact_textarea" cols="40" rows="5"
+                                placeholder="Type your message here:" required pattern="/^[a-z A-Z]+$/"></textarea>
+                        </p>
+
+                        <button type="submit" class="but but-send" id="btn_submit">Send</button>
+                    </form>
+                </div>
+
             </div>
         </section>
         <!-- END OF CONTACT US SECTION -->
 
-    <footer class="footer">
-        <div class="footer-back">
-          <div class="container">
-            <div class="col-sm-12 text-center ">
-                <h3 class="fre">POSEIDON</h3>            
-            </div>
+        <footer class="footer">
+            <div class="footer-back">
+                <div class="container">
+                    <div class="col-sm-12 text-center ">
+                        <h3 class="fre">POSEIDON</h3>
+                    </div>
 
-                <p class="fre">The perfect solar calculator for your abode</p>
-                <div class="nav nav-pills flex-column flex-sm-row footer-nav">
-                    <a class="link flex-sm-fill text-sm-center" href="#calc_section">HOME</a>
-                    <a class="link flex-sm-fill text-sm-center" href="#calc_section">CALCULATE</a>
-                    <a class="link flex-sm-fill text-sm-center" href="#how-it-work">HOW IT WORKS</a>
-                    <a class="link flex-sm-fill text-sm-center" href="#faq">FAQ</a>
-                    <a class="link flex-sm-fill text-sm-center" href="#about-us">ABOUT US</a>
-                    <a class="link flex-sm-fill text-sm-center" href="#section_contact">CONTACT US</a>
-                    <a class="link flex-sm-fill text-sm-center" href="blog.html">BLOG</a>
+                    <p class="fre">The perfect solar calculator for your abode</p>
+                    <div class="nav nav-pills flex-column flex-sm-row footer-nav">
+                        <a class="link flex-sm-fill text-sm-center" href="#calc_section">HOME</a>
+                        <a class="link flex-sm-fill text-sm-center" href="#calc_section">CALCULATE</a>
+                        <a class="link flex-sm-fill text-sm-center" href="#how-it-work">HOW IT WORKS</a>
+                        <a class="link flex-sm-fill text-sm-center" href="#faq">FAQ</a>
+                        <a class="link flex-sm-fill text-sm-center" href="#about-us">ABOUT US</a>
+                        <a class="link flex-sm-fill text-sm-center" href="#section_contact">CONTACT US</a>
+                        <a class="link flex-sm-fill text-sm-center" href="blog.html">BLOG</a>
+                    </div>
+
                 </div>
-                
+
             </div>
 
-        </div>
+            <div class="footer-back2">
+                <p>With <span><i class="fas fa-heart"></i></span> from Team Poseidon</p>
+                <p>© 2019</p>
+            </div>
+        </footer>
 
-        <div class="footer-back2">
-            <p>With <span><i class="fas fa-heart"></i></span> from Team Poseidon</p>
-            <p >© 2019</p>
-        </div>
-    </footer>
-
-    <!-- SCRIPTS -->
+        <!-- SCRIPTS -->
 
 
-    
 
-   
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js"></script>
-    <script src="src/js/faq.js " defer></script>
-    <script src="src/js/solar.js" async></script>
-	<script src="src/js/webshare.js" defer></script>
-    <script src="src/js/contact.js" defer></script>
-    <script src="src/js/app.js" async> </script>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js"></script>
+        <script src="src/js/faq.js " defer></script>
+        <script src="src/js/solar.js" async></script>
+        <script src="src/js/webshare.js" defer></script>
+        <script src="src/js/contact.js" defer></script>
+        <script src="src/js/app.js" async> </script>
+        <script src="sw.js" async> </script>
+        <script src="src/js/install.js"></script>
 </body>
 
 </html>

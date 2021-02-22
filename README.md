@@ -1,51 +1,41 @@
 # Poseidon-Solar-Calculator
 
-  
+## Solar Calculator by Team Poseidon
 
-### Solar Calculator by Team Poseidon
+===============================
 
-  
-### Using git flow for the first time?
-Follow these steps:
-
-- Fork the git repo
-- Clone the forked git repo
-- Head to frontend branch on your code editor.
-``` 	git checkout frontend		```  
-- Check for the remote url (optional)
-``` git remote -v ```
-- Stage changes
-``` git add . ```
-- Commit Changes
-``` git commit -m "added ReadMe file" ```
-- Pull 
-``` git pull origin frontend ``` Use origin if you've not published the branch
-- Now Push
-``` git push -u origin frontend```
+## Table of Contents
 
 
-<b> We are using four branches for this project <b>
+* [Introduction](#introduction)
 
-  
+* [Instructions](#instructions)
 
-Backend Devs: For all backend tasks, create your own branches <br>
+* [Usage](#usage)
 
-  
+* [Contributing](#contributing)
 
-Frontend Devs: For all front end tasks, create your own branches
-
-Develop: For FE & BE integration and tests
-
-Master: Final branch for deployment only
-
-  
-
-> NOTE: Always create pull requests
+* [Licence](#usage)
 
 
 
-Always include details of your contribution
+## Introduction
 
-Remember to pull first and update your local repo before making a PR
+Poseidon-Solar-Calculator
 
-The master branch shall remain untouched until deployment stage.
+
+## Instructions
+
+To View the page, click this link https://hngi.github.io/Poseidon-Solar-Calculator/
+
+## Usage
+
+To run on localhost, double click on the the index.html or open with a web browser
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
